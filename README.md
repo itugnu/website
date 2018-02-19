@@ -6,6 +6,7 @@ INSTALL
 
 * Clone project from git
 * Create virtual environment: `virtualenv venv -p python3`
+* Switch to virtual environment: `source venv/bin/activate`
 * Install requirements: `pip install -r requirements.txt`
 * Create `local_settings.py` file in the project root directory
 * Initialize database: `./manage.py migrate`

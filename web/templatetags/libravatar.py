@@ -20,9 +20,9 @@ def avatar(context, email, size=128):
         return settings.LIBRAVATAR_DEFAULT.format(size=size)
     cache_key = "avatar:{email}:{size}".format(email=email, size=size)
     avatar_url = cache.get(cache_key)
-    if not url:
+    if not avatar_url:
         avatar_url = libravatar_url(
             email, https=True, default=settings.LIBRAVATAR_DEFAULT.format(size=size), size=size
         )
-        cache.set(cache_key, url, 86400)
+        cache.set(cache_key, avatar_url, 86400)
     return avatar_url

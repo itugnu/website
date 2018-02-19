@@ -5,7 +5,7 @@
 from django.conf import settings
 from django.contrib import admin
 from django.conf.urls.static import static
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -14,5 +14,5 @@ urlpatterns = [
 if settings.DEBUG and settings.DEBUG_TOOLBAR:
     import debug_toolbar
     urlpatterns = [
-        url(r'^__debug__/', include(debug_toolbar.urls)),
+        path('__debug__/', include(debug_toolbar.urls)),
     ] + urlpatterns
