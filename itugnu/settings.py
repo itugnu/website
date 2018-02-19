@@ -23,6 +23,8 @@ DEBUG_TOOLBAR = False
 ALLOWED_HOSTS = ['*']
 
 ROOT_URLCONF = 'itugnu.urls'
+AUTH_USER_MODEL = 'common.User'
+APPEND_SLASH = True
 
 TEMPLATES = [
     {

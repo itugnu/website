@@ -100,5 +100,8 @@ ENV/
 # mypy
 .mypy_cache/
 
+# SQLite
+db.sqlite3
+
 # PyCharm files
 .idea/

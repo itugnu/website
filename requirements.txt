@@ -1,5 +1,6 @@
 Django==2.0.2
 psycopg2-binary==2.7.4
+django-reversion==2.0.13
 pyLibravatar
 gunicorn
 flake8
