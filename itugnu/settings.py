@@ -90,6 +90,7 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGES = (
     ('en', _('English')),
     ('tr', _('Turkish')),
+    ('ru', _('Russian'))
 )
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
