@@ -4,20 +4,69 @@
 # Author: Ahmed Ihsan Erdem <ihsan@itugnu.org>
 
 from django.utils.translation import ugettext_lazy as _
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login
 from django.http import JsonResponse
 from django.core.mail import send_mail
 from django.conf import settings
 from datetime import date
 from lecture.models import Lecture
+from common.forms import RegistrationForm
+from common.models import User
 from web.forms import ContactForm
 from web.components import *  # NOQA
+
+
+def get_user(email):
+    try:
+        return User.objects.get(email=email.lower())
+    except User.DoesNotExist:
+        return None
 
 
 def index(request):
     lectures = Lecture.objects.filter(start_date__gte=date.today())[:6]
     data = {'lectures': lectures}
     return render(request, 'index.html', data)
+
+
+def registration(request):
+    if request.method == 'POST':
+        next_url = request.POST.get('next', 'index')
+        form = RegistrationForm(request.POST)
+        if form.is_valid():
+            user = form.save(commit=True)
+            login(request, user)
+            return redirect(next_url)
+        return render(request, 'registration.html', {'form': form})
+    form = RegistrationForm()
+    return render(request, 'registration.html', {'form': form})
+
+
+def login_view(request):
+    data = {'error': None}
+    if request.method == 'POST':
+        next_url = request.POST.get('next', 'index')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        if not email or not password:
+            data['error'] = _('Missing Fields')
+            return render(request, 'login.html', data)
+        username = get_user(email)
+        if not username:
+            data['error'] = _('User not found')
+            return render(request, 'login.html', data)
+        username = username.username
+        _user = authenticate(username=username, password=password)
+        if _user is not None:
+            if _user.is_active:
+                login(request, _user)
+                return redirect(next_url)
+            data['error'] = _('Account Disabled')
+            return render(request, 'login.html', data)
+        data['error'] = _('Invalid login credentials')
+        return render(request, 'login.html', data)
+    return render(request, 'login.html', data)
 
 
 def faq(request):
