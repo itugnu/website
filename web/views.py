@@ -1,6 +1,7 @@
 # This file is part of ITUGnu Website, licensed under GNU GPLv3.
 # Copyright: ITUGnu <info@itugnu.org>.
 # Author: Emin Mastizada <emin@linux.com>
+# Author: Ahmed Ihsan Erdem <ihsan@itugnu.org>
 
 from django.utils.translation import ugettext_lazy as _
 from django.shortcuts import render
@@ -17,6 +18,10 @@ def index(request):
     lectures = Lecture.objects.filter(start_date__gte=date.today())[:6]
     data = {'lectures': lectures}
     return render(request, 'index.html', data)
+
+
+def faq(request):
+    return render(request, 'faq.html')
 
 
 def contact(request):
