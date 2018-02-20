@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/{{ LANGUAGE_CODE|default:"en" }}/#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="/{{ LANGUAGE_CODE|default:"en" }}/#blog">{% trans "Blog" %}</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/{{ LANGUAGE_CODE|default:"en" }}/#lectures">{% trans "Lectures" %}</a>
@@ -102,7 +102,7 @@
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
-                <a href="#">{% trans "Privacy Policy" %}</a>
+                <a href="{% url 'faq' %}">{% trans "FAQ" %}</a>
               </li>
               <li class="list-inline-item">
                   <form action="{% url 'set_language' %}" method="post" id="languageForm">
