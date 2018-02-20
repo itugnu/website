@@ -1,7 +1,7 @@
 # Translation files for ITUGnu Website.
 # Copyright (C) 2018 ITUGnu
 # This file is distributed under GPLv3 License.
-# Emek Gözlüklü <emek@itugnu.com>, YEAR.
+# Emek Gözlüklü <emek@itugnu.com>, 2018.
 #
 #, fuzzy
 msgid ""

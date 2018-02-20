@@ -42,3 +42,4 @@ AUTHORS
 
 * Emin Mastizada <emin@linux.com>
 * Ahmed Ihsan Erdem <ihsan@itugnu.org>
+* Emek Gozluklu <emek@itugnu.org>
