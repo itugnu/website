@@ -113,6 +113,7 @@ EMAIL_HOST_PASSWORD = ""
 # EMAIL_USE_SSL = True
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+DEFAULT_CONTACT_EMAIL = DEFAULT_FROM_EMAIL
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/

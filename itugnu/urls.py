@@ -10,10 +10,15 @@ from django.urls import path, include
 from web import views
 
 
+urlpatterns = [
+    path('contact/', views.contact, name='ajax-contact'),
+    path('i18n/', include('django.conf.urls.i18n')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 urlpatterns = i18n_patterns(
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+) + urlpatterns
 
 if settings.DEBUG and settings.DEBUG_TOOLBAR:
     import debug_toolbar
