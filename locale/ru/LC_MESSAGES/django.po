@@ -30,7 +30,7 @@ msgstr "Пароль"
 
 #: common/admin.py:25 lecture/admin.py:36 lecture/admin.py:64
 msgid "Stamps"
-msgstr ""
+msgstr "Печати"
 
 #: common/models.py:15 web/forms.py:20
 msgid "Email"
@@ -193,11 +193,11 @@ msgstr "Ваше сообщение"
 
 #: web/templates/base.html:7
 msgid "Freedom for Bees - Software Freedom Club, Istanbul Technical University"
-msgstr ""
+msgstr "Freedom for Bees - Software Freedom Club, Стамбульский технический университет"
 
 #: web/templates/base.html:23
 msgid "ITUGnu"
-msgstr ""
+msgstr "ITUGnu"
 
 #: web/templates/base.html:24
 msgid "Toggle navigation"
