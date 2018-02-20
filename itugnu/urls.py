@@ -1,6 +1,7 @@
 # This file is part of ITUGnu Website, licensed under GNU GPLv3.
 # Copyright: ITUGnu <info@itugnu.org>.
 # Author: Emin Mastizada <emin@linux.com>
+# Author: Ahmed Ihsan Erdem <ihsan@itugnu.org>
 
 from django.conf.urls.i18n import i18n_patterns
 from django.conf import settings
@@ -17,6 +18,7 @@ urlpatterns = [
 
 urlpatterns = i18n_patterns(
     path('admin/', admin.site.urls),
+    path('faq/', views.faq, name='faq'),
     path('', views.index, name='index'),
 ) + urlpatterns
 
