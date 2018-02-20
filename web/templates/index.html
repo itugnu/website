@@ -61,7 +61,7 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading text-uppercase">{% trans "Lectures" %}</h2>
-        <h3 class="section-subheading text-muted"><a href="" title="{% trans "All lectures" %}">{% trans "See all lectures" %}</a></h3>
+        <h3 class="section-subheading text-muted"><a href="{% url 'lectures-index' %}" title="{% trans "All lectures" %}">{% trans "See all lectures" %}</a></h3>
       </div>
     </div>
     <div class="row">
@@ -95,7 +95,7 @@
       {% else %}
       <div class="col-md-12 col-sm-12 lecture-item">
         <div class="caption text-center">
-            <h3>{% trans "There is no any lectures open for registration, subscribe to get new announcements." %}</h3>
+            <h3>{% trans "There is no any lectures, subscribe to get new announcements." %}</h3>
         </div>
       </div>
       {% endif %}

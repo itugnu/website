@@ -17,6 +17,7 @@ urlpatterns = [
 
 urlpatterns = i18n_patterns(
     path('admin/', admin.site.urls),
+    path('lectures/', views.lectures_list, name='lectures-index'),
     path('', views.index, name='index'),
 ) + urlpatterns
 

@@ -8,3 +8,9 @@
     vertical-align: middle;
     border-style: none;
 }
+.bg-dark {
+    color: #eeeeee;
+}
+.filter-form {
+    font-style: normal !important;
+}

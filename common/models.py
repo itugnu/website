@@ -17,7 +17,7 @@ class User(AbstractUser):
             'unique': _("A user with that email address already exists."),
         },
     )
-    phone = models.IntegerField(_("Phone Number"), null=True)
+    phone = models.IntegerField(_("Phone Number"), null=True, blank=True)
     language = models.CharField(choices=settings.LANGUAGES, default='tr', max_length=10)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
