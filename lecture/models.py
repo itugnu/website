@@ -21,6 +21,7 @@ def poster_upload_path(instance, filename):
 
 class Lecture(models.Model):
     name = models.CharField(_("Lecture Name"), max_length=255, blank=False, null=False)
+    description = models.TextField(_("Description"), blank=True, null=True)
     poster = models.ImageField(_("Poster"), upload_to=poster_upload_path, blank=True, null=True)
     lecturer = models.ForeignKey(
         User, on_delete=models.SET_NULL, null=True, related_name='lectures', verbose_name=_("Lecturer")
@@ -31,6 +32,10 @@ class Lecture(models.Model):
     is_registration_open = models.BooleanField(_("Open for Registration"), default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    @property
+    def weeks(self) -> int:
+        return int((self.end_date - self.start_date).days / 7)
 
     def __str__(self):
         return self.name

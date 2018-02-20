@@ -14,7 +14,7 @@ from web.components import *  # NOQA
 
 
 def index(request):
-    lectures = Lecture.objects.filter(is_registration_open=True, start_date__gte=date.today())
+    lectures = Lecture.objects.filter(start_date__gte=date.today())[:6]
     data = {'lectures': lectures}
     return render(request, 'index.html', data)
 

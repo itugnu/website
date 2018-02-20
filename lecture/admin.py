@@ -28,7 +28,7 @@ class LectureAdmin(VersionAdmin):
     )
     fieldsets = (
         (_('Lecture Information'), {
-            'fields': ('name', 'poster', 'lecturer', ('classroom', 'is_registration_open'),)
+            'fields': ('name', 'description', 'poster', 'lecturer', ('classroom', 'is_registration_open'),)
         }),
         (_('Dates'), {
             'fields': (('start_date', 'end_date'),)
