@@ -1,0 +1,311 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-20 14:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: common/admin.py:18
+msgid "Account Info"
+msgstr ""
+
+#: common/admin.py:22
+msgid "Password"
+msgstr ""
+
+#: common/admin.py:25 lecture/admin.py:36 lecture/admin.py:64
+msgid "Stamps"
+msgstr ""
+
+#: common/models.py:15 web/forms.py:20
+msgid "Email"
+msgstr ""
+
+#: common/models.py:17
+msgid "A user with that email address already exists."
+msgstr ""
+
+#: common/models.py:20 web/forms.py:29 web/forms.py:32
+#: web/templates/index.html:129
+msgid "Phone Number"
+msgstr ""
+
+#: common/models.py:49 lecture/models.py:80
+msgid "User"
+msgstr ""
+
+#: common/models.py:50
+msgid "Users"
+msgstr ""
+
+#: itugnu/settings.py:91
+msgid "English"
+msgstr ""
+
+#: itugnu/settings.py:92
+msgid "Turkish"
+msgstr ""
+
+#: lecture/admin.py:30
+msgid "Lecture Information"
+msgstr ""
+
+#: lecture/admin.py:33 web/templates/index.html:171
+msgid "Dates"
+msgstr ""
+
+#: lecture/admin.py:61
+msgid "Application"
+msgstr ""
+
+#: lecture/filters.py:13 lecture/models.py:30
+msgid "Start Date"
+msgstr ""
+
+#: lecture/models.py:23
+msgid "Lecture Name"
+msgstr ""
+
+#: lecture/models.py:24
+msgid "Description"
+msgstr ""
+
+#: lecture/models.py:25
+msgid "Poster"
+msgstr ""
+
+#: lecture/models.py:27 web/templates/index.html:189
+msgid "Lecturer"
+msgstr ""
+
+#: lecture/models.py:29 web/templates/index.html:186
+msgid "Classroom"
+msgstr ""
+
+#: lecture/models.py:31
+msgid "End Date"
+msgstr ""
+
+#: lecture/models.py:32 web/templates/index.html:86
+#: web/templates/lectures/index.html:39
+msgid "Open for Registration"
+msgstr ""
+
+#: lecture/models.py:44 lecture/models.py:60 lecture/models.py:77
+msgid "Lecture"
+msgstr ""
+
+#: lecture/models.py:45 web/templates/base.html:34 web/templates/index.html:63
+#: web/templates/lectures/index.html:4 web/templates/lectures/index.html:11
+msgid "Lectures"
+msgstr ""
+
+#: lecture/models.py:51
+msgid "Monday"
+msgstr ""
+
+#: lecture/models.py:52
+msgid "Tuesday"
+msgstr ""
+
+#: lecture/models.py:53
+msgid "Wednesday"
+msgstr ""
+
+#: lecture/models.py:54
+msgid "Thursday"
+msgstr ""
+
+#: lecture/models.py:55
+msgid "Friday"
+msgstr ""
+
+#: lecture/models.py:56
+msgid "Saturday"
+msgstr ""
+
+#: lecture/models.py:57
+msgid "Sunday"
+msgstr ""
+
+#: lecture/models.py:62
+msgid "Start Time"
+msgstr ""
+
+#: lecture/models.py:63
+msgid "End Time"
+msgstr ""
+
+#: lecture/models.py:70
+msgid "Lecture Schedule"
+msgstr ""
+
+#: lecture/models.py:71
+msgid "Lecture Schedules"
+msgstr ""
+
+#: lecture/models.py:82
+msgid "Approved"
+msgstr ""
+
+#: lecture/models.py:91
+msgid "Lecture Application"
+msgstr ""
+
+#: lecture/models.py:92
+msgid "Lecture Applications"
+msgstr ""
+
+#: web/forms.py:11
+msgid "Name"
+msgstr ""
+
+#: web/forms.py:14
+msgid "Full Name"
+msgstr ""
+
+#: web/forms.py:23
+msgid "Email Address"
+msgstr ""
+
+#: web/forms.py:37
+msgid "Message"
+msgstr ""
+
+#: web/forms.py:40
+msgid "Your Message"
+msgstr ""
+
+#: web/templates/base.html:7
+msgid "Freedom for Bees - Software Freedom Club, Istanbul Technical University"
+msgstr ""
+
+#: web/templates/base.html:23
+msgid "ITUGnu"
+msgstr ""
+
+#: web/templates/base.html:24
+msgid "Toggle navigation"
+msgstr ""
+
+#: web/templates/base.html:25
+msgid "Menu"
+msgstr ""
+
+#: web/templates/base.html:37
+msgid "Contact"
+msgstr ""
+
+#: web/templates/base.html:48
+msgid "Dashboard"
+msgstr ""
+
+#: web/templates/base.html:49
+msgid "Logout"
+msgstr ""
+
+#: web/templates/base.html:52
+msgid "Administration"
+msgstr ""
+
+#: web/templates/base.html:54
+msgid "Admin Center"
+msgstr ""
+
+#: web/templates/base.html:60
+msgid "Login"
+msgstr ""
+
+#: web/templates/base.html:105
+msgid "Privacy Policy"
+msgstr ""
+
+#: web/templates/faq.html:4
+msgid "FAQ"
+msgstr ""
+
+#: web/templates/faq.html:11
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: web/templates/index.html:4
+msgid "Software Freedom Club"
+msgstr ""
+
+#: web/templates/index.html:64
+msgid "All lectures"
+msgstr ""
+
+#: web/templates/index.html:64
+msgid "See all lectures"
+msgstr ""
+
+#: web/templates/index.html:88 web/templates/index.html:198
+#: web/templates/lectures/index.html:41
+msgid "Registration Closed"
+msgstr ""
+
+#: web/templates/index.html:98 web/templates/lectures/index.html:51
+msgid "There is no any lectures, subscribe to get new announcements."
+msgstr ""
+
+#: web/templates/index.html:112
+msgid "Contact Us"
+msgstr ""
+
+#: web/templates/index.html:121
+msgid "Full Name *"
+msgstr ""
+
+#: web/templates/index.html:125
+msgid "Email Address *"
+msgstr ""
+
+#: web/templates/index.html:135
+msgid "Your Message *"
+msgstr ""
+
+#: web/templates/index.html:142
+msgid "Send Message"
+msgstr ""
+
+#: web/templates/index.html:171
+#, python-format
+msgid "%(start)s - %(end)s (%(weeks)s weeks)"
+msgstr ""
+
+#: web/templates/index.html:180
+msgid "Schedule is not announced"
+msgstr ""
+
+#: web/templates/index.html:186 web/templates/index.html:189
+msgid "Not Announced"
+msgstr ""
+
+#: web/templates/index.html:194
+msgid "Enroll"
+msgstr ""
+
+#: web/templates/index.html:202
+msgid "Close"
+msgstr ""
+
+#: web/templates/lectures/index.html:15
+msgid "Filter"
+msgstr ""
+
+#: web/views.py:29
+msgid "Method not allowed"
+msgstr ""
