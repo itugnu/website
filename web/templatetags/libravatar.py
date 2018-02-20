@@ -5,7 +5,11 @@
 from django import template
 from django.core.cache import cache
 from django.conf import settings
+import DNS
 from libravatar import libravatar_url
+
+
+DNS.defaults['server'] = ['8.8.8.8', '8.8.4.4']
 
 register = template.Library()
 

@@ -1,3 +1,10 @@
 #languageForm {
     display: inline;
 }
+.img-avatar {
+    height: 6em;
+    margin: 0 10px;
+    border-radius: 50em;
+    vertical-align: middle;
+    border-style: none;
+}

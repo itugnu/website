@@ -7,12 +7,15 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.core.mail import send_mail
 from django.conf import settings
+from datetime import date
+from lecture.models import Lecture
 from web.forms import ContactForm
 from web.components import *  # NOQA
 
 
 def index(request):
-    data = {}
+    lectures = Lecture.objects.filter(is_registration_open=True, start_date__gte=date.today())
+    data = {'lectures': lectures}
     return render(request, 'index.html', data)
 
 
