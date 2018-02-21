@@ -61,10 +61,11 @@ $(document).ready(
   })
 );
 $(document).ready(
-    $('#lecture-register-button').on("click", function (e) {
+    $('.lecture-register-button').on("click", function (e) {
         e.preventDefault();
         var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
         $(this).prop("disabled", true);
+        var result_box = $($(this).data("result-box"));
         var lecture = $(this).data("lecture");
         // Send data
         $.ajax({
@@ -79,7 +80,6 @@ $(document).ready(
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             },
             success: function() {
-                var result_box = $('#enroll-result');
                 result_box.html("<div class='alert alert-success'>");
                 result_box.find('> .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
                 result_box.find('> .alert-success').append("<strong>Your application received. </strong>");
@@ -87,7 +87,6 @@ $(document).ready(
             },
             error: function(data) {
                 var response = $.parseJSON(data.responseText).message;
-                var result_box = $('#enroll-result');
                 result_box.html("<div class='alert alert-danger'>");
                 result_box.find('> .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
                 result_box.find('> .alert-danger').append($("<strong>").text(response));

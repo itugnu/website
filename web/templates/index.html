@@ -167,8 +167,8 @@
                 </li>
               </ul>
               {% if lecture.is_registration_open %}
-              <div id="enroll-result"></div>
-              <button class="btn btn-success" type="button" href="" id="lecture-register-button" data-lecture="{{ lecture.pk }}">
+              <div id="enroll-result{{ lecture.pk }}"></div>
+              <button class="btn btn-success lecture-register-button" type="button" href="" data-lecture="{{ lecture.pk }}" data-result-box="#enroll-result{{ lecture.pk }}">
                 <i class="fa fa-sign-in"></i> {% trans "Enroll" %}
               </button>
               {% else %}
