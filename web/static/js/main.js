@@ -56,7 +56,44 @@ $(document).ready(
     })
 );
 $(document).ready(
-    $('input#name').focus(function() {
-      $('#success').html('');
+  $('input#name').focus(function() {
+    $('#success').html('');
+  })
+);
+$(document).ready(
+    $('#lecture-register-button').on("click", function (e) {
+        e.preventDefault();
+        var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+        $(this).prop("disabled", true);
+        var lecture = $(this).data("lecture");
+        // Send data
+        $.ajax({
+            url: "/lecture/register/",
+            type: "POST",
+            dataType: "json",
+            data: {
+              "lecture": lecture
+            },
+            cache: false,
+            beforeSend: function(xhr, settings) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            },
+            success: function() {
+                var result_box = $('#success');
+                result_box.html("<div class='alert alert-success'>");
+                result_box.find('> .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
+                result_box.find('> .alert-success').append("<strong>Your application received. </strong>");
+                result_box.find('> .alert-success').append('</div>');
+            },
+            error: function(data) {
+                var response = $.parseJSON(data.responseText).message;
+                var result_box = $('#success');
+                result_box.html("<div class='alert alert-danger'>");
+                result_box.find('> .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
+                result_box.find('> .alert-danger').append($("<strong>").text(response));
+                result_box.find('> .alert-danger').append('</div>');
+            }
+        });
+        return false;
     })
 );

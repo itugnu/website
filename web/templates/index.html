@@ -167,13 +167,14 @@
                 </li>
               </ul>
               {% if lecture.is_registration_open %}
-              <a class="btn btn-success" type="button" href="">
+              <div id="success"></div>
+              <button class="btn btn-success" type="button" href="" id="lecture-register-button" data-lecture="{{ lecture.pk }}">
                 <i class="fa fa-sign-in"></i> {% trans "Enroll" %}
-              </a>
+              </button>
               {% else %}
-              <a class="btn btn-danger disabled" type="button" href="#" disabled>
+              <button class="btn btn-danger disabled" type="button" href="#" disabled>
                 <i class="fa fa-exclamation-circle"></i> {% trans "Registration Closed" %}
-              </a>
+              </button>
               {% endif %}
               <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <i class="fa fa-times"></i> {% trans "Close" %}</button>

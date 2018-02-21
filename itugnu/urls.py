@@ -14,6 +14,7 @@ from web import views
 
 urlpatterns = [
     path('contact/', views.contact, name='ajax-contact'),
+    path('lecture/register/', views.lectures_register, name='lecture-register'),
     path('logout/', logout, {'next_page': settings.LOGOUT_REDIRECT_URL}, name='logout'),
     path('i18n/', include('django.conf.urls.i18n')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -56,4 +56,65 @@
     </div>
 </section>
 {% endblock %}
+{% block contentmodals %}
+{% for lecture in lectures.qs %}
+<div class="lecture-modal modal fade" id="lectureModal{{ lecture.pk }}" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">{{ lecture.name }}</h2>
+              <pre><p class="item-intro text-muted">{{ lecture.description }}</p></pre>
+              <ul class="list-inline">
+                <li>
+                  <i class="fa fa-calendar" title="{% trans "Dates" %}"></i> {% blocktrans with start=lecture.start_date end=lecture.end_date weeks=lecture.weeks %}{{ start }} - {{ end }} ({{ weeks }} weeks){% endblocktrans %}
+                  <ul>
+                    {% if lecture.schedules.count %}
+                    {% for schedule in lecture.schedules.all %}
+                      <li>
+                        {{ schedule.get_day_of_week_display }}, {{ schedule.start_time }} - {{ schedule.end_time }}
+                      </li>
+                    {% endfor %}
+                    {% else %}
+                    <li>{% trans "Schedule is not announced" %}</li>
+                    {% endif %}
+                  </ul>
+                </li>
+                <li>&nbsp;</li>
+                <li>
+                  <i class="fa fa-map-marker" title="{% trans "Classroom" %}"></i> {% if lecture.classroom %}{{ lecture.classroom }}{% else %}{% trans "Not Announced" %}{% endif %}
+                </li>
+                <li>
+                  <i class="fa fa-user-secret" title="{% trans "Lecturer" %}"></i> {% if lecture.lecturer %}{{ lecture.lecturer }}{% else %}{% trans "Not Announced" %}{% endif %}
+                </li>
+              </ul>
+              {% if lecture.is_registration_open %}
+              <div id="success"></div>
+              <button class="btn btn-success" type="button" href="" id="lecture-register-button" data-lecture="{{ lecture.pk }}">
+                <i class="fa fa-sign-in"></i> {% trans "Enroll" %}
+              </button>
+              {% else %}
+              <button class="btn btn-danger disabled" type="button" href="#" disabled>
+                <i class="fa fa-exclamation-circle"></i> {% trans "Registration Closed" %}
+              </button>
+              {% endif %}
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fa fa-times"></i> {% trans "Close" %}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
 {% block footerclass %} class="bg-dark"{% endblock %}

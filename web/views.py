@@ -75,7 +75,7 @@ def faq(request):
 
 def contact(request):
     if request.method == 'GET':
-        return JsonResponse({"response": _("Method not allowed")}, status=405)
+        return JsonResponse({"message": _("Method not allowed")}, status=405)
     form = ContactForm(request.POST)
     if form.is_valid():
         send_mail(
