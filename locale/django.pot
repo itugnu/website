@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 11:37+0000\n"
+"POT-Creation-Date: 2018-02-21 18:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Lecture"
 msgstr ""
 
-#: lecture/models.py:45 web/templates/base.html:34 web/templates/index.html:13
+#: lecture/models.py:45 web/templates/base.html:36 web/templates/index.html:13
 #: web/templates/index.html:40 web/templates/lectures/index.html:4
 #: web/templates/lectures/index.html:11
 msgid "Lectures"
@@ -176,7 +176,7 @@ msgstr ""
 msgid "Lecture Applications"
 msgstr ""
 
-#: web/components/lecture.py:22 web/views.py:78
+#: web/components/lecture.py:21 web/views.py:78
 msgid "Method not allowed"
 msgstr ""
 
@@ -186,6 +186,10 @@ msgid "Lecture {pk} does not exist!"
 msgstr ""
 
 #: web/components/lecture.py:29
+msgid "Lecture is not open for registration"
+msgstr ""
+
+#: web/components/lecture.py:31
 msgid "You already registered for this lecture!"
 msgstr ""
 
@@ -213,48 +217,48 @@ msgstr ""
 msgid "Freedom for Bees - Software Freedom Club, Istanbul Technical University"
 msgstr ""
 
-#: web/templates/base.html:23
+#: web/templates/base.html:25
 msgid "ITUGnu"
 msgstr ""
 
-#: web/templates/base.html:24
+#: web/templates/base.html:26
 msgid "Toggle navigation"
 msgstr ""
 
-#: web/templates/base.html:25
+#: web/templates/base.html:27
 msgid "Menu"
 msgstr ""
 
-#: web/templates/base.html:31 web/templates/index.html:25
+#: web/templates/base.html:33 web/templates/index.html:25
 msgid "Blog"
 msgstr ""
 
-#: web/templates/base.html:37
+#: web/templates/base.html:39
 msgid "Contact"
 msgstr ""
 
-#: web/templates/base.html:48
+#: web/templates/base.html:50
 msgid "Dashboard"
 msgstr ""
 
-#: web/templates/base.html:49
+#: web/templates/base.html:51
 msgid "Logout"
 msgstr ""
 
-#: web/templates/base.html:52
+#: web/templates/base.html:54
 msgid "Administration"
 msgstr ""
 
-#: web/templates/base.html:54
+#: web/templates/base.html:56
 msgid "Admin Center"
 msgstr ""
 
-#: web/templates/base.html:60 web/templates/login.html:4
+#: web/templates/base.html:62 web/templates/login.html:4
 #: web/templates/login.html:11 web/templates/login.html:34
 msgid "Login"
 msgstr ""
 
-#: web/templates/base.html:110 web/templates/faq.html:4
+#: web/templates/base.html:112 web/templates/faq.html:4
 msgid "FAQ"
 msgstr ""
 
@@ -341,12 +345,12 @@ msgstr ""
 msgid "Filter"
 msgstr ""
 
-#: web/templates/registration.html:4 web/templates/registration.html:11
-msgid "Registration"
+#: web/templates/login.html:35 web/templates/registration.html:26
+msgid "Register"
 msgstr ""
 
-#: web/templates/registration.html:26
-msgid "Register"
+#: web/templates/registration.html:4 web/templates/registration.html:11
+msgid "Registration"
 msgstr ""
 
 #: web/views.py:53

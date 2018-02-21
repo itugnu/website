@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 11:37+0000\n"
+"POT-Creation-Date: 2018-02-21 18:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Emek Gozluklu <emek@itugnu.org>\n"
 "Language-Team: tr <LL@li.org>\n"
@@ -115,7 +115,7 @@ msgstr "Kayıt olabilirsiniz"
 msgid "Lecture"
 msgstr "Eğitim"
 
-#: lecture/models.py:45 web/templates/base.html:34 web/templates/index.html:13
+#: lecture/models.py:45 web/templates/base.html:36 web/templates/index.html:13
 #: web/templates/index.html:40 web/templates/lectures/index.html:4
 #: web/templates/lectures/index.html:11
 msgid "Lectures"
@@ -177,7 +177,7 @@ msgstr "Eğitim Başvurusu"
 msgid "Lecture Applications"
 msgstr "Eğitim Başvuruları"
 
-#: web/components/lecture.py:22 web/views.py:78
+#: web/components/lecture.py:21 web/views.py:78
 msgid "Method not allowed"
 msgstr "Yönteme izin verilmemektedir"
 
@@ -187,6 +187,10 @@ msgid "Lecture {pk} does not exist!"
 msgstr "{pk} numaralı eğitim kaydı bulunmamaktadır!"
 
 #: web/components/lecture.py:29
+msgid "Lecture is not open for registration"
+msgstr ""
+
+#: web/components/lecture.py:31
 msgid "You already registered for this lecture!"
 msgstr "Bu eğitime daha önce kayıt oldunuz!"
 
@@ -214,48 +218,48 @@ msgstr "Mesajınız"
 msgid "Freedom for Bees - Software Freedom Club, Istanbul Technical University"
 msgstr "Freedom for Bees - Özgür Yazılım Kulübü, İstanbul Teknik Üniversitesi"
 
-#: web/templates/base.html:23
+#: web/templates/base.html:25
 msgid "ITUGnu"
 msgstr "İTÜGnu"
 
-#: web/templates/base.html:24
+#: web/templates/base.html:26
 msgid "Toggle navigation"
 msgstr "Navigasyonu Aç"
 
-#: web/templates/base.html:25
+#: web/templates/base.html:27
 msgid "Menu"
 msgstr "Menü"
 
-#: web/templates/base.html:31 web/templates/index.html:25
+#: web/templates/base.html:33 web/templates/index.html:25
 msgid "Blog"
 msgstr "Blog"
 
-#: web/templates/base.html:37
+#: web/templates/base.html:39
 msgid "Contact"
 msgstr "İletişim"
 
-#: web/templates/base.html:48
+#: web/templates/base.html:50
 msgid "Dashboard"
 msgstr "Kontrol Paneli"
 
-#: web/templates/base.html:49
+#: web/templates/base.html:51
 msgid "Logout"
 msgstr "Çıkış"
 
-#: web/templates/base.html:52
+#: web/templates/base.html:54
 msgid "Administration"
 msgstr "Admin"
 
-#: web/templates/base.html:54
+#: web/templates/base.html:56
 msgid "Admin Center"
 msgstr "Admin Merkezi"
 
-#: web/templates/base.html:60 web/templates/login.html:4
+#: web/templates/base.html:62 web/templates/login.html:4
 #: web/templates/login.html:11 web/templates/login.html:34
 msgid "Login"
 msgstr "Giriş"
 
-#: web/templates/base.html:110 web/templates/faq.html:4
+#: web/templates/base.html:112 web/templates/faq.html:4
 msgid "FAQ"
 msgstr "S.S.S."
 
@@ -342,13 +346,13 @@ msgstr "Kapalı"
 msgid "Filter"
 msgstr "Filtre"
 
+#: web/templates/login.html:35 web/templates/registration.html:26
+msgid "Register"
+msgstr "Kayıt ol"
+
 #: web/templates/registration.html:4 web/templates/registration.html:11
 msgid "Registration"
 msgstr "Kayıt"
-
-#: web/templates/registration.html:26
-msgid "Register"
-msgstr "Kayıt ol"
 
 #: web/views.py:53
 msgid "Missing Fields"

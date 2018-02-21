@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 11:37+0000\n"
+"POT-Creation-Date: 2018-02-21 18:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Emin Mastizada <emin@linux.com>\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -117,7 +117,7 @@ msgstr "Открыто для регистрации"
 msgid "Lecture"
 msgstr "Лекция"
 
-#: lecture/models.py:45 web/templates/base.html:34 web/templates/index.html:13
+#: lecture/models.py:45 web/templates/base.html:36 web/templates/index.html:13
 #: web/templates/index.html:40 web/templates/lectures/index.html:4
 #: web/templates/lectures/index.html:11
 msgid "Lectures"
@@ -179,7 +179,7 @@ msgstr "Лекция"
 msgid "Lecture Applications"
 msgstr "Заявки на Лекции"
 
-#: web/components/lecture.py:22 web/views.py:78
+#: web/components/lecture.py:21 web/views.py:78
 msgid "Method not allowed"
 msgstr "Метод не разрешён"
 
@@ -189,6 +189,10 @@ msgid "Lecture {pk} does not exist!"
 msgstr "Лекция {pk} не существует"
 
 #: web/components/lecture.py:29
+msgid "Lecture is not open for registration"
+msgstr "Лекция не открыто для регистрации"
+
+#: web/components/lecture.py:31
 msgid "You already registered for this lecture!"
 msgstr "Вы уже зарегистрированы для этой лекции"
 
@@ -214,50 +218,52 @@ msgstr "Ваше сообщение"
 
 #: web/templates/base.html:7
 msgid "Freedom for Bees - Software Freedom Club, Istanbul Technical University"
-msgstr "Свобода для пчел - Клуб Свободного Программное обеспечение, Стамбульский Технический Университет"
+msgstr ""
+"Свобода для пчел - Клуб Свободного Программное обеспечение, Стамбульский "
+"Технический Университет"
 
-#: web/templates/base.html:23
+#: web/templates/base.html:25
 msgid "ITUGnu"
 msgstr "ITUGnu"
 
-#: web/templates/base.html:24
+#: web/templates/base.html:26
 msgid "Toggle navigation"
 msgstr "Переключить навигацию"
 
-#: web/templates/base.html:25
+#: web/templates/base.html:27
 msgid "Menu"
 msgstr "Меню"
 
-#: web/templates/base.html:31 web/templates/index.html:25
+#: web/templates/base.html:33 web/templates/index.html:25
 msgid "Blog"
 msgstr "Блог"
 
-#: web/templates/base.html:37
+#: web/templates/base.html:39
 msgid "Contact"
 msgstr "Свяжитесь с нами"
 
-#: web/templates/base.html:48
+#: web/templates/base.html:50
 msgid "Dashboard"
 msgstr "Панель"
 
-#: web/templates/base.html:49
+#: web/templates/base.html:51
 msgid "Logout"
 msgstr "Выйти"
 
-#: web/templates/base.html:52
+#: web/templates/base.html:54
 msgid "Administration"
 msgstr "Администрация"
 
-#: web/templates/base.html:54
+#: web/templates/base.html:56
 msgid "Admin Center"
 msgstr "Центр администратора"
 
-#: web/templates/base.html:60 web/templates/login.html:4
+#: web/templates/base.html:62 web/templates/login.html:4
 #: web/templates/login.html:11 web/templates/login.html:34
 msgid "Login"
 msgstr "Войти"
 
-#: web/templates/base.html:110 web/templates/faq.html:4
+#: web/templates/base.html:112 web/templates/faq.html:4
 msgid "FAQ"
 msgstr "ЧАВО"
 
@@ -344,13 +350,13 @@ msgstr "Закрыть"
 msgid "Filter"
 msgstr "Фильтровать"
 
+#: web/templates/login.html:35 web/templates/registration.html:26
+msgid "Register"
+msgstr "Зарегистрироваться"
+
 #: web/templates/registration.html:4 web/templates/registration.html:11
 msgid "Registration"
 msgstr "Регистрация"
-
-#: web/templates/registration.html:26
-msgid "Register"
-msgstr "Зарегистрировать"
 
 #: web/views.py:53
 msgid "Missing Fields"
