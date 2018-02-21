@@ -6,4 +6,5 @@ Pillow
 pyLibravatar
 py3dns
 gunicorn
+raven
 flake8
