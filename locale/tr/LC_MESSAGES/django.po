@@ -184,11 +184,11 @@ msgstr "Yönteme izin verilmemektedir"
 #: web/components/lecture.py:27
 #, python-brace-format
 msgid "Lecture {pk} does not exist!"
-msgstr ""
+msgstr "Eğitim kaydı bulunmamaktadır!"
 
 #: web/components/lecture.py:29
 msgid "You already registered for this lecture!"
-msgstr ""
+msgstr "Bu eğitime daha önce kayıt oldunuz!"
 
 #: web/forms.py:11
 msgid "Name"
@@ -212,7 +212,7 @@ msgstr "Mesajınız"
 
 #: web/templates/base.html:7
 msgid "Freedom for Bees - Software Freedom Club, Istanbul Technical University"
-msgstr ""
+msgstr "Freedom for Bees - Özgür Yazılım Kulübü, İstanbul Teknik Üniversitesi"
 
 #: web/templates/base.html:23
 msgid "ITUGnu"
@@ -228,7 +228,7 @@ msgstr "Menü"
 
 #: web/templates/base.html:31 web/templates/index.html:25
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: web/templates/base.html:37
 msgid "Contact"
@@ -273,11 +273,11 @@ msgstr "İTÜ Özgür Yazılım Kulübü"
 
 #: web/templates/index.html:12
 msgid "Free as in Freedom"
-msgstr ""
+msgstr "Free as in Freedom"
 
 #: web/templates/index.html:26
 msgid "Coming soon..."
-msgstr ""
+msgstr "Çok yakında..."
 
 #: web/templates/index.html:41
 msgid "All lectures"
@@ -352,19 +352,19 @@ msgstr "Kayıt ol"
 
 #: web/views.py:53
 msgid "Missing Fields"
-msgstr ""
+msgstr "Eksik Alanlar Mevcut"
 
 #: web/views.py:57
 msgid "User not found"
-msgstr ""
+msgstr "Kullanıcı bulunamadı."
 
 #: web/views.py:65
 msgid "Account Disabled"
-msgstr ""
+msgstr "Hesaba Erişim Engellenmiştir"
 
 #: web/views.py:67
 msgid "Invalid login credentials"
-msgstr ""
+msgstr "Geçersiz giriş bilgileri"
 
 #~ msgid "Privacy Policy"
 #~ msgstr "Gizlilik Politikası"
