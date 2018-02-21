@@ -20,7 +20,6 @@ def lectures_register(request):
     if request.method == 'GET':
         return JsonResponse({"message": _("Method not allowed")}, status=405)
     if not request.user.is_authenticated:
-        return JsonResponse({"message": _("Please, login to register for lectures")}, status 403)
     lecture_pk = request.POST.get('lecture')
     try:
         lecture = Lecture.objects.get(pk=lecture_pk)
