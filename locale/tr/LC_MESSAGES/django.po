@@ -184,7 +184,7 @@ msgstr "Yönteme izin verilmemektedir"
 #: web/components/lecture.py:27
 #, python-brace-format
 msgid "Lecture {pk} does not exist!"
-msgstr "Eğitim kaydı bulunmamaktadır!"
+msgstr "{pk} numaralı eğitim kaydı bulunmamaktadır!"
 
 #: web/components/lecture.py:29
 msgid "You already registered for this lecture!"
