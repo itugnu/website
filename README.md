@@ -5,7 +5,7 @@ INSTALL
 -------
 
 * Clone project from git
-* Create virtual environment: `virtualenv venv -p python3`
+* Create virtual environment: `virtualenv venv -p python3.6`
 * Switch to virtual environment: `source venv/bin/activate`
 * Install requirements: `pip install -r requirements.txt`
 * Create `local_settings.py` file in the project root directory
@@ -15,6 +15,10 @@ INSTALL
 DEPLOYMENT
 ----------
 
+* Ubuntu: `apt install python3.6 python3.6-dev nginx libpq-dev postgresql postgresql-contrib`
+* Set-up database and create settings file using `cp local_settings.template.py local_settings.py` (hint: use link (`ln -s`))
+* Install virtualenv: `sudo pip3 install virtualenv`
+* Create user: `useradd -m itugnu`
 * Check `etc` folder for deployment files (nginx & supervisor)
 * Application uses gunicorn and PostgreSQL (psycopg2-binary) database for deployment
 * Translations needs to be compiled to use them: `./manage.py compilemessages`
