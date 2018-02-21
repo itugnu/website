@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 14:44+0000\n"
+"POT-Creation-Date: 2018-02-21 11:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Account Info"
 msgstr ""
 
-#: common/admin.py:22
+#: common/admin.py:22 web/templates/login.html:30
 msgid "Password"
 msgstr ""
 
@@ -30,7 +30,7 @@ msgstr ""
 msgid "Stamps"
 msgstr ""
 
-#: common/models.py:15 web/forms.py:20
+#: common/models.py:15 web/forms.py:20 web/templates/login.html:27
 msgid "Email"
 msgstr ""
 
@@ -39,7 +39,7 @@ msgid "A user with that email address already exists."
 msgstr ""
 
 #: common/models.py:20 web/forms.py:29 web/forms.py:32
-#: web/templates/index.html:129
+#: web/templates/index.html:106
 msgid "Phone Number"
 msgstr ""
 
@@ -59,11 +59,16 @@ msgstr ""
 msgid "Turkish"
 msgstr ""
 
+#: itugnu/settings.py:93
+msgid "Russian"
+msgstr ""
+
 #: lecture/admin.py:30
 msgid "Lecture Information"
 msgstr ""
 
-#: lecture/admin.py:33 web/templates/index.html:171
+#: lecture/admin.py:33 web/templates/index.html:148
+#: web/templates/lectures/index.html:78
 msgid "Dates"
 msgstr ""
 
@@ -87,11 +92,13 @@ msgstr ""
 msgid "Poster"
 msgstr ""
 
-#: lecture/models.py:27 web/templates/index.html:189
+#: lecture/models.py:27 web/templates/index.html:166
+#: web/templates/lectures/index.html:96
 msgid "Lecturer"
 msgstr ""
 
-#: lecture/models.py:29 web/templates/index.html:186
+#: lecture/models.py:29 web/templates/index.html:163
+#: web/templates/lectures/index.html:93
 msgid "Classroom"
 msgstr ""
 
@@ -99,7 +106,7 @@ msgstr ""
 msgid "End Date"
 msgstr ""
 
-#: lecture/models.py:32 web/templates/index.html:86
+#: lecture/models.py:32 web/templates/index.html:63
 #: web/templates/lectures/index.html:39
 msgid "Open for Registration"
 msgstr ""
@@ -108,8 +115,9 @@ msgstr ""
 msgid "Lecture"
 msgstr ""
 
-#: lecture/models.py:45 web/templates/base.html:34 web/templates/index.html:63
-#: web/templates/lectures/index.html:4 web/templates/lectures/index.html:11
+#: lecture/models.py:45 web/templates/base.html:34 web/templates/index.html:13
+#: web/templates/index.html:40 web/templates/lectures/index.html:4
+#: web/templates/lectures/index.html:11
 msgid "Lectures"
 msgstr ""
 
@@ -169,6 +177,19 @@ msgstr ""
 msgid "Lecture Applications"
 msgstr ""
 
+#: web/components/lecture.py:22 web/views.py:78
+msgid "Method not allowed"
+msgstr ""
+
+#: web/components/lecture.py:27
+#, python-brace-format
+msgid "Lecture {pk} does not exist!"
+msgstr ""
+
+#: web/components/lecture.py:29
+msgid "You already registered for this lecture!"
+msgstr ""
+
 #: web/forms.py:11
 msgid "Name"
 msgstr ""
@@ -205,6 +226,10 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
+#: web/templates/base.html:31 web/templates/index.html:25
+msgid "Blog"
+msgstr ""
+
 #: web/templates/base.html:37
 msgid "Contact"
 msgstr ""
@@ -225,15 +250,12 @@ msgstr ""
 msgid "Admin Center"
 msgstr ""
 
-#: web/templates/base.html:60
+#: web/templates/base.html:60 web/templates/login.html:4
+#: web/templates/login.html:11 web/templates/login.html:34
 msgid "Login"
 msgstr ""
 
-#: web/templates/base.html:105
-msgid "Privacy Policy"
-msgstr ""
-
-#: web/templates/faq.html:4
+#: web/templates/base.html:110 web/templates/faq.html:4
 msgid "FAQ"
 msgstr ""
 
@@ -245,61 +267,74 @@ msgstr ""
 msgid "Software Freedom Club"
 msgstr ""
 
-#: web/templates/index.html:64
+#: web/templates/index.html:11
+msgid "ITU Software Freedom Club"
+msgstr ""
+
+#: web/templates/index.html:12
+msgid "Free as in Freedom"
+msgstr ""
+
+#: web/templates/index.html:26
+msgid "Coming soon..."
+msgstr ""
+
+#: web/templates/index.html:41
 msgid "All lectures"
 msgstr ""
 
-#: web/templates/index.html:64
+#: web/templates/index.html:41
 msgid "See all lectures"
 msgstr ""
 
-#: web/templates/index.html:88 web/templates/index.html:198
-#: web/templates/lectures/index.html:41
+#: web/templates/index.html:65 web/templates/index.html:176
+#: web/templates/lectures/index.html:41 web/templates/lectures/index.html:106
 msgid "Registration Closed"
 msgstr ""
 
-#: web/templates/index.html:98 web/templates/lectures/index.html:51
+#: web/templates/index.html:75 web/templates/lectures/index.html:51
 msgid "There is no any lectures, subscribe to get new announcements."
 msgstr ""
 
-#: web/templates/index.html:112
+#: web/templates/index.html:89
 msgid "Contact Us"
 msgstr ""
 
-#: web/templates/index.html:121
+#: web/templates/index.html:98
 msgid "Full Name *"
 msgstr ""
 
-#: web/templates/index.html:125
+#: web/templates/index.html:102
 msgid "Email Address *"
 msgstr ""
 
-#: web/templates/index.html:135
+#: web/templates/index.html:112
 msgid "Your Message *"
 msgstr ""
 
-#: web/templates/index.html:142
+#: web/templates/index.html:119
 msgid "Send Message"
 msgstr ""
 
-#: web/templates/index.html:171
+#: web/templates/index.html:148 web/templates/lectures/index.html:78
 #, python-format
 msgid "%(start)s - %(end)s (%(weeks)s weeks)"
 msgstr ""
 
-#: web/templates/index.html:180
+#: web/templates/index.html:157 web/templates/lectures/index.html:87
 msgid "Schedule is not announced"
 msgstr ""
 
-#: web/templates/index.html:186 web/templates/index.html:189
+#: web/templates/index.html:163 web/templates/index.html:166
+#: web/templates/lectures/index.html:93 web/templates/lectures/index.html:96
 msgid "Not Announced"
 msgstr ""
 
-#: web/templates/index.html:194
+#: web/templates/index.html:172 web/templates/lectures/index.html:102
 msgid "Enroll"
 msgstr ""
 
-#: web/templates/index.html:202
+#: web/templates/index.html:180 web/templates/lectures/index.html:110
 msgid "Close"
 msgstr ""
 
@@ -307,6 +342,26 @@ msgstr ""
 msgid "Filter"
 msgstr ""
 
-#: web/views.py:29
-msgid "Method not allowed"
+#: web/templates/registration.html:4 web/templates/registration.html:11
+msgid "Registration"
+msgstr ""
+
+#: web/templates/registration.html:26
+msgid "Register"
+msgstr ""
+
+#: web/views.py:53
+msgid "Missing Fields"
+msgstr ""
+
+#: web/views.py:57
+msgid "User not found"
+msgstr ""
+
+#: web/views.py:65
+msgid "Account Disabled"
+msgstr ""
+
+#: web/views.py:67
+msgid "Invalid login credentials"
 msgstr ""
