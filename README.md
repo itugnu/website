@@ -17,6 +17,7 @@ DEPLOYMENT
 
 * Check `etc` folder for deployment files (nginx & supervisor)
 * Application uses gunicorn and PostgreSQL (psycopg2-binary) database for deployment
+* Translations needs to be compiled to use them: `./manage.py compilemessages`
 
 
 LICENSE
