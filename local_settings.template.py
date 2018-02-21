@@ -16,3 +16,14 @@ DEFAULT_CONTACT_EMAIL = DEFAULT_FROM_EMAIL
 SECRET_KEY = ""
 ALLOWED_HOSTS = [".itugnu.org"]
 TIME_ZONE = "Europe/Istanbul"
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydatabase',
+        'USER': 'mydatabaseuser',
+        'PASSWORD': 'mypassword',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
