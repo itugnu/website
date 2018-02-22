@@ -188,7 +188,7 @@ msgstr "{pk} numaralı eğitim kaydı bulunmamaktadır!"
 
 #: web/components/lecture.py:29
 msgid "Lecture is not open for registration"
-msgstr ""
+msgstr "Eğitim kayıtlara kapalı"
 
 #: web/components/lecture.py:31
 msgid "You already registered for this lecture!"
@@ -340,7 +340,7 @@ msgstr "Kayıt ol"
 
 #: web/templates/index.html:180 web/templates/lectures/index.html:110
 msgid "Close"
-msgstr "Kapalı"
+msgstr "Kapat"
 
 #: web/templates/lectures/index.html:15
 msgid "Filter"
