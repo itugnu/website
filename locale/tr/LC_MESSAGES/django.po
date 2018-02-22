@@ -263,6 +263,102 @@ msgstr "S.S.S."
 msgid "Frequently Asked Questions"
 msgstr "Sıkça Sorulan Sorular"
 
+#: web/templates/faq.html:16
+msgid "What GNU"
+msgstr "GNU Nedir?"
+
+#: web/templates/faq.html:18
+msgid "GNU"
+msgstr "GNU Projesi 1983 yılında Richard M. Stallman tarafından başlatılan Özgür Yazılım hareketine verilen isimdir. İsim olarak GNU hayvanının seçilmesine neyin sebep olduğu bilinmemektedir ancak tüm dünyada bu sembolle anılmaktadır. \"GNU bir kısaltma mıdır?\" sorusunun cevabını ise Stallman bir röportajında \"GNU is Not Unix\" olarak vermiştir."
+
+#: web/templates/faq.html:22
+msgid "What ITUGnu"
+msgstr "İTÜ Özgür Yazılım Kulübü nedir?"
+
+#: web/templates/faq.html:24
+msgid "ITUGnu"
+msgstr "İTÜ Özgür Yazılım Kulübü (ITUGnu) adından anlaşılacağı üzere Teknik Üniversite bünyesinde faaliyetlerine devam eden bir okul kulübüdür. Kuruluş ve faaliyet amacı başta İTÜ bünyesinde olmak üzere Türkiye genelinde Özgür Yazılım felsefesinin yaygınlaştırılması, Özgür Yazılımların kullandırılmaya teşvik edilmesi ve anlaşılmasını sağlamaktır. Bu çerçevede dönemlik olarak yazılım dilleri ve özgür teknolojiler üzerine eğitim, kurs ve seminerler düzenler."
+
+#: web/templates/faq.html:28
+msgid "What Membership"
+msgstr "Etkinliklere katılmak için İTÜ mensubu olmak zorunlu mu?"
+
+#: web/templates/faq.html:30
+msgid "Membership"
+msgstr "Hayır değil. Etkinlik, eğitim ve kurslarımızda öncelik İTÜ öğrenci ve personeline verilse de genel olarak kulübümüze üye olan herekese açıktır. Kulübe üyelik için de İTÜ mensubu olma şartı aranmamaktadır. Sitemizin en altında bulunan Facebook linki ile kaydolma sayfasına ulaşabilirsiniz. Haricen resmi kayıt olmak için yenilenen yüzüyle Web sitemize üye olursanız girmiş olduğunuz e-posta adresi üzerinden mail gruplarımıza dahil edileceksiniz."
+
+#: web/templates/faq.html:34
+msgid "What Paid"
+msgstr "Eğitimler ücretli mi?"
+
+#: web/templates/faq.html:36
+msgid "Money"
+msgstr "Hayır değil. Kulübümüz bünyesinde yapılan hiç bir etkinlik ve eğitimde kulübümüz ve eğitmenlerimiz para kazanmamaktadır. Gönüllülük esasına dayalı ve bilginin özgürlüğünü şiar edinmiş kulüp üyelerimiz ve yönetim kurulumuz bu hizmetleri sizlere sunmaktadır. Ancak zaman zaman eğitime katılan üyelerimizden bizlere destek olmak isteyenlere, topluma ve insanlığa faydalı olmak adına TEMA Vakfı, hayvan barınakları gibi kuruluşlara bağışta bulunmalarını telkin ediyoruz."
+
+#: web/templates/faq.html:40
+msgid "What GNULinux"
+msgstr "Eğitimlerde GNU/Linux harici bir işletim sistemi kullanabilir miyim?"
+
+#: web/templates/faq.html:42
+msgid "GNULinux"
+msgstr "Eğitimlerimizde özgür olmayan işletim sistemli makinaları kullanmanız yasaktır. Özellikle W*ndows işletim sistemlerinin kabulu ve desteği kesinlikle olmamaktadır. Unix tabanlı MacBook makinaların durumu ise camiada henüz net bir karara bağlanmadığından kullanabilirsiniz. Ancak MacOS işletim sistemine ait destek de tarafımızdan sağlıklı şekilde verilememektedir. Sanal ortamda da olsa bir GNU/Linux işletim sistemi kullanmanız faydanıza olacaktır."
+
+#: web/templates/faq.html:46
+msgid "What No Linux"
+msgstr "GNU/Linux yüklemeyi bilmiyorum. Ne yapmalıyım?"
+
+#: web/templates/faq.html:48
+msgid "No Linux"
+msgstr "Kulüp üyelerimiz veya eğitmenlerimizden biriyle iletişime geçmeniz halinde sizlere bireysel kurulum desteği kulübümüz tarafından sağlanmaktadır."
+
+#: web/templates/faq.html:52
+msgid "What Computer"
+msgstr "Eğitimlere kendi bilgisayarımızla mı gelmeliyiz?"
+
+#: web/templates/faq.html:54
+msgid "Computer"
+msgstr "Evet. Eğitimlerimiz labaratuarlarda değil normal amfi ve sınıflarda yapılmaktadır. Dolayısı ile kendi bilgisayarlarınızı getirmeniz gerekmektedir. Eğer taşınabilir bir bilgisayarınız yok ise ya da farklı bir sorundan dolayı getiremiyorsanız lütfen bizimle iletişime geçiniz."
+
+#: web/templates/faq.html:58
+msgid "What Lecture"
+msgstr "Aynı anda birden fazla eğitime katılabilir miyim?"
+
+#: web/templates/faq.html:60
+msgid "Lecture"
+msgstr "Eğitim saatleri çakışmadığı sürece ve eğitimlerden kabul aldığınız takdirde istediğiniz eğitime istediğiniz anda katılabilirsiniz."
+
+#: web/templates/faq.html:64
+msgid "What Attendance"
+msgstr "Eğitimlerde devam zorunluluğu var mı?"
+
+#: web/templates/faq.html:66
+msgid "Attendance"
+msgstr "Evet. Eğitimlerimizin tamamında sıkı bir yoklama takibi yapılmaktadır. Eğitimlere mazeretsiz devamsızlık yapmanız halinde kara listeye alınacak ve devam eden eğitimlerden de kaydınız düşürülecektir. Ayrıca bizimle aynı mantıkta hareket eden tüm İTÜ kulüpleri ile iletişime geçip, etkinliklere kabul edilmemeniz için elimizden geleni yapacağız :)."
+
+#: web/templates/faq.html:70
+msgid "What Capacity"
+msgstr "Eğitime kabul almasam da gelip dersleri dinleyebiliyor muyum?"
+
+#: web/templates/faq.html:72
+msgid "Capacity"
+msgstr "Hayır. Eğitimlerimiz sınıfın kapasitesine ve/veya eğitmenin tercihlerine göre öğrenci kabul etmektedir. Bu sebeple kontenjanı aşmamız mümkün değil."
+
+#: web/templates/faq.html:76
+msgid "What Cypher"
+msgstr "Parola ile şifre aynı şey değil mi? Neden insanları bu konuda darlıyorsunuz?"
+
+#: web/templates/faq.html:78
+msgid "No Cypher Yes Password"
+msgstr "Hayır değil. Parola ile şifre birbiri ile alakasız iki farklı terimdir. Parola paroladır, şifre de şifredir. İnsanı delirtmeyin! Her yerde parolaya şifre denmesi cahilliği sizin öğrenmeme."
+
+#: web/templates/faq.html:82
+msgid "What Security"
+msgstr "Kayıt sırasında alınan kişisel bilgilerimin güvenliğinden nasıl emin olabilirim?"
+
+#: web/templates/faq.html:84
+msgid "Very Security"
+msgstr "itugnu.org web sitesine kayıt sırasında alınan bilgilerden hiçbiri herhangi bir servis sağlayıcı ile paylaşılmamaktadır. Ayrıca girdiğiniz bilgiler yedek sunucularda vs. kayıt altına alınmamaktadır. Girdiğiniz paralolar dahi şifrelenerek tarafımızdan okunamamaktadır."
+
 #: web/templates/index.html:4
 msgid "Software Freedom Club"
 msgstr "Özgür Yazılım Kulübü"
