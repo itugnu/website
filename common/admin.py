@@ -17,14 +17,14 @@ class UserAdmin(AbstractUserAdmin, VersionAdmin):
     fieldsets = (
         (_('Account Info'), {
             'fields': ('first_name', 'last_name', 'username', 'email', 'phone',
-                       'groups', 'is_staff', 'is_active',)
+                       'groups', ('is_staff', 'is_superuser'), 'is_active',)
         }),
         (_('Password'), {
             'fields': ('password',)
         }),
         (_('Stamps'), {
-            'fields': (('created_at', 'updated_at'),)
+            'fields': (('created_at', 'updated_at'), 'last_login',)
         }),
     )
-    readonly_fields = ('created_at', 'updated_at')
+    readonly_fields = ('created_at', 'updated_at', 'last_login')
     search_fields = ('username', 'email', 'phone', 'first_name', 'last_name',)
