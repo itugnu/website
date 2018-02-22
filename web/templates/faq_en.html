@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}{% trans "FAQ" %}{% endblock %}
+
+{% block content %}
+<section id="faq">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{% trans "Frequently Asked Questions" %}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="service-heading">What is GNU?</h4>
+        <p>
+            GNU Project is given name to the Free Software movement that initiated at 1983 by Richard M. Stallman.
+            It is unknown why an animal's name (GNU) is chosen as name however, the project's symbol is animal's itself.
+            "Is GNU an acronym?" question is answered by Stallman as "GNU is Not Unix" during an interview.
+        </p>
+      </div>
+      <div class="col-md-12">
+        <h4 class="service-heading">What is ITU Software Freedom Club?</h4>
+        <p>
+            ITU Software Freedom Club (ITUGnu), as name suggests, is a student club which continues activities under
+            the roof of Istanbul Technical University. Its mission is spreading Free Software Philosophy, encourage and
+            make people understand Free Software usage throughout Turkey, starting from ITU. In this context, we arrange
+            lectures and seminars about programming languages and free technologies during semester.
+        </p>
+      </div>
+      <div class="col-md-12">
+        <h4 class="service-heading">Do we have to be a member of ITU to join activities?</h4>
+        <p>
+            No, you don't have to. Even though ITU students and personal have higher priority, every member of our club
+            can participate activities and lectures. Also it is not required to be a member of ITU to be a member of our club.
+            You can reach registration page via Facebook link at the bottom of page. To be an official member,
+            you can register with registration form at our website so that, we can add you to our mail groups by using
+            e-mail address you gave.
+        </p>
+      </div>
+      <div class="col-md-12">
+        <h4 class="service-heading">Are your lectures paid?</h4>
+        <p>
+            No, they are not. None of our members and instructors gain money from our activities and lectures. Our members
+            and administrative body, who adopted Freedom of Information as motto, provide these lectures and services.
+
+            However, if our members want to support us, we suggest them to make donations to charities such as TEMA and
+            animal shelters so that, all of us can be useful to society and humanity.
+        </p>
+      </div>
+      <div class="col-md-12">
+        <h4 class="service-heading">Can I use an operating system other than a GNU/Linux distribution?</h4>
+        <p>
+            It is forbidden to use computers with proprietary operating systems. Any computer with W*ndows will not be accepted
+            and supported. Status of macOS is undecided among free software communities since it is a UNIX-like operating system
+            and uses free software behind the scenes. Therefore, you can use a computer with macOS currently. However, we cannot provide
+            a healthy support for macOS. Therefore, it will be better for you to use a GNU/Linux distribution even in
+            virtual environment.
+        </p>
+      </div>
+      <div class="col-md-12">
+        <h4 class="service-heading">I don't know how to install a GNU/Linux distribution. What should I do?</h4>
+        <p>
+            If you contact any of our members or instructors we provide you personal support regarding this subject.
+        </p>
+      </div>
+      <div class="col-md-12">
+        <h4 class="service-heading">Should we being our own computers to lectures?</h4>
+        <p>
+            Yes. Our lectures are done in classrooms and lecture halls. Therefore, you must bring your own computers.
+            If you don't own a laptop or cannot bring it for another problem, please connect us.
+        </p>
+      </div>
+      <div class="col-md-12">
+        <h4 class="service-heading">Can I participate more than one lecture?</h4>
+        <p>
+            As long as there is no time conflict and you are accepted, you can join any lecture.
+        </p>
+      </div>
+      <div class="col-md-12">
+        <h4 class="service-heading">Are there any attendence obligation?</h4>
+        <p>
+            Yes. There is a strict attendence obligation for our lectures. If you do not attend lectures without reason,
+            you will be blacklisted and you will not be accepted to any ongoing lectures. Also, we will contact other
+            student clubs and do anything we can so that you will not be accepted to their activities :).
+        </p>
+      </div>
+      <div class="col-md-12">
+        <h4 class="service-heading">Can I come and listen lectures even if I am not accepted?</h4>
+        <p>
+            No. We accept people for lectures depending on class capacity and instructor preference. Therefore, we cannot
+            exceed this quota.
+        </p>
+      </div>
+      <div class="col-md-12">
+        <h4 class="service-heading">Are password and cypher the same? Why you stress people?</h4>
+        <p>
+            No, they are not. Password and cypher are unreleated two terms. Password is password, cypher is cypher.
+            Do not drive people nuts! Even if cypher is used for password everywhere, it does not give you right to make this mistake.
+        </p>
+      </div>
+      <div class="col-md-12">
+        <h4 class="service-heading">How can I be certain about security of my personal information that I gave during registration?</h4>
+        <p>
+            None of the information taken during registration is shared by third party service providers. Also your information is not
+            kept in any backup servers. Even your password is encrypted so that we cannot read it.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block footerclass %} class="bg-dark"{% endblock %}
