@@ -7,7 +7,6 @@ from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 from common.managers import UserManager
-from uuid import uuid4
 
 
 class User(AbstractUser):
@@ -40,9 +39,23 @@ class User(AbstractUser):
             return True
         return False
 
+    @classmethod
+    def get_random_username(cls, email, counter=0):
+        """Get random username using email field.
+        :param email: First part of email
+        """
+        if counter:
+            username = email + str(counter)
+        else:
+            username = email
+        if cls.objects.filter(username=username).exists():
+            counter += 1
+            return cls.get_random_username(email, counter)
+        return username
+
     def save(self, *args, **kwargs):
-        if not self.username:
-            self.username = str(uuid4())
+        if not self.username and self.email:
+            self.username = User.get_random_username(self.email.split('@')[0])
         super(User, self).save(*args, **kwargs)
 
     class Meta:
