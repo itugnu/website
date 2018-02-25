@@ -11,7 +11,7 @@ from django.core.mail import send_mail
 from django.conf import settings
 from datetime import date
 from lecture.models import Lecture
-from common.forms import RegistrationForm
+from common.forms import RegistrationForm, LoginForm
 from common.models import User
 from web.forms import ContactForm
 from web.components import *  # NOQA
@@ -44,29 +44,16 @@ def registration(request):
 
 
 def login_view(request):
-    data = {'error': None}
     if request.method == 'POST':
         next_url = request.POST.get('next', 'index')
-        email = request.POST.get('email')
-        password = request.POST.get('password')
-        if not email or not password:
-            data['error'] = _('Missing Fields')
-            return render(request, 'login.html', data)
-        username = get_user(email)
-        if not username:
-            data['error'] = _('User not found')
-            return render(request, 'login.html', data)
-        username = username.username
-        _user = authenticate(username=username, password=password)
-        if _user is not None:
-            if _user.is_active:
-                login(request, _user)
-                return redirect(next_url)
-            data['error'] = _('Account Disabled')
-            return render(request, 'login.html', data)
-        data['error'] = _('Invalid login credentials')
-        return render(request, 'login.html', data)
-    return render(request, 'login.html', data)
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            user = form.save(commit=True)
+            login(request, user)
+            return redirect(next_url)
+        return render(request, 'login.html', {'form': form})
+    form = LoginForm()
+    return render(request, 'login.html', {'form': form})
 
 
 def faq(request):

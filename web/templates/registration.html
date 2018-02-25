@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load i18n webtools %}
 
 {% block title %}{% trans "Registration" %}{% endblock %}
 
@@ -11,22 +11,60 @@
                 <h2 class="section-heading text-uppercase">{% trans "Registration" %}</h2>
             </div>
         </div>
-        <div class="row text-center">
+        <div class="row">
+          <div class="col-lg-12 text-center">
             <form id="registration-form" method="post" action="">
-              {% csrf_token %}
-              {% if request.GET.next %}
-                <input type="hidden" hidden class="hidden" name="next" value="{{ request.GET.next }}">
-              {% endif %}
-              {% for hidden in form.hidden_fields %}
-                {{ hidden }}
-              {% endfor %}
-              <table class="table-responsive">
-                {{ form }}
-              </table>
-              <button type="submit" class="btn btn-success">{% trans "Register" %}</button>
+              <div class="row">
+                {% csrf_token %}
+                {% if request.GET.next %}
+                  <input type="hidden" hidden class="hidden" name="next" value="{{ request.GET.next }}">
+                {% endif %}
+                {% for hidden in form.hidden_fields %}
+                  {{ hidden }}
+                {% endfor %}
+                {% for field in form %}
+                <div class="col-md-6">
+                  <div class="form-group{% if field.errors %} is-invalid{% endif %}">
+                    {{ field }}
+                  </div>
+                </div>
+                {% endfor %}
+                <div class="clearfix"></div>
+                <div class="col-lg-12">
+                  <ul class="errorlist">
+                  {% for field in form %}
+                    {% if field.errors %}
+                      {% for error in field.errors %}
+                        <li>{{ field.label }}: {{ error|escape }}</li>
+                      {% endfor %}
+                    {% endif %}
+                  {% endfor %}
+                  </ol>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12">
+                  <button type="submit" class="btn btn-success btn-xl text-uppercase">{% trans "Register" %}</button>
+                  <a href="{% url 'login' %}" class="btn btn-secondary btn-xl text-uppercase auth-button">{% trans "Login" %}</a>
+                </div>
+              </div>
             </form>
+          </div>
+        </div>
+        <div class="row pt3">
+          <div class="col-lg-12">
+            <h3 class="text-uppercase notice-heading">{% trans "Privacy Notice" %}</h3>
+          </div>
+          <div class="col-lg-12">
+            <ul class="upper-roman">
+              <li>{% trans "ITUGnu do not share any confidential user information like emails with any third party including University and community members." %}</li>
+              <li>{% trans "We don't use any thirt party services that can track your web active for marketing or marketing related purposes, like Analytics and Advertisement providers." %}</li>
+              <li>{% trans "Our statistics and error tracking solutions (sentry.io) don't store email and password information." %}</li>
+              <li>{% blocktrans with maillist_url="https://listeci.itu.edu.tr/mailman/listinfo/ozguryazilim" %}We don't use your user information for our maillist, you will need to register over <a href="{{ maillist_url }}" target="_blank">listeci.itu.edu.tr</a> in order to get email updates from us.{% endblocktrans %}</li>
+              <li>{% url 'faq' as faq_url %}{% blocktrans %}Please, read our <a href="{{ faq_url}}">Frequently Asked Questions</a> for more.{% endblocktrans %}</li>
+            </ul>
+          </div>
         </div>
     </div>
 </section>
 {% endblock %}
-{% block footerclass %} class="bg-dark"{% endblock %}
+{% block footerclass %}bg-dark{% endblock %}
