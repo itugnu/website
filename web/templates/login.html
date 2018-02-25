@@ -13,7 +13,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12 text-center">
-            <form id="registration-form" method="post" action="">
+            <form id="login-form" method="post" action="">
               <div class="row">
                 {% csrf_token %}
                 {% if request.GET.next %}
@@ -60,6 +60,7 @@
               <li>{% trans "We don't use any thirt party services that can track your web active for marketing or marketing related purposes, like Analytics and Advertisement providers." %}</li>
               <li>{% trans "Our statistics and error tracking solutions (sentry.io) don't store email and password information." %}</li>
               <li>{% blocktrans with maillist_url="https://listeci.itu.edu.tr/mailman/listinfo/ozguryazilim" %}We don't use your user information for our maillist, you will need to register over <a href="{{ maillist_url }}" target="_blank">listeci.itu.edu.tr</a> in order to get email updates from us.{% endblocktrans %}</li>
+              <li>{% trans "Your phone number will be shared with lecturer or club administration in case of emergency." %}</li>
               <li>{% url 'faq' as faq_url %}{% blocktrans %}Please, read our <a href="{{ faq_url}}">Frequently Asked Questions</a> for more.{% endblocktrans %}</li>
             </ul>
           </div>

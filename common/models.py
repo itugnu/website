@@ -18,6 +18,7 @@ class User(AbstractUser):
     )
     phone = models.IntegerField(_("Phone Number"), null=True, blank=True)
     language = models.CharField(choices=settings.LANGUAGES, default='tr', max_length=10)
+    is_student = models.BooleanField(_("Student"), default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

@@ -13,10 +13,10 @@ from reversion.admin import VersionAdmin
 class UserAdmin(AbstractUserAdmin, VersionAdmin):
     """Custom user in Django Admin."""
     list_display = ('pk', '__str__', 'updated_at',)
-    list_filter = ('created_at',)
+    list_filter = ('is_student', 'created_at',)
     fieldsets = (
         (_('Account Info'), {
-            'fields': ('first_name', 'last_name', 'username', 'email', 'phone',
+            'fields': (('first_name', 'last_name'), 'username', 'email', ('phone', 'is_student'),
                        'groups', ('is_staff', 'is_superuser'), 'is_active',)
         }),
         (_('Password'), {

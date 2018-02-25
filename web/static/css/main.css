@@ -45,3 +45,19 @@ a.auth-button {
 .errorlist {
   color: #ff0000;
 }
+input.phone-input {
+  -moz-appearance:textfield;
+}
+input.phone-input::-webkit-inner-spin-button,
+input.phone-input::-webkit-outer-spin-button,
+input.phone-input:hover::-webkit-inner-spin-button,
+input.phone-input:hover::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Mobile views */
+@media only screen and (max-width: 768px) {
+  .auth-button {
+    margin-top: 1rem;
+  }
+}

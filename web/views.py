@@ -19,7 +19,7 @@ from web.components import *  # NOQA
 
 def get_user(email):
     try:
-        return User.objects.get(email=email.lower())
+        return User.objects.get(email=email.lower()).username
     except User.DoesNotExist:
         return None
 
@@ -48,10 +48,17 @@ def login_view(request):
         next_url = request.POST.get('next', 'index')
         form = LoginForm(request.POST)
         if form.is_valid():
-            user = form.save(commit=True)
-            login(request, user)
-            return redirect(next_url)
-        return render(request, 'login.html', {'form': form})
+            username = get_user(form.cleaned_data.get('email'))
+            if not username:
+                return render(request, 'login.html', {'form': form, 'error': _("User not found")})
+            _user = authenticate(username=username, password=form.cleaned_data.get('password'))
+            if _user is not None:
+                if _user.is_active:
+                    login(request, _user)
+                    return redirect(next_url)
+                return render(request, 'login.html', {'form': form, 'error': _("Account Disabled")})
+            return render(request, 'login.html', {'form': form, 'error': _("Invalid login credentials")})
+        return render(request, 'login.html', {'form': form})  # form errors
     form = LoginForm()
     return render(request, 'login.html', {'form': form})
 

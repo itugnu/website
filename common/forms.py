@@ -10,7 +10,7 @@ from django.core.validators import validate_slug
 from common.models import User
 
 
-class LoginForm(forms.ModelForm):
+class LoginForm(forms.Form):
     error_css_class = 'is-invalid'
     email = forms.EmailField(
         label=_("Email"),
@@ -31,12 +31,8 @@ class LoginForm(forms.ModelForm):
         })
     )
 
-    class Meta:
-        model = User
-        fields = ['email', 'password']
 
-
-class RegistrationForm(LoginForm):
+class RegistrationForm(forms.ModelForm, LoginForm):
     first_name = forms.CharField(
         label=_("First Name"),
         required=False,
@@ -74,9 +70,28 @@ class RegistrationForm(LoginForm):
         })
     )
 
+    phone = forms.IntegerField(
+        label=_("Phone Number"),
+        min_value=7,
+        required=False,
+        widget=forms.NumberInput(attrs={
+            'placeholder': _("With international code: 90xxxxxxxxxx"),
+            'class': 'form-control phone-input'
+        })
+    )
+
+    is_student = forms.ChoiceField(
+        label=_("Student"),
+        required=False,
+        choices=((False, _("Not Student")), (True, _("Student"))),
+        widget=forms.Select(attrs={
+            'class': 'form-control'
+        })
+    )
+
     class Meta:
         model = User
-        fields = ['email', 'password', 'first_name', 'last_name', 'username', 'language']
+        fields = ['email', 'password', 'first_name', 'last_name', 'username', 'language', 'phone', 'is_student']
 
     def clean_email(self):
         email = self.cleaned_data.get('email')
