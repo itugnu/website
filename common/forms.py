@@ -98,3 +98,10 @@ class RegistrationForm(forms.ModelForm, LoginForm):
         if email and User.objects.filter(email=email).exists():
             raise ValidationError(_("A user with that email address already exists."))
         return email
+
+    def save(self, commit=True):
+        user = super().save(commit=False)
+        user.set_password(self.cleaned_data.get('password'))
+        if commit:
+            user.save()
+        return user
