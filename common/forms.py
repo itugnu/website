@@ -70,12 +70,12 @@ class RegistrationForm(forms.ModelForm, LoginForm):
         })
     )
 
-    phone = forms.IntegerField(
+    phone = forms.CharField(
         label=_("Phone Number"),
-        min_value=7,
+        min_length=7,
         required=False,
         widget=forms.NumberInput(attrs={
-            'placeholder': _("With international code: 90xxxxxxxxxx"),
+            'placeholder': _("Phone Number"),
             'class': 'form-control phone-input'
         })
     )

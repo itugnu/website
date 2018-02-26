@@ -6,17 +6,22 @@ from django.utils.translation import ugettext_lazy as _
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
+from django.core.validators import RegexValidator
 from common.managers import UserManager
 
 
 class User(AbstractUser):
+    PhoneValidator = RegexValidator(
+        regex=r'^\+?1?\d{7,16}$',
+        message=_("Phone number must be entered in the format: '+9055555'. Up to 16 digits allowed.")
+    )
     email = models.EmailField(
         _('Email'), unique=True, blank=False, null=False,
         error_messages={
             'unique': _("A user with that email address already exists."),
         },
     )
-    phone = models.IntegerField(_("Phone Number"), null=True, blank=True)
+    phone = models.CharField(_("Phone Number"), validators=[PhoneValidator], null=True, blank=True, max_length=30)
     language = models.CharField(choices=settings.LANGUAGES, default='tr', max_length=10)
     is_student = models.BooleanField(_("Student"), default=False)
     created_at = models.DateTimeField(auto_now_add=True)
