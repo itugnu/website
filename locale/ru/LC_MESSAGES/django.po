@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-25 23:29+0000\n"
+"POT-Creation-Date: 2018-02-26 00:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Emin Mastizada <emin@linux.com>\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr "Пароль"
 msgid "Stamps"
 msgstr "Печати"
 
-#: common/forms.py:16 common/models.py:14 web/forms.py:20
+#: common/forms.py:16 common/models.py:19 web/forms.py:20
 msgid "Email"
 msgstr "Электронная почта"
 
@@ -60,16 +60,12 @@ msgstr "Имя пользователя"
 msgid "Language"
 msgstr "Язык"
 
-#: common/forms.py:74 common/models.py:19 web/forms.py:29 web/forms.py:32
-#: web/templates/index.html:106
+#: common/forms.py:74 common/forms.py:78 common/models.py:24 web/forms.py:29
+#: web/forms.py:32 web/templates/index.html:106
 msgid "Phone Number"
 msgstr "Номер телефона"
 
-#: common/forms.py:78
-msgid "With international code: 90xxxxxxxxxx"
-msgstr "С международным кодом: +7хххххххххх"
-
-#: common/forms.py:84 common/forms.py:86 common/models.py:21
+#: common/forms.py:84 common/forms.py:86 common/models.py:26
 msgid "Student"
 msgstr "Студент"
 
@@ -77,15 +73,21 @@ msgstr "Студент"
 msgid "Not Student"
 msgstr "Не студент"
 
-#: common/forms.py:99 common/models.py:16
+#: common/forms.py:99 common/models.py:21
 msgid "A user with that email address already exists."
 msgstr "Пользователь с данной электронной почтой уже существует"
 
-#: common/models.py:63 lecture/models.py:80
+#: common/models.py:16
+msgid ""
+"Phone number must be entered in the format: '+9055555'. Up to 16 digits "
+"allowed."
+msgstr ""
+
+#: common/models.py:68 lecture/models.py:80
 msgid "User"
 msgstr "Пользователь"
 
-#: common/models.py:64
+#: common/models.py:69
 msgid "Users"
 msgstr "Пользователи"
 
@@ -473,3 +475,6 @@ msgstr ""
 #: web/views.py:60
 msgid "Invalid login credentials"
 msgstr ""
+
+#~ msgid "With international code: 90xxxxxxxxxx"
+#~ msgstr "С международным кодом: +7хххххххххх"
