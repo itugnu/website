@@ -38,9 +38,9 @@ def registration(request):
             user = form.save(commit=True)
             login(request, user)
             return redirect(next_url)
-        return render(request, 'registration.html', {'form': form})
+        return render(request, 'auth/registration.html', {'form': form})
     form = RegistrationForm()
-    return render(request, 'registration.html', {'form': form})
+    return render(request, 'auth/registration.html', {'form': form})
 
 
 def login_view(request):
@@ -50,17 +50,22 @@ def login_view(request):
         if form.is_valid():
             username = get_user(form.cleaned_data.get('email'))
             if not username:
-                return render(request, 'login.html', {'form': form, 'error': _("User not found")})
+                return render(request, 'auth/login.html', {'form': form, 'error': _("User not found")})
             _user = authenticate(username=username, password=form.cleaned_data.get('password'))
             if _user is not None:
                 if _user.is_active:
                     login(request, _user)
                     return redirect(next_url)
-                return render(request, 'login.html', {'form': form, 'error': _("Account Disabled")})
-            return render(request, 'login.html', {'form': form, 'error': _("Invalid login credentials")})
-        return render(request, 'login.html', {'form': form})  # form errors
+                return render(request, 'auth/login.html', {'form': form, 'error': _("Account Disabled")})
+            return render(request, 'auth/login.html', {'form': form, 'error': _("Invalid login credentials")})
+        return render(request, 'auth/login.html', {'form': form})  # form errors
     form = LoginForm()
-    return render(request, 'login.html', {'form': form})
+    return render(request, 'auth/login.html', {'form': form})
+
+
+def password_reset_done(request):
+    """Page after password reset."""
+    return render(request, 'auth/reset-done.html', {})
 
 
 def faq(request):

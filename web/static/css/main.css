@@ -1,6 +1,12 @@
 #languageForm {
     display: inline;
 }
+.pt1 {
+  padding-top: 1rem;
+}
+.pt2 {
+  padding-top: 2rem;
+}
 .pt3 {
   padding-top: 3rem;
 }

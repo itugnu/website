@@ -47,7 +47,10 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12">
                   <button type="submit" class="btn btn-success btn-xl text-uppercase">{% trans "Login" %}</button>
-                  <a href="{% url 'registration' %}" class="btn btn-secondary btn-xl text-uppercase auth-button">{% trans "Register" %}</a>
+                </div>
+                <div class="col-lg-12 pt1">
+                  <a href="{% url 'registration' %}" class="btn btn-secondary text-uppercase auth-button">{% trans "Register" %}</a>
+                  <a href="{% url 'password-reset' %}" class="btn btn-warning text-uppercase auth-button">{% trans "Lost Password" %}</a>
                 </div>
               </div>
             </form>
