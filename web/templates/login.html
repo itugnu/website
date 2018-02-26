@@ -32,6 +32,9 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12">
                   <ul class="errorlist">
+                  {% if error %}
+                    <li>{{ error }}</li>
+                  {% endif %}
                   {% for field in form %}
                     {% if field.errors %}
                       {% for error in field.errors %}
@@ -39,7 +42,7 @@
                       {% endfor %}
                     {% endif %}
                   {% endfor %}
-                  </ol>
+                  </ul>
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-lg-12">
