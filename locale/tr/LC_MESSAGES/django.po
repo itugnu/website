@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-26 00:09+0000\n"
+"POT-Creation-Date: 2018-02-25 23:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Emek Gozluklu <emek@itugnu.org>\n"
 "Language-Team: tr <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgstr "Parola"
 msgid "Stamps"
 msgstr "Oluşturulma Zamanı"
 
-#: common/forms.py:16 common/models.py:19 web/forms.py:20
+#: common/forms.py:16 common/models.py:14 web/forms.py:20
 msgid "Email"
 msgstr "E-posta"
 
@@ -56,36 +56,34 @@ msgstr "Kullanıcı adı"
 
 #: common/forms.py:65
 msgid "Language"
-msgstr ""
+msgstr "Dil"
 
-#: common/forms.py:74 common/forms.py:78 common/models.py:24 web/forms.py:29
-#: web/forms.py:32 web/templates/index.html:106
+#: common/forms.py:74 common/models.py:19 web/forms.py:29 web/forms.py:32
+#: web/templates/index.html:106
 msgid "Phone Number"
 msgstr "Telefon Numarası"
 
-#: common/forms.py:84 common/forms.py:86 common/models.py:26
+#: common/forms.py:78
+msgid "With international code: 90xxxxxxxxxx"
+msgstr "Ülke kodu ile: 90xxxxxxxxxx"
+
+#: common/forms.py:84 common/forms.py:86 common/models.py:21
 msgid "Student"
-msgstr ""
+msgstr "Öğrenciyim"
 
 #: common/forms.py:86
 msgid "Not Student"
-msgstr ""
+msgstr "Öğrenci değilim"
 
-#: common/forms.py:99 common/models.py:21
+#: common/forms.py:99 common/models.py:16
 msgid "A user with that email address already exists."
 msgstr "Bu email ile kayıtlı bir kullanıcı zaten mevcut."
 
-#: common/models.py:16
-msgid ""
-"Phone number must be entered in the format: '+9055555'. Up to 16 digits "
-"allowed."
-msgstr ""
-
-#: common/models.py:68 lecture/models.py:80
+#: common/models.py:63 lecture/models.py:80
 msgid "User"
 msgstr "Kullanıcı"
 
-#: common/models.py:69
+#: common/models.py:64
 msgid "Users"
 msgstr "Kullanıcılar"
 
@@ -221,7 +219,7 @@ msgstr "Yönteme izin verilmemektedir"
 
 #: web/components/lecture.py:23
 msgid "Please, login to register for lectures"
-msgstr ""
+msgstr "Eğitimlere kayıt olabilmek için lütfen giriş yapınız"
 
 #: web/components/lecture.py:28
 #, python-brace-format
@@ -402,6 +400,8 @@ msgid ""
 "ITUGnu do not share any confidential user information like emails with any "
 "third party including University and community members."
 msgstr ""
+"İTÜGnu e-mail gibi kişisel bilgileri üniversite ve kulüp üyeleri "
+"dahil olmak üzere hiçbir kişi, uygulama ve organizasyon ile paylaşmaz."
 
 #: web/templates/login.html:60
 msgid ""
@@ -409,12 +409,15 @@ msgid ""
 "marketing or marketing related purposes, like Analytics and Advertisement "
 "providers."
 msgstr ""
+"Web-sitemizde Analytics ve Reklam Sağlayıcıları gibi pazarlama amacı "
+"güden üçüncü parti servisleri kullanmayız."
 
 #: web/templates/login.html:61
 msgid ""
 "Our statistics and error tracking solutions (sentry.io) don't store email "
 "and password information."
 msgstr ""
+"İstatistik ve ETS servislerimiz e-mail ve parola bilgisi saklamaz."
 
 #: web/templates/login.html:62 web/templates/registration.html:62
 #, python-format
@@ -423,12 +426,16 @@ msgid ""
 "register over <a href=\"%(maillist_url)s\" target=\"_blank\">listeci.itu.edu."
 "tr</a> in order to get email updates from us."
 msgstr ""
+"E-mail'inizi, mail listemize kaydetmiyoruz. Kulüp hareketleri ve etkinliklerinden "
+"haberdar olmak için mail listemize <a href=\"%(maillist_url)s\" target=\"_blank\"> bu bağlantıdan </a>"
+kayıt olmanız gerekmektedir."
 
 #: web/templates/login.html:63 web/templates/registration.html:63
 msgid ""
 "Your phone number will be shared with lecturer or club administration in "
-"case of emergency."
+"case of emergency."We don't use any thirt party services that can track your web active for marketing or marketing related purposes, like Analytics and Advertisement providers.
 msgstr ""
+"Acil bir durumda telefon numaranız kulüp yönetimi veya kurs eğitmeni ile paylaşılır."
 
 #: web/templates/login.html:64 web/templates/registration.html:64
 #, python-format
@@ -436,6 +443,7 @@ msgid ""
 "Please, read our <a href=\"%(faq_url)s\">Frequently Asked Questions</a> for "
 "more."
 msgstr ""
+"Daha fazla bilgi almak için lüfen <a href=\"%(faq_url)s\">Sık Sorulan Sorular</a> sayfasını okuyun."
 
 #: web/templates/registration.html:4 web/templates/registration.html:11
 msgid "Registration"
@@ -446,6 +454,8 @@ msgid ""
 "ITUGnu do not share any confidential user information like email or phone "
 "number with any third party including University and community members."
 msgstr ""
+"İTÜGnu e-mail gibi kişisel bilgileri üniversite ve kulüp üyeleri "
+"dahil olmak üzere hiçbir kişi, uygulama ve organizasyon ile paylaşmaz."
 
 #: web/templates/registration.html:60
 msgid ""
@@ -453,12 +463,15 @@ msgid ""
 "marketing or marketing related purposes, like Analytics and Advertisement "
 "providers."
 msgstr ""
+"Web-sitemizde Analytics ve Reklam Sağlayıcıları gibi pazarlama amacı "
+"güden üçüncü parti servisleri kullanmayız."
 
 #: web/templates/registration.html:61
 msgid ""
 "Our statistics and error tracking solutions (sentry.io) don't store email, "
 "phone and password information."
 msgstr ""
+"İstatistik ve ETS servislerimiz e-mail, telefon ve parola bilgisi saklamaz."
 
 #: web/views.py:53
 msgid "User not found"
