@@ -11,7 +11,7 @@ from django.core.mail import send_mail
 from django.conf import settings
 from datetime import date
 from lecture.models import Lecture
-from common.forms import RegistrationForm
+from common.forms import RegistrationForm, LoginForm
 from common.models import User
 from web.forms import ContactForm
 from web.components import *  # NOQA
@@ -19,7 +19,7 @@ from web.components import *  # NOQA
 
 def get_user(email):
     try:
-        return User.objects.get(email=email.lower())
+        return User.objects.get(email=email.lower()).username
     except User.DoesNotExist:
         return None
 
@@ -38,35 +38,34 @@ def registration(request):
             user = form.save(commit=True)
             login(request, user)
             return redirect(next_url)
-        return render(request, 'registration.html', {'form': form})
+        return render(request, 'auth/registration.html', {'form': form})
     form = RegistrationForm()
-    return render(request, 'registration.html', {'form': form})
+    return render(request, 'auth/registration.html', {'form': form})
 
 
 def login_view(request):
-    data = {'error': None}
     if request.method == 'POST':
         next_url = request.POST.get('next', 'index')
-        email = request.POST.get('email')
-        password = request.POST.get('password')
-        if not email or not password:
-            data['error'] = _('Missing Fields')
-            return render(request, 'login.html', data)
-        username = get_user(email)
-        if not username:
-            data['error'] = _('User not found')
-            return render(request, 'login.html', data)
-        username = username.username
-        _user = authenticate(username=username, password=password)
-        if _user is not None:
-            if _user.is_active:
-                login(request, _user)
-                return redirect(next_url)
-            data['error'] = _('Account Disabled')
-            return render(request, 'login.html', data)
-        data['error'] = _('Invalid login credentials')
-        return render(request, 'login.html', data)
-    return render(request, 'login.html', data)
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            username = get_user(form.cleaned_data.get('email'))
+            if not username:
+                return render(request, 'auth/login.html', {'form': form, 'error': _("User not found")})
+            _user = authenticate(username=username, password=form.cleaned_data.get('password'))
+            if _user is not None:
+                if _user.is_active:
+                    login(request, _user)
+                    return redirect(next_url)
+                return render(request, 'auth/login.html', {'form': form, 'error': _("Account Disabled")})
+            return render(request, 'auth/login.html', {'form': form, 'error': _("Invalid login credentials")})
+        return render(request, 'auth/login.html', {'form': form})  # form errors
+    form = LoginForm()
+    return render(request, 'auth/login.html', {'form': form})
+
+
+def password_reset_done(request):
+    """Page after password reset."""
+    return render(request, 'auth/reset-done.html', {})
 
 
 def faq(request):

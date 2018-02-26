@@ -6,19 +6,24 @@ from django.utils.translation import ugettext_lazy as _
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
+from django.core.validators import RegexValidator
 from common.managers import UserManager
-from uuid import uuid4
 
 
 class User(AbstractUser):
+    PhoneValidator = RegexValidator(
+        regex=r'^\+?1?\d{7,16}$',
+        message=_("Phone number must be entered in the format: '+9055555'. Up to 16 digits allowed.")
+    )
     email = models.EmailField(
         _('Email'), unique=True, blank=False, null=False,
         error_messages={
             'unique': _("A user with that email address already exists."),
         },
     )
-    phone = models.IntegerField(_("Phone Number"), null=True, blank=True)
+    phone = models.CharField(_("Phone Number"), validators=[PhoneValidator], null=True, blank=True, max_length=30)
     language = models.CharField(choices=settings.LANGUAGES, default='tr', max_length=10)
+    is_student = models.BooleanField(_("Student"), default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -40,9 +45,23 @@ class User(AbstractUser):
             return True
         return False
 
+    @classmethod
+    def get_random_username(cls, email, counter=0):
+        """Get random username using email field.
+        :param email: First part of email
+        """
+        if counter:
+            username = email + str(counter)
+        else:
+            username = email
+        if cls.objects.filter(username=username).exists():
+            counter += 1
+            return cls.get_random_username(email, counter)
+        return username
+
     def save(self, *args, **kwargs):
-        if not self.username:
-            self.username = str(uuid4())
+        if not self.username and self.email:
+            self.username = User.get_random_username(self.email.split('@')[0])
         super(User, self).save(*args, **kwargs)
 
     class Meta:

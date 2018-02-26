@@ -6,7 +6,7 @@
 from django.conf.urls.i18n import i18n_patterns
 from django.conf import settings
 from django.contrib import admin
-from django.contrib.auth.views import logout
+from django.contrib.auth.views import logout, password_reset, password_reset_confirm, password_reset_complete
 from django.conf.urls.static import static
 from django.urls import path, include
 from web import views
@@ -22,7 +22,23 @@ urlpatterns = [
 urlpatterns = i18n_patterns(
     path('admin/', admin.site.urls),
     path('registration/', views.registration, name='registration'),
+    # Login
+    path('login/reset/done/', views.password_reset_done, name='password-reset-done'),
+    path('login/reset/complete/', password_reset_complete,
+         {'template_name': 'auth/password-reset-complete.html'},
+         name='password_reset_complete'),
+    path('login/reset/<uidb64>/<token>/',
+         password_reset_confirm,
+         {'template_name': 'auth/password-reset-confirm.html'},
+         name='password_reset_confirm'),
+    path('login/reset/', password_reset,
+         {
+            'template_name': 'auth/password-reset.html',
+            'email_template_name': 'auth/password-reset-email.html',
+            'post_reset_redirect': 'password-reset-done',
+         }, name='password-reset'),
     path('login/', views.login_view, name='login'),
+    # Lectures
     path('lectures/', views.lectures_list, name='lectures-index'),
     path('faq/', views.faq, name='faq'),
     path('', views.index, name='index'),

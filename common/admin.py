@@ -13,18 +13,18 @@ from reversion.admin import VersionAdmin
 class UserAdmin(AbstractUserAdmin, VersionAdmin):
     """Custom user in Django Admin."""
     list_display = ('pk', '__str__', 'updated_at',)
-    list_filter = ('created_at',)
+    list_filter = ('is_student', 'created_at',)
     fieldsets = (
         (_('Account Info'), {
-            'fields': ('first_name', 'last_name', 'username', 'email', 'phone',
-                       'groups', 'is_staff', 'is_active',)
+            'fields': (('first_name', 'last_name'), 'username', 'email', ('phone', 'is_student'),
+                       'groups', ('is_staff', 'is_superuser'), 'is_active',)
         }),
         (_('Password'), {
             'fields': ('password',)
         }),
         (_('Stamps'), {
-            'fields': (('created_at', 'updated_at'),)
+            'fields': (('created_at', 'updated_at'), 'last_login',)
         }),
     )
-    readonly_fields = ('created_at', 'updated_at')
+    readonly_fields = ('created_at', 'updated_at', 'last_login')
     search_fields = ('username', 'email', 'phone', 'first_name', 'last_name',)

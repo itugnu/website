@@ -16,13 +16,15 @@
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" type="text/css">
     <link href="{% static "css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
     <link href="{% static "css/agency.min.css" %}" rel="stylesheet" type="text/css">
-    <link href="{% static "css/main.css" %}" rel="stylesheet" type="text/css">
+    <link href="{% static "css/main.css" %}?v1" rel="stylesheet" type="text/css">
   </head>
   <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="/{{ LANGUAGE_CODE|default:"en" }}/#page-top">{% trans "ITUGnu" %}</a>
+        <a class="navbar-brand js-scroll-trigger" href="/{{ LANGUAGE_CODE|default:"en" }}/#page-top">
+          <img src="{% static "img/itugnu.png" %}" alt="" class="nav-logo"> {% trans "ITUGnu" %}
+        </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="{% trans "Toggle navigation" %}">
           {% trans "Menu" %}
           <i class="fa fa-bars"></i>
@@ -71,7 +73,7 @@
     {% block content %}{% endblock %}
 
     <!-- Footer -->
-    <footer{% block footerclass %}{% endblock %}>
+    <footer class="{% block footerclass %}default-footer{% endblock %}">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -144,6 +146,6 @@
     <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
     <script src="{% static "js/jquery.easing.min.js" %}"></script>
     <script src="{% static "js/agency.min.js" %}"></script>
-    <script src="{% static "js/main.js" %}"></script>
+    <script src="{% static "js/main.js" %}?v1"></script>
   </body>
 </html>

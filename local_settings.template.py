@@ -1,4 +1,6 @@
 from itugnu.base import INSTALLED_APPS, MIDDLEWARE  # NOQA
+import os
+import raven
 
 DEBUG = False
 DEBUG_TOOLBAR = False
@@ -26,4 +28,9 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
+}
+
+RAVEN_CONFIG = {
+    'dsn': '',
+    'release': raven.fetch_git_sha(os.path.dirname(os.pardir)),
 }

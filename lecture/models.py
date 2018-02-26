@@ -16,7 +16,7 @@ def poster_upload_path(instance, filename):
     logger.debug("Uploading file {name} as {lecture} lecture poster".format(
         name=filename, lecture=instance.name
     ))
-    return ospath.join('lectures', instance.pk, filename)
+    return ospath.join('lectures', str(instance.pk), filename)
 
 
 class Lecture(models.Model):
