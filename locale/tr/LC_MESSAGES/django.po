@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-21 18:59+0000\n"
+"POT-Creation-Date: 2018-02-25 23:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Emek Gozluklu <emek@itugnu.org>\n"
 "Language-Team: tr <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Account Info"
 msgstr "Hesap Bilgisi"
 
-#: common/admin.py:22 web/templates/login.html:30
+#: common/admin.py:22 common/forms.py:25
 msgid "Password"
 msgstr "Parola"
 
@@ -30,24 +30,60 @@ msgstr "Parola"
 msgid "Stamps"
 msgstr "Oluşturulma Zamanı"
 
-#: common/models.py:15 web/forms.py:20 web/templates/login.html:27
+#: common/forms.py:16 common/models.py:14 web/forms.py:20
 msgid "Email"
 msgstr "E-posta"
 
-#: common/models.py:17
-msgid "A user with that email address already exists."
-msgstr "Bu email ile kayıtlı bir kullanıcı zaten mevcut."
+#: common/forms.py:19
+msgid "Email *"
+msgstr "E-posta *"
 
-#: common/models.py:20 web/forms.py:29 web/forms.py:32
+#: common/forms.py:29
+msgid "Password *"
+msgstr "Parola *"
+
+#: common/forms.py:37 common/forms.py:40
+msgid "First Name"
+msgstr "Ad"
+
+#: common/forms.py:46 common/forms.py:49
+msgid "Last Name"
+msgstr "Soyad"
+
+#: common/forms.py:55 common/forms.py:58
+msgid "Username"
+msgstr "Kullanıcı adı"
+
+#: common/forms.py:65
+msgid "Language"
+msgstr ""
+
+#: common/forms.py:74 common/models.py:19 web/forms.py:29 web/forms.py:32
 #: web/templates/index.html:106
 msgid "Phone Number"
 msgstr "Telefon Numarası"
 
-#: common/models.py:49 lecture/models.py:80
+#: common/forms.py:78
+msgid "With international code: 90xxxxxxxxxx"
+msgstr ""
+
+#: common/forms.py:84 common/forms.py:86 common/models.py:21
+msgid "Student"
+msgstr ""
+
+#: common/forms.py:86
+msgid "Not Student"
+msgstr ""
+
+#: common/forms.py:99 common/models.py:16
+msgid "A user with that email address already exists."
+msgstr "Bu email ile kayıtlı bir kullanıcı zaten mevcut."
+
+#: common/models.py:63 lecture/models.py:80
 msgid "User"
 msgstr "Kullanıcı"
 
-#: common/models.py:50
+#: common/models.py:64
 msgid "Users"
 msgstr "Kullanıcılar"
 
@@ -115,7 +151,7 @@ msgstr "Kayıt olabilirsiniz"
 msgid "Lecture"
 msgstr "Eğitim"
 
-#: lecture/models.py:45 web/templates/base.html:36 web/templates/index.html:13
+#: lecture/models.py:45 web/templates/base.html:38 web/templates/index.html:13
 #: web/templates/index.html:40 web/templates/lectures/index.html:4
 #: web/templates/lectures/index.html:11
 msgid "Lectures"
@@ -177,20 +213,24 @@ msgstr "Eğitim Başvurusu"
 msgid "Lecture Applications"
 msgstr "Eğitim Başvuruları"
 
-#: web/components/lecture.py:21 web/views.py:78
+#: web/components/lecture.py:21 web/views.py:72
 msgid "Method not allowed"
 msgstr "Yönteme izin verilmemektedir"
 
-#: web/components/lecture.py:27
+#: web/components/lecture.py:23
+msgid "Please, login to register for lectures"
+msgstr ""
+
+#: web/components/lecture.py:28
 #, python-brace-format
 msgid "Lecture {pk} does not exist!"
 msgstr "{pk} numaralı eğitim kaydı bulunmamaktadır!"
 
-#: web/components/lecture.py:29
+#: web/components/lecture.py:30
 msgid "Lecture is not open for registration"
 msgstr "Eğitim kayıtlara kapalı"
 
-#: web/components/lecture.py:31
+#: web/components/lecture.py:32
 msgid "You already registered for this lecture!"
 msgstr "Bu eğitime daha önce kayıt oldunuz!"
 
@@ -218,48 +258,49 @@ msgstr "Mesajınız"
 msgid "Freedom for Bees - Software Freedom Club, Istanbul Technical University"
 msgstr "Freedom for Bees - Özgür Yazılım Kulübü, İstanbul Teknik Üniversitesi"
 
-#: web/templates/base.html:25
+#: web/templates/base.html:26
 msgid "ITUGnu"
 msgstr "İTÜGnu"
 
-#: web/templates/base.html:26
+#: web/templates/base.html:28
 msgid "Toggle navigation"
 msgstr "Navigasyonu Aç"
 
-#: web/templates/base.html:27
+#: web/templates/base.html:29
 msgid "Menu"
 msgstr "Menü"
 
-#: web/templates/base.html:33 web/templates/index.html:25
+#: web/templates/base.html:35 web/templates/index.html:25
 msgid "Blog"
 msgstr "Blog"
 
-#: web/templates/base.html:39
+#: web/templates/base.html:41
 msgid "Contact"
 msgstr "İletişim"
 
-#: web/templates/base.html:50
+#: web/templates/base.html:52
 msgid "Dashboard"
 msgstr "Kontrol Paneli"
 
-#: web/templates/base.html:51
+#: web/templates/base.html:53
 msgid "Logout"
 msgstr "Çıkış"
 
-#: web/templates/base.html:54
+#: web/templates/base.html:56
 msgid "Administration"
 msgstr "Admin"
 
-#: web/templates/base.html:56
+#: web/templates/base.html:58
 msgid "Admin Center"
 msgstr "Admin Merkezi"
 
-#: web/templates/base.html:62 web/templates/login.html:4
-#: web/templates/login.html:11 web/templates/login.html:34
+#: web/templates/base.html:64 web/templates/login.html:4
+#: web/templates/login.html:11 web/templates/login.html:46
+#: web/templates/registration.html:47
 msgid "Login"
 msgstr "Giriş"
 
-#: web/templates/base.html:112 web/templates/faq.html:4
+#: web/templates/base.html:114 web/templates/faq.html:4
 msgid "FAQ"
 msgstr "S.S.S."
 
@@ -346,29 +387,88 @@ msgstr "Kapat"
 msgid "Filter"
 msgstr "Filtre"
 
-#: web/templates/login.html:35 web/templates/registration.html:26
+#: web/templates/login.html:47 web/templates/registration.html:46
 msgid "Register"
 msgstr "Kayıt ol"
+
+#: web/templates/login.html:55 web/templates/registration.html:55
+msgid "Privacy Notice"
+msgstr "Gizlilik Bildirimi"
+
+#: web/templates/login.html:59
+msgid ""
+"ITUGnu do not share any confidential user information like emails with any "
+"third party including University and community members."
+msgstr ""
+
+#: web/templates/login.html:60
+msgid ""
+"We don't use any thirt party services that can track your web active for "
+"marketing or marketing related purposes, like Analytics and Advertisement "
+"providers."
+msgstr ""
+
+#: web/templates/login.html:61
+msgid ""
+"Our statistics and error tracking solutions (sentry.io) don't store email "
+"and password information."
+msgstr ""
+
+#: web/templates/login.html:62 web/templates/registration.html:62
+#, python-format
+msgid ""
+"We don't use your user information for our maillist, you will need to "
+"register over <a href=\"%(maillist_url)s\" target=\"_blank\">listeci.itu.edu."
+"tr</a> in order to get email updates from us."
+msgstr ""
+
+#: web/templates/login.html:63 web/templates/registration.html:63
+msgid ""
+"Your phone number will be shared with lecturer or club administration in "
+"case of emergency."
+msgstr ""
+
+#: web/templates/login.html:64 web/templates/registration.html:64
+#, python-format
+msgid ""
+"Please, read our <a href=\"%(faq_url)s\">Frequently Asked Questions</a> for "
+"more."
+msgstr ""
 
 #: web/templates/registration.html:4 web/templates/registration.html:11
 msgid "Registration"
 msgstr "Kayıt"
 
-#: web/views.py:53
-msgid "Missing Fields"
-msgstr "Eksik Alanlar Mevcut"
+#: web/templates/registration.html:59
+msgid ""
+"ITUGnu do not share any confidential user information like email or phone "
+"number with any third party including University and community members."
+msgstr ""
 
-#: web/views.py:57
+#: web/templates/registration.html:60
+msgid ""
+"We don't use any third party services that can track your web active for "
+"marketing or marketing related purposes, like Analytics and Advertisement "
+"providers."
+msgstr ""
+
+#: web/templates/registration.html:61
+msgid ""
+"Our statistics and error tracking solutions (sentry.io) don't store email, "
+"phone and password information."
+msgstr ""
+
+#: web/views.py:53
 msgid "User not found"
 msgstr "Kullanıcı bulunamadı."
 
-#: web/views.py:65
+#: web/views.py:59
 msgid "Account Disabled"
 msgstr "Hesaba Erişim Engellenmiştir"
 
-#: web/views.py:67
+#: web/views.py:60
 msgid "Invalid login credentials"
 msgstr "Geçersiz giriş bilgileri"
 
-#~ msgid "Privacy Policy"
-#~ msgstr "Gizlilik Politikası"
+#~ msgid "Missing Fields"
+#~ msgstr "Eksik Alanlar Mevcut"
