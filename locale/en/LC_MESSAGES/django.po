@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-26 00:09+0000\n"
+"POT-Creation-Date: 2018-02-26 03:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-#: common/forms.py:19
+#: common/forms.py:19 web/templates/auth/password-reset.html:24
 msgid "Email *"
 msgstr ""
 
@@ -215,7 +215,7 @@ msgstr ""
 msgid "Lecture Applications"
 msgstr ""
 
-#: web/components/lecture.py:21 web/views.py:72
+#: web/components/lecture.py:21 web/views.py:77
 msgid "Method not allowed"
 msgstr ""
 
@@ -256,6 +256,176 @@ msgstr ""
 msgid "Your Message"
 msgstr ""
 
+#: web/templates/auth/login.html:4 web/templates/auth/login.html:11
+#: web/templates/auth/login.html:49
+#: web/templates/auth/password-reset-complete.html:18
+#: web/templates/auth/registration.html:47
+#: web/templates/auth/reset-done.html:17 web/templates/base.html:64
+msgid "Login"
+msgstr ""
+
+#: web/templates/auth/login.html:52 web/templates/auth/registration.html:46
+msgid "Register"
+msgstr ""
+
+#: web/templates/auth/login.html:53
+msgid "Lost Password"
+msgstr ""
+
+#: web/templates/auth/login.html:61 web/templates/auth/registration.html:55
+msgid "Privacy Notice"
+msgstr ""
+
+#: web/templates/auth/login.html:65
+msgid ""
+"ITUGnu do not share any confidential user information like emails with any "
+"third party including University and community members."
+msgstr ""
+
+#: web/templates/auth/login.html:66
+msgid ""
+"We don't use any thirt party services that can track your web active for "
+"marketing or marketing related purposes, like Analytics and Advertisement "
+"providers."
+msgstr ""
+
+#: web/templates/auth/login.html:67
+msgid ""
+"Our statistics and error tracking solutions (sentry.io) don't store email "
+"and password information."
+msgstr ""
+
+#: web/templates/auth/login.html:68 web/templates/auth/registration.html:62
+#, python-format
+msgid ""
+"We don't use your user information for our maillist, you will need to "
+"register over <a href=\"%(maillist_url)s\" target=\"_blank\">listeci.itu.edu."
+"tr</a> in order to get email updates from us."
+msgstr ""
+
+#: web/templates/auth/login.html:69 web/templates/auth/registration.html:63
+msgid ""
+"Your phone number will be shared with lecturer or club administration in "
+"case of emergency."
+msgstr ""
+
+#: web/templates/auth/login.html:70 web/templates/auth/registration.html:64
+#, python-format
+msgid ""
+"Please, read our <a href=\"%(faq_url)s\">Frequently Asked Questions</a> for "
+"more."
+msgstr ""
+
+#: web/templates/auth/password-reset-complete.html:4
+#: web/templates/auth/password-reset-complete.html:11
+#: web/templates/auth/password-reset-confirm.html:4
+#: web/templates/auth/password-reset-confirm.html:11
+msgid "New Password"
+msgstr ""
+
+#: web/templates/auth/password-reset-complete.html:16
+msgid "Your password has been successfully updated."
+msgstr ""
+
+#: web/templates/auth/password-reset-complete.html:17
+msgid "You may go ahead and log in now."
+msgstr ""
+
+#: web/templates/auth/password-reset-confirm.html:17
+msgid "Please enter your new password twice."
+msgstr ""
+
+#: web/templates/auth/password-reset-confirm.html:26
+msgid "New Password *"
+msgstr ""
+
+#: web/templates/auth/password-reset-confirm.html:31
+msgid "Repeat New Password *"
+msgstr ""
+
+#: web/templates/auth/password-reset-confirm.html:48
+#: web/templates/auth/password-reset.html:41
+msgid "Reset"
+msgstr ""
+
+#: web/templates/auth/password-reset-confirm.html:53
+msgid "The password reset link is invalid!"
+msgstr ""
+
+#: web/templates/auth/password-reset-confirm.html:54
+msgid "Possibly because it has already been used."
+msgstr ""
+
+#: web/templates/auth/password-reset-confirm.html:55
+msgid "Please, request a new password reset."
+msgstr ""
+
+#: web/templates/auth/password-reset-confirm.html:56
+msgid "Request new password"
+msgstr ""
+
+#: web/templates/auth/password-reset-email.html:2
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at itugnu.org"
+msgstr ""
+
+#: web/templates/auth/password-reset-email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+
+#: web/templates/auth/password-reset-email.html:9
+msgid ""
+"If you have some problems with restoring access to the system, please "
+"contact us at admin@itugnu.org"
+msgstr ""
+
+#: web/templates/auth/password-reset-email.html:11
+msgid "ITU Software Freedom Club | ITUGnu"
+msgstr ""
+
+#: web/templates/auth/password-reset.html:4
+#: web/templates/auth/password-reset.html:11
+#: web/templates/auth/reset-done.html:3
+msgid "Password Reset"
+msgstr ""
+
+#: web/templates/auth/registration.html:4
+#: web/templates/auth/registration.html:11
+msgid "Registration"
+msgstr ""
+
+#: web/templates/auth/registration.html:59
+msgid ""
+"ITUGnu do not share any confidential user information like email or phone "
+"number with any third party including University and community members."
+msgstr ""
+
+#: web/templates/auth/registration.html:60
+msgid ""
+"We don't use any third party services that can track your web active for "
+"marketing or marketing related purposes, like Analytics and Advertisement "
+"providers."
+msgstr ""
+
+#: web/templates/auth/registration.html:61
+msgid ""
+"Our statistics and error tracking solutions (sentry.io) don't store email, "
+"phone and password information."
+msgstr ""
+
+#: web/templates/auth/reset-done.html:10
+msgid "E-mail Sent"
+msgstr ""
+
+#: web/templates/auth/reset-done.html:15
+msgid "We've emailed you instructions for setting your password."
+msgstr ""
+
+#: web/templates/auth/reset-done.html:16
+msgid "You should receive it soon."
+msgstr ""
+
 #: web/templates/base.html:7
 msgid "Freedom for Bees - Software Freedom Club, Istanbul Technical University"
 msgstr ""
@@ -294,12 +464,6 @@ msgstr ""
 
 #: web/templates/base.html:58
 msgid "Admin Center"
-msgstr ""
-
-#: web/templates/base.html:64 web/templates/login.html:4
-#: web/templates/login.html:11 web/templates/login.html:46
-#: web/templates/registration.html:47
-msgid "Login"
 msgstr ""
 
 #: web/templates/base.html:114 web/templates/faq.html:4
@@ -387,77 +551,6 @@ msgstr ""
 
 #: web/templates/lectures/index.html:15
 msgid "Filter"
-msgstr ""
-
-#: web/templates/login.html:47 web/templates/registration.html:46
-msgid "Register"
-msgstr ""
-
-#: web/templates/login.html:55 web/templates/registration.html:55
-msgid "Privacy Notice"
-msgstr ""
-
-#: web/templates/login.html:59
-msgid ""
-"ITUGnu do not share any confidential user information like emails with any "
-"third party including University and community members."
-msgstr ""
-
-#: web/templates/login.html:60
-msgid ""
-"We don't use any thirt party services that can track your web active for "
-"marketing or marketing related purposes, like Analytics and Advertisement "
-"providers."
-msgstr ""
-
-#: web/templates/login.html:61
-msgid ""
-"Our statistics and error tracking solutions (sentry.io) don't store email "
-"and password information."
-msgstr ""
-
-#: web/templates/login.html:62 web/templates/registration.html:62
-#, python-format
-msgid ""
-"We don't use your user information for our maillist, you will need to "
-"register over <a href=\"%(maillist_url)s\" target=\"_blank\">listeci.itu.edu."
-"tr</a> in order to get email updates from us."
-msgstr ""
-
-#: web/templates/login.html:63 web/templates/registration.html:63
-msgid ""
-"Your phone number will be shared with lecturer or club administration in "
-"case of emergency."
-msgstr ""
-
-#: web/templates/login.html:64 web/templates/registration.html:64
-#, python-format
-msgid ""
-"Please, read our <a href=\"%(faq_url)s\">Frequently Asked Questions</a> for "
-"more."
-msgstr ""
-
-#: web/templates/registration.html:4 web/templates/registration.html:11
-msgid "Registration"
-msgstr ""
-
-#: web/templates/registration.html:59
-msgid ""
-"ITUGnu do not share any confidential user information like email or phone "
-"number with any third party including University and community members."
-msgstr ""
-
-#: web/templates/registration.html:60
-msgid ""
-"We don't use any third party services that can track your web active for "
-"marketing or marketing related purposes, like Analytics and Advertisement "
-"providers."
-msgstr ""
-
-#: web/templates/registration.html:61
-msgid ""
-"Our statistics and error tracking solutions (sentry.io) don't store email, "
-"phone and password information."
 msgstr ""
 
 #: web/views.py:53
