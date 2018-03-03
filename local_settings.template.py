@@ -12,19 +12,19 @@ EMAIL_PORT = 465
 EMAIL_HOST_USER = ""
 EMAIL_HOST_PASSWORD = ""
 EMAIL_USE_SSL = True
-EMAIL_USE_TLS = False
+# EMAIL_USE_TLS = False
 DEFAULT_FROM_EMAIL = ""
 DEFAULT_CONTACT_EMAIL = DEFAULT_FROM_EMAIL
-SECRET_KEY = ""
-ALLOWED_HOSTS = [".itugnu.org"]
+# SECRET_KEY = ""
+# ALLOWED_HOSTS = [".itugnu.org"]
 TIME_ZONE = "Europe/Istanbul"
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydatabase',
-        'USER': 'mydatabaseuser',
-        'PASSWORD': 'mypassword',
+        'NAME': 'testdb',
+        'USER': 'postgres',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
