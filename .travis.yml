@@ -1,0 +1,16 @@
+language: python
+
+python:
+  - 3.6
+
+services: postgresql
+
+install:
+  - pip install -r requirements.txt
+
+before_script:
+  - cp local_settings.template.py local_settings.py
+  - psql -c "CREATE DATABASE testdb;" -U postgres
+
+script:
+  - ./manage.py test
