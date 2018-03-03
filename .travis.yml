@@ -7,10 +7,14 @@ services: postgresql
 
 install:
   - pip install -r requirements.txt
+  - pip install coverage python-coveralls
 
 before_script:
   - cp local_settings.template.py local_settings.py
   - psql -c "CREATE DATABASE testdb;" -U postgres
 
 script:
-  - ./manage.py test
+  - coverage run --source=. ./manage.py test
+
+after_success:
+  - coveralls

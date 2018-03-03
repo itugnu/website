@@ -2,6 +2,7 @@
 Public website for ITUGnu
 
 [![Build Status](https://travis-ci.org/itugnu/website.svg?branch=master)](https://travis-ci.org/itugnu/website)
+[![Coverage Status](https://coveralls.io/repos/github/itugnu/website/badge.svg?branch=master)](https://coveralls.io/github/itugnu/website?branch=master)
 
 INSTALL
 -------
