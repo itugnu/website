@@ -3,6 +3,7 @@ from django.test import Client
 from django.shortcuts import reverse
 
 from web import forms
+from common.models import User
 
 
 class FormTestCase(TestCase):
@@ -23,12 +24,12 @@ class FormTestCase(TestCase):
             'message': ''
         }
 
-    def test_is_valid(self):
+    def test_form_is_valid(self):
 
         form = forms.ContactForm(data=self.correct_data)
         self.assertTrue(form.is_valid())
 
-    def test_is_invalid(self):
+    def test_form_is_invalid(self):
 
         form = forms.ContactForm(data=self.incorrect_data)
         self.assertFalse(form.is_valid())
@@ -41,11 +42,15 @@ class ViewTestCase(TestCase):
         self.email = 'lier10@mon.com'
         self.password = 'imnotlier12345'
 
+        self.user = User.objects.create_user(
+            username=self.username,
+            email=self.email,
+            password=self.password
+        )
         self.client = Client()
         self.client.login(
             username=self.username,
             password=self.password
-
         )
 
     def test_view(self):
