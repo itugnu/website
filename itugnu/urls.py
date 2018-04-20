@@ -41,6 +41,7 @@ urlpatterns = i18n_patterns(
     # Lectures
     path('lectures/', views.lectures_list, name='lectures-index'),
     path('faq/', views.faq, name='faq'),
+    path('oyz/', views.oyz, name='oyz'),
     path('', views.index, name='index'),
 ) + urlpatterns
 

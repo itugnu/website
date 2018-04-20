@@ -72,6 +72,10 @@ def faq(request):
     return render(request, 'faq.html')
 
 
+def oyz(request):
+    return render(request, 'oyz.html')
+
+
 def contact(request):
     if request.method == 'GET':
         return JsonResponse({"message": _("Method not allowed")}, status=405)
