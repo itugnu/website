@@ -50,5 +50,6 @@ AUTHORS
 
 * Emin Mastizada <emin@linux.com> - Code
 * Ahmed Ihsan Erdem <ihsan@itugnu.org> - Code
+* Muhammed Ali Yeter <muhammed@itugnu.org> - Code
 * Emek Gozluklu <emek@itugnu.org> - Turkish Translation
 * Jabrail Lezgintsev <lezgintsev13@yandex.ru> - Russian Translation
