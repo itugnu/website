@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-26 03:01+0000\n"
+"POT-Creation-Date: 2018-04-23 07:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Emek Gozluklu <emek@itugnu.org>\n"
 "Language-Team: tr <LL@li.org>\n"
@@ -215,7 +215,7 @@ msgstr "Eğitim Başvurusu"
 msgid "Lecture Applications"
 msgstr "Eğitim Başvuruları"
 
-#: web/components/lecture.py:21 web/views.py:77
+#: web/components/lecture.py:21 web/views.py:81
 msgid "Method not allowed"
 msgstr "Yönteme izin verilmemektedir"
 
@@ -552,6 +552,18 @@ msgstr "Kapat"
 #: web/templates/lectures/index.html:15
 msgid "Filter"
 msgstr "Filtre"
+
+#: web/templates/oyz.html:4 web/templates/oyz.html:12
+msgid "Free Software Summit"
+msgstr ""
+
+#: web/templates/oyz.html:11
+msgid "Free Your Mind!"
+msgstr ""
+
+#: web/templates/oyz.html:13
+msgid "Etkinlik Kayıt"
+msgstr ""
 
 #: web/views.py:53
 msgid "User not found"

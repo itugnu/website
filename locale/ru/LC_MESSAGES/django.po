@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-26 03:01+0000\n"
+"POT-Creation-Date: 2018-04-23 07:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Emin Mastizada <emin@linux.com>\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -217,7 +217,7 @@ msgstr "Лекция"
 msgid "Lecture Applications"
 msgstr "Заявки на Лекции"
 
-#: web/components/lecture.py:21 web/views.py:77
+#: web/components/lecture.py:21 web/views.py:81
 msgid "Method not allowed"
 msgstr "Метод не разрешён"
 
@@ -556,6 +556,18 @@ msgstr "Закрыть"
 #: web/templates/lectures/index.html:15
 msgid "Filter"
 msgstr "Фильтровать"
+
+#: web/templates/oyz.html:4 web/templates/oyz.html:12
+msgid "Free Software Summit"
+msgstr ""
+
+#: web/templates/oyz.html:11
+msgid "Free Your Mind!"
+msgstr ""
+
+#: web/templates/oyz.html:13
+msgid "Etkinlik Kayıt"
+msgstr ""
 
 #: web/views.py:53
 msgid "User not found"
