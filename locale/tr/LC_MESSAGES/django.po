@@ -56,7 +56,7 @@ msgstr "Kullanıcı adı"
 
 #: common/forms.py:65
 msgid "Language"
-msgstr ""
+msgstr "Dil"
 
 #: common/forms.py:74 common/forms.py:78 common/models.py:24 web/forms.py:29
 #: web/forms.py:32 web/templates/index.html:106
@@ -65,11 +65,11 @@ msgstr "Telefon Numarası"
 
 #: common/forms.py:84 common/forms.py:86 common/models.py:26
 msgid "Student"
-msgstr ""
+msgstr "İTÜ Öğrencisiyim"
 
 #: common/forms.py:86
 msgid "Not Student"
-msgstr ""
+msgstr "İTÜ Öğrencisi Değilim"
 
 #: common/forms.py:99 common/models.py:21
 msgid "A user with that email address already exists."
@@ -79,8 +79,7 @@ msgstr "Bu email ile kayıtlı bir kullanıcı zaten mevcut."
 msgid ""
 "Phone number must be entered in the format: '+9055555'. Up to 16 digits "
 "allowed."
-msgstr ""
-
+msgstr "Telefon numarası '+905555555' formatında olmalıdır."
 #: common/models.py:68 lecture/models.py:80
 msgid "User"
 msgstr "Kullanıcı"
@@ -221,7 +220,7 @@ msgstr "Yönteme izin verilmemektedir"
 
 #: web/components/lecture.py:23
 msgid "Please, login to register for lectures"
-msgstr ""
+msgstr "Etkinliklere kayıt olmak için giriş yapınız."
 
 #: web/components/lecture.py:28
 #, python-brace-format
@@ -270,7 +269,7 @@ msgstr "Kayıt ol"
 
 #: web/templates/auth/login.html:53
 msgid "Lost Password"
-msgstr ""
+msgstr "Parolamı Unuttum"
 
 #: web/templates/auth/login.html:61 web/templates/auth/registration.html:55
 msgid "Privacy Notice"
@@ -281,6 +280,8 @@ msgid ""
 "ITUGnu do not share any confidential user information like emails with any "
 "third party including University and community members."
 msgstr ""
+"İTÜGnu kullanıcı bilgilerini, üniversite ve topluluk üyeleri dahil olmak"
+"üzere kimseyle paylaşmaz."
 
 #: web/templates/auth/login.html:66
 msgid ""
@@ -288,12 +289,16 @@ msgid ""
 "marketing or marketing related purposes, like Analytics and Advertisement "
 "providers."
 msgstr ""
+"Analitik ve Reklam sağlayıcıları gibi internet etkinliğinizi kaydeden "
+"üçüncü parti servisleri sitemizde kullanmıyoruz."
 
 #: web/templates/auth/login.html:67
 msgid ""
 "Our statistics and error tracking solutions (sentry.io) don't store email "
 "and password information."
 msgstr ""
+"İstatistik ve hata takibi için kullandığımız sentry.io, e-posta ve parola "
+"bilgisi tutmamaktadır."
 
 #: web/templates/auth/login.html:68 web/templates/auth/registration.html:62
 #, python-format
@@ -302,12 +307,16 @@ msgid ""
 "register over <a href=\"%(maillist_url)s\" target=\"_blank\">listeci.itu.edu."
 "tr</a> in order to get email updates from us."
 msgstr ""
+"Mail bilginizi mail listesi kaydı için kullanmıyoruz. Mail listesine kayıt "
+"olmak için <a href=\"%(maillist_url)s\" target=\"_blank\">listeci.itu.edu."
+"tr</a> adresine gidebilirsiniz."
 
 #: web/templates/auth/login.html:69 web/templates/auth/registration.html:63
 msgid ""
 "Your phone number will be shared with lecturer or club administration in "
 "case of emergency."
 msgstr ""
+"Telefon numaranız acil durumlarda eğitmen veya kulüp yönetimi ile paylaşılır."
 
 #: web/templates/auth/login.html:70 web/templates/auth/registration.html:64
 #, python-format
@@ -315,70 +324,75 @@ msgid ""
 "Please, read our <a href=\"%(faq_url)s\">Frequently Asked Questions</a> for "
 "more."
 msgstr ""
+"Lütfen, <a href=\"%(faq_url)s\">Sık Sorulan Sorular</a> sayfasını okuyunuz."
 
 #: web/templates/auth/password-reset-complete.html:4
 #: web/templates/auth/password-reset-complete.html:11
 #: web/templates/auth/password-reset-confirm.html:4
 #: web/templates/auth/password-reset-confirm.html:11
 msgid "New Password"
-msgstr ""
+msgstr "Yeni Parola"
 
 #: web/templates/auth/password-reset-complete.html:16
 msgid "Your password has been successfully updated."
-msgstr ""
+msgstr "Parolanız başarıyla kaydedildi."
 
 #: web/templates/auth/password-reset-complete.html:17
 msgid "You may go ahead and log in now."
-msgstr ""
+msgstr "Şimdi giriş yapabilirsiniz."
 
 #: web/templates/auth/password-reset-confirm.html:17
 msgid "Please enter your new password twice."
-msgstr ""
+msgstr "Lütfen yeni parolanızı iki kere giriniz."
 
 #: web/templates/auth/password-reset-confirm.html:26
 msgid "New Password *"
-msgstr ""
+msgstr "Yeni Parola"
 
 #: web/templates/auth/password-reset-confirm.html:31
 msgid "Repeat New Password *"
-msgstr ""
+msgstr "Yeni Parola(Tekrar)"
 
 #: web/templates/auth/password-reset-confirm.html:48
 #: web/templates/auth/password-reset.html:41
 msgid "Reset"
-msgstr ""
+msgstr "Yenile"
 
 #: web/templates/auth/password-reset-confirm.html:53
 msgid "The password reset link is invalid!"
-msgstr ""
+msgstr "Parola yenileme linki geçerli değil."
 
 #: web/templates/auth/password-reset-confirm.html:54
 msgid "Possibly because it has already been used."
-msgstr ""
+msgstr "Halihazırda kullanıldığı için olabilir."
 
 #: web/templates/auth/password-reset-confirm.html:55
 msgid "Please, request a new password reset."
-msgstr ""
+msgstr "Lütfen yeni bir parola deiştirme isteği gönderiniz."
 
 #: web/templates/auth/password-reset-confirm.html:56
 msgid "Request new password"
-msgstr ""
+msgstr "Parola Değiştir"
 
 #: web/templates/auth/password-reset-email.html:2
 msgid ""
 "You're receiving this email because you requested a password reset for your "
 "user account at itugnu.org"
 msgstr ""
+"Bu maili itugnu.org adresinden bir parola değişikliği talebinde bulunduğunuz "
+"için alıyorsunuz."
 
 #: web/templates/auth/password-reset-email.html:4
 msgid "Please go to the following page and choose a new password:"
-msgstr ""
+msgstr "Lütfen aşağıdaki sayfaya gidip yeni bir parola seçin:"
 
 #: web/templates/auth/password-reset-email.html:9
 msgid ""
 "If you have some problems with restoring access to the system, please "
 "contact us at admin@itugnu.org"
 msgstr ""
+"Giriş yapma konusunda hala sorun yaşıyorsanız admin@itugnu.org'a mail "
+"atarak durumu bildirebilirsiniz."
 
 #: web/templates/auth/password-reset-email.html:11
 msgid "ITU Software Freedom Club | ITUGnu"
@@ -388,7 +402,7 @@ msgstr "İTÜ Özgür Yazılım Kulübü | İTÜGnu"
 #: web/templates/auth/password-reset.html:11
 #: web/templates/auth/reset-done.html:3
 msgid "Password Reset"
-msgstr ""
+msgstr "Parola Yenileme"
 
 #: web/templates/auth/registration.html:4
 #: web/templates/auth/registration.html:11
@@ -400,6 +414,8 @@ msgid ""
 "ITUGnu do not share any confidential user information like email or phone "
 "number with any third party including University and community members."
 msgstr ""
+"İTÜGnu kullanıcı bilgilerini, üniversite ve topluluk üyeleri dahil olmak"
+"üzere kimseyle paylaşmaz."
 
 #: web/templates/auth/registration.html:60
 msgid ""
@@ -407,24 +423,28 @@ msgid ""
 "marketing or marketing related purposes, like Analytics and Advertisement "
 "providers."
 msgstr ""
+"Analitik ve Reklam sağlayıcıları gibi internet etkinliğinizi kaydeden "
+"üçüncü parti servisleri sitemizde kullanmıyoruz."
 
 #: web/templates/auth/registration.html:61
 msgid ""
 "Our statistics and error tracking solutions (sentry.io) don't store email, "
 "phone and password information."
 msgstr ""
+"İstatistik ve hata takibi için kullandığımız sentry.io, e-posta ve parola "
+"bilgisi tutmamaktadır."
 
 #: web/templates/auth/reset-done.html:10
 msgid "E-mail Sent"
-msgstr ""
+msgstr "E-mail gönderildi"
 
 #: web/templates/auth/reset-done.html:15
 msgid "We've emailed you instructions for setting your password."
-msgstr ""
+msgstr "Mailinize parola ayarları için yönlendirmeleri gönderdik."
 
 #: web/templates/auth/reset-done.html:16
 msgid "You should receive it soon."
-msgstr ""
+msgstr "Yakın zamanda size ulaşacaktır."
 
 #: web/templates/base.html:7
 msgid "Freedom for Bees - Software Freedom Club, Istanbul Technical University"
@@ -555,15 +575,15 @@ msgstr "Filtre"
 
 #: web/templates/oyz.html:4 web/templates/oyz.html:12
 msgid "Free Software Summit"
-msgstr ""
+msgstr "Özgür Yazılım Zirvesi"
 
 #: web/templates/oyz.html:11
 msgid "Free Your Mind!"
-msgstr ""
+msgstr "Free Your Mind!"
 
 #: web/templates/oyz.html:13
 msgid "Etkinlik Kayıt"
-msgstr ""
+msgstr "Etkinliğe Kayıt Ol"
 
 #: web/views.py:53
 msgid "User not found"
