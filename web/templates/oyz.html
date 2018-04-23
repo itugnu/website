@@ -1,0 +1,261 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}{% trans "Free Software Summit" %}{% endblock %}
+
+{% block headercontent %}
+<!-- Header -->
+<header class="masthead">
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-lead-in">{% trans "Free Your Mind!" %}</div>
+      <div class="intro-heading text-uppercase">{% trans "Free Software Summit" %}</div>
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#lectures">{% trans "Etkinlik Kayıt" %}</a>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<!-- Services -->
+<section id="etkinlik" style="background-color: #b7a6a6; background-image: url('{% static "img/bground.png" %}')">
+  <div class="container" align="center ! important;">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">İTÜ Özgür Yazılım Zirvesi 28 Nisan 2018 Tarihinde İTÜ Ayazağa Kampüsünde!</h2>
+      </div>
+	  <div class="col text-center">
+	  	<p><strong> Açık kaynak kodlu ve Özgür Yazılımlara ilgi duyan ve bu akımı tanımak isteyen kişilerin bir araya geleceği
+            Özgür Yazılım Zirvesi’nin ilki 28 Nisan’da İstanbul Teknik Üniversitesi Ayazağa Kampüsünde gerçekleşecek.
+            Akademisyenler, öğrenciler ve sektörden kişilerin bir araya geleceği bu etkinlik, her kesimden ziyaretçiye
+            hitap ediyor. Aynı zamanda dünyada gitgide önemi kavranan ve daha fazla destek gören Özgür Yazılım
+            kavramının ülkemizde daha geniş kitlelerce tanınır hale gelmesi adına büyük önem taşıyor. </strong></p>
+	  </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+          <h4>Ana Sponsor</h4>
+          <br>
+          <img class="d-block mx-auto img-thumbnail align-content-lg-center" src="{% static "img/hipo.png" %}">
+          <br>
+      </div>
+    </div>
+    <div class="row">
+        <div class=" col text-center">
+            <h4>Altın Sponsorlar</h4>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col align-left">
+            <img class="d-block mx-auto img-thumbnail" src="{% static "img/genomize.png" %}">
+        </div>
+        <div class="col align-right">
+            <img class="d-block mx-auto img-thumbnail" src="{% static "img/ogrenenler_type-01.png" %}">
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lectures Grid -->
+<section class="bg-dark" id="konusmacilar">
+  <div id="konusmacislayt" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+	<div class="row">
+	  <div class="col text-center">
+      <img class="d-block w-25 mx-auto img-thumbnail" src="{% static "img/konusmacilar/ihsan.jpg" %}" alt="First slide">
+	  <h3><strong> Barış Büyükakyol </strong></h3>
+      <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+              <a href="https://twitter.com/barisbuyukakyol" target="_blank">
+                 <i class="fa fa-twitter"></i>
+              </a>
+              </li>
+          <li class="list-inline-item">
+              <a href="http://usrb.in/" target="_blank">
+                 <i class="fa fa-link"></i>
+              </a>
+          </li>
+      </ul>
+      <br>
+	  <h6> GNU Müntesibi </h6>
+      <h7> Özgür Yazılım Felsefesi </h7>
+	  </div>
+	  <div class="col text-center">
+	  <img class="d-block w-25 mx-auto img-thumbnail" src="{% static "img/konusmacilar/htu.jpg" %}" alt="First slide">
+	  <h3><strong> Öğr. Gör. Hayri Turgut Uyar </strong></h3>
+      <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+              <a href="http://akademi.itu.edu.tr/uyar/" target="_blank">
+                  <i class="fa fa-link"></i>
+              </a>
+          </li>
+      </ul>
+          <br>
+          <h6>İstanbul Teknik Üniversitesi</h6>
+          <h7>Özgür Yazılımlar Üzerine Öznel Değerlendirmeler</h7>
+	  </div>
+	</div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col text-center">
+        <img class="d-block w-25 mx-auto img-thumbnail" src="{% static "img/konusmacilar/guray.jpg" %}" alt="Second slide">
+	    <h3><strong> Güray Yıldırım </strong></h3>
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+              <a href="https://twitter.com/GurayYildirim" target="_blank">
+                 <i class="fa fa-twitter"></i>
+              </a>
+          </li>
+          <li class="list-inline-item">
+              <a href="https://www.gurayyildirim.com.tr/" target="_blank">
+                 <i class="fa fa-link"></i>
+              </a>
+          </li>
+          <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/gryyldrm/" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+              </a>
+          </li>
+          <li class="list-inline-item">
+              <a href="https://medium.com/@gurayy">
+                  <i class="fa fa-medium"></i>
+              </a>
+          </li>
+      </ul>
+        <br>
+	    <h6> Eczacıbaşı | İTÜ Mezunu </h6>
+        <h7> Docker </h7>
+	    </div>
+
+        <div class="col text-center">
+        <img class="d-block w-25 mx-auto img-thumbnail" src="{% static "img/konusmacilar/erdem.png" %}" alt="Second slide">
+	    <h3> Erdem Bayer </h3>
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+              <a href="https://twitter.com/erdembayer" target="_blank">
+                 <i class="fa fa-twitter"></i>
+              </a>
+          </li>
+          <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/erdem-bayer-1633915/" target="_blank">
+                 <i class="fa fa-linkedin"></i>
+              </a>
+          </li>
+        </ul>
+        <br>
+	    <h6> Özgür Yazılım A.Ş. </h6>
+        <h7> GNU/Linux Sistem Yöneticisi Olmak </h7>
+	    </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col text-center">
+        <img class="d-block w-25 mx-auto img-thumbnail" src="{% static "img/konusmacilar/zeynep.jpeg" %}" alt="Third slide">
+	    <h3> Zeynep Yurt </h3>
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+              <a href="https://twitter.com/erdembayer" target="_blank">
+                 <i class="fa fa-twitter"></i>
+              </a>
+          </li>
+          <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/zeynepyurt/" target="_blank">
+                 <i class="fa fa-linkedin"></i>
+              </a>
+          </li>
+          <li class="list-inline-item">
+              <a href="https://twitter.com/GeekEngineer_">
+                  <i class="fa fa-twitter"></i>
+              </a>
+          </li>
+        </ul>
+        <br>
+	    <h6> Yıldırım Beyazıt Üniversitesi </h6>
+        <h7> Vagrant UP! </h7>
+	    </div>
+
+        <div class="col text-center">
+        <img class="d-block w-25 mx-auto img-thumbnail" src="{% static "img/konusmacilar/ihsan.jpg" %}" alt="Third slide">
+	    <h3> Ahmed İhsan Erdem </h3>
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+              <a href="https://twitter.com/ahmedihsanerdem" target="_blank">
+                 <i class="fa fa-twitter"></i>
+              </a>
+          </li>
+          <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/ihsanerdem/" target="_blank">
+                 <i class="fa fa-linkedin"></i>
+              </a>
+          </li>
+        </ul>
+        <br>
+	    <h6> İTÜ Özgür Yazılım Kulübü</h6>
+        <h7> İTÜ'de Özgür Yazılım </h7>
+	    </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#konusmacislayt" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#konusmacislayt" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">İletişim</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <form id="contactForm" name="sentMessage" method="post">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input class="form-control" id="name" type="text" placeholder="Adınız Soyadınız*" required>
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="email" type="email" placeholder="Email Adresiniz*" required>
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="phone" type="tel" placeholder="Telefon Numaranız">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <textarea class="form-control" id="message" placeholder="Mesajınız*" required></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12 text-center">
+              <div id="success"></div>
+              <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit"> Gönder </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block footerclass %}bg-dark{% endblock %}
