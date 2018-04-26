@@ -10,7 +10,7 @@
     <div class="intro-text">
       <div class="intro-lead-in">{% trans "Free Your Mind!" %}</div>
       <div class="intro-heading text-uppercase">{% trans "Free Software Summit" %}</div>
-      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/#lectures">{% trans "Etkinlik Kayıt" %}</a>
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/#lectures">{% trans "Registration" %}</a>
     </div>
   </div>
 </header>
@@ -22,19 +22,18 @@
   <div class="container" align="center ! important;">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">İTÜ Özgür Yazılım Zirvesi 28 Nisan 2018 Tarihinde İTÜ Ayazağa Kampüsünde!</h2>
+        <h2 class="section-heading text-uppercase">{% trans "ITU Free Software Summit in the ITU Ayazaga Campus in 28th April!" %}</h2>
       </div>
 	  <div class="col text-center">
-	  	<p><strong> Açık kaynak kodlu ve Özgür Yazılımlara ilgi duyan ve bu akımı tanımak isteyen kişilerin bir araya geleceği
-            Özgür Yazılım Zirvesi’nin ilki 28 Nisan’da İstanbul Teknik Üniversitesi Ayazağa Kampüsünde gerçekleşecek.
-            Akademisyenler, öğrenciler ve sektörden kişilerin bir araya geleceği bu etkinlik, her kesimden ziyaretçiye
-            hitap ediyor. Aynı zamanda dünyada gitgide önemi kavranan ve daha fazla destek gören Özgür Yazılım
-            kavramının ülkemizde daha geniş kitlelerce tanınır hale gelmesi adına büyük önem taşıyor. </strong></p>
+	  	<p><strong> {% blocktrans "The first Free Software Summit which puts together the people interested in this movement and wants to learn it, will be
+		xxx in Istanbul Technical University Ayazaga Campus in 28th April. The event that academicians, students and the people
+		from the sector will be coalesce, talks to anybody. At the same time, the event is important for the mission of presentation
+		of the free software which is getting more and more important on all over the world." endblock %} </strong></p>
 	  </div>
     </div>
     <div class="row">
       <div class="col text-center">
-          <h4>Ana Sponsor</h4>
+          <h4>{% trans "Main Sponsor" %}</h4>
           <br>
           <a href="https://hipolabs.com/" target="_blank">
               <img class="d-block mx-auto img-thumbnail align-content-lg-center" src="{% static "img/hipo.png" %}">
@@ -44,7 +43,7 @@
     </div>
     <div class="row">
         <div class=" col text-center">
-            <h4>Altın Sponsorlar</h4>
+            <h4>{% trans "Golden Sponsors" %}</h4>
             <br>
         </div>
     </div>
@@ -62,7 +61,7 @@
     </div>
 	<div class="row">
         <div class=" col text-center">
-            <h4>Destekleyen Kuruluşlar</h4>
+            <h4>{% trans "Supporting Organizations" %}</h4>
             <br>
         </div>
 	</div>
@@ -111,12 +110,12 @@
           </li>
       </ul>
       <br>
-	  <h6> GNU Müntesibi </h6>
-      <h7> Özgür Yazılım Felsefesi </h7>
+	  <h6>{% trans "GNU Follower" %}</h6>
+      <h7>{% trans "Free Software Thought" %} </h7>
 	  </div>
 	  <div class="col text-center">
 	  <img class="d-block w-25 mx-auto img-thumbnail" src="{% static "img/konusmacilar/htu.jpg" %}" alt="First slide">
-	  <h3><strong> Öğr. Gör. Hayri Turgut Uyar </strong></h3>
+	  <h3><strong> {% trans Academician %} Hayri Turgut Uyar </strong></h3>
       <ul class="list-inline social-buttons">
           <li class="list-inline-item">
               <a href="http://akademi.itu.edu.tr/uyar/" target="_blank">
@@ -125,8 +124,8 @@
           </li>
       </ul>
           <br>
-          <h6>İstanbul Teknik Üniversitesi</h6>
-          <h7>Özgür Yazılımlar Üzerine Öznel Değerlendirmeler</h7>
+          <h6>{% trans "Istanbul Technical University" %}</h6>
+          <h7>{% trans "Subjective Assessments about Free Software" %}</h7>
 	  </div>
 	</div>
     </div>
@@ -158,8 +157,8 @@
           </li>
       </ul>
         <br>
-	    <h6> Eczacıbaşı | İTÜ Mezunu </h6>
-        <h7> Docker </h7>
+	    <h6> {% trans "Eczacibasi | ITU Graduate" %} </h6>
+        <h7> {% trans "Docker" %} </h7>
 	    </div>
 
         <div class="col text-center">
@@ -178,8 +177,8 @@
           </li>
         </ul>
         <br>
-	    <h6> Özgür Yazılım A.Ş. </h6>
-        <h7> GNU/Linux Sistem Yöneticisi Olmak </h7>
+	    <h6>{% "Özgür Yazılım A.Ş." %} </h6>
+        <h7>{% "Being GNU/Linux System Administrator" %} </h7>
 	    </div>
       </div>
     </div>
@@ -201,8 +200,8 @@
           </li>
         </ul>
         <br>
-	    <h6> Yıldırım Beyazıt Üniversitesi </h6>
-        <h7> Vagrant UP! </h7>
+	    <h6>{% trans "Yıldırım Beyazıt University" %}</h6>
+        <h7>{% trans "Vagrant UP!" %}</h7>
 	    </div>
 
         <div class="col text-center">
@@ -221,8 +220,8 @@
           </li>
         </ul>
         <br>
-	    <h6> İTÜ Özgür Yazılım Kulübü</h6>
-        <h7> İTÜ'de Özgür Yazılım </h7>
+	    <h6> {% trans "ITU Free Software Club" %}</h6>
+        <h7> {% trans "Free Software in ITU" %}</h7>
 	    </div>
       </div>
     </div>
@@ -244,7 +243,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">İletişim</h2>
+        <h2 class="section-heading text-uppercase">{% trans "Contact Us" %}</h2>
       </div>
     </div>
     <div class="row">
@@ -253,28 +252,28 @@
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <input class="form-control" id="name" type="text" placeholder="Adınız Soyadınız*" required>
+                <input class="form-control" id="name" type="text" placeholder="{% trans "Name-Surname*" %}" required>
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
-                <input class="form-control" id="email" type="email" placeholder="Email Adresiniz*" required>
+                <input class="form-control" id="email" type="email" placeholder="{% trans "E-mail Address*" %}" required>
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
-                <input class="form-control" id="phone" type="tel" placeholder="Telefon Numaranız">
+                <input class="form-control" id="phone" type="tel" placeholder="{% trans "Phone Number" %}">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <textarea class="form-control" id="message" placeholder="Mesajınız*" required></textarea>
+                <textarea class="form-control" id="message" placeholder="{% trans Message* %}" required></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="clearfix"></div>
             <div class="col-lg-12 text-center">
               <div id="success"></div>
-              <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit"> Gönder </button>
+              <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">{% trans Submit %} </button>
             </div>
           </div>
         </form>
