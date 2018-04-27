@@ -597,5 +597,109 @@ msgstr "Hesaba Erişim Engellenmiştir"
 msgid "Invalid login credentials"
 msgstr "Geçersiz giriş bilgileri"
 
+#: web/templates/oyz.html:25
+msgid "ITU Free Software Summit in the ITU Ayazaga Campus in 28th April!"
+msgstr "İTÜ Özgür Yazılım Zirvesi 28 Nisan 2018 Tarihinde İTÜ Ayazağa Kampüsünde!"
+
+#: web/templates/oyz.html:28
+msgid "The first Free Software Summit which puts together the people interested in this movement and wants to learn it, will be" 
+		"hosted in Istanbul Technical University Ayazaga Campus in 28th April. The event that academicians, students and the people" 
+		"from the sector will be coalesce, talks to anybody. At the same time, the event is important for the mission of presentation"
+		"of the free software which is getting more and more important on all over the world."
+msgstr "Açık kaynak kodlu ve Özgür Yazılımlara ilgi duyan ve bu akımı tanımak isteyen kişilerin bir araya geleceği"
+            "Özgür Yazılım Zirvesi’nin ilki 28 Nisan’da İstanbul Teknik Üniversitesi Ayazağa Kampüsünde gerçekleşecek."
+            "Akademisyenler, öğrenciler ve sektörden kişilerin bir araya geleceği bu etkinlik, her kesimden ziyaretçiye"
+            "hitap ediyor. Aynı zamanda dünyada gitgide önemi kavranan ve daha fazla destek gören Özgür Yazılım"
+            "kavramının ülkemizde daha geniş kitlelerce tanınır hale gelmesi adına büyük önem taşıyor."
+            
+#: web/templates/oyz.html:37
+msgid "Main Sponsor"
+msgstr "Ana Sponsor"
+
+#: web/templates/oyz.html:47
+msgid "Golden Sponsors"
+msgstr "Altın Sponsorlar"
+
+#: web/templates/oyz.html:65
+msgid "Supporting Organizations"
+msgstr "Destekleyen Kuruluşlar"
+
+#: web/templates/oyz.html:114
+msgid "GNU Follower"
+msgstr "GNU Münstesibi"
+
+#: web/templates/oyz.html:114
+msgid "Free Software Thought"
+msgstr "Özgür Yazılım Felsefesi"
+
+#: web/templates/oyz.html:119
+msgid "Lecturer"
+msgstr "Öğr. Gör."
+
+#: web/templates/oyz.html:128
+msgid "Istanbul Technical University"
+msgstr "İstanbul Teknik Üniversitesi"
+
+#: web/templates/oyz.html:129
+msgid "Subjective Assessments about Free Software"
+msgstr "Özgür Yazılım Üzerine Öznel Değerlendirmeler"
+
+#: web/templates/oyz.html:161
+msgid "Eczacibasi | ITU Graduate"
+msgstr "Eczacıbaşı | İTÜ Mezunu"
+
+#: web/templates/oyz.html:162
+msgid "Docker"
+msgstr "Docker"
+
+#: web/templates/oyz.html:181
+msgid "Özgür Yazılım A.Ş."
+msgstr "Özgür Yazılım A.Ş."
+
+#: web/templates/oyz.html:182
+msgid "Being GNU/Linux System Administrator"
+msgstr "GNU/Linux Sistem Yöneticisi Olmak"
+
+#: web/templates/oyz.html:204
+msgid "Yıldırım Beyazıt University"
+msgstr "Yıldırım Beyazıt Üniversitesi"
+
+#: web/templates/oyz.html:205
+msgid "Vagrant UP!"
+msgstr "Vagrant UP!"
+
+#: web/templates/oyz.html:224
+msgid "ITU Free Software Club"
+msgstr "İTÜ Özgür Yazılım Kulübü"
+
+
+#: web/templates/oyz.html:224
+msgid "Free Software in ITU"
+msgstr "İTÜ'de Özgür Yazılım"
+
+#: web/templates/oyz.html:247
+msgid "Contact Us"
+msgstr "İletişim"
+
+#: web/templates/oyz.html:256
+msgid "Name-Surname*"
+msgstr "Adınız Soyadınız*"
+
+#: web/templates/oyz.html:260
+msgid "E-mail Address*"
+msgstr "Email Adresiniz*"
+
+#: web/templates/oyz.html:264
+msgid "Phone Number"
+msgstr "Telefon Numaranız"
+
+#: web/templates/oyz.html:270
+msgid "Message*"
+msgstr "Mesajınız*"
+
+#: web/templates/oyz.html:277
+msgid "Submit"
+msgstr "Gönder"
+
 #~ msgid "Missing Fields"
 #~ msgstr "Eksik Alanlar Mevcut"
