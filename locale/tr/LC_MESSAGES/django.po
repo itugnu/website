@@ -2,6 +2,7 @@
 # Copyright (C) 2018 ITUGnu
 # This file is distributed under GPLv3 License.
 # Emek Gozluklu <emek@itugnu.org>, 2018.
+# Muhammed Ali Yeter <muhammed@itugnu.org>
 #
 #, fuzzy
 msgid ""
@@ -200,7 +201,7 @@ msgstr "Eğitim Takvimi"
 
 #: lecture/models.py:71
 msgid "Lecture Schedules"
-msgstr "Eğitim Takvimleri"
+msgstr "Eğitim Takvimi"
 
 #: lecture/models.py:82
 msgid "Approved"
@@ -220,7 +221,7 @@ msgstr "Yönteme izin verilmemektedir"
 
 #: web/components/lecture.py:23
 msgid "Please, login to register for lectures"
-msgstr "Etkinliklere kayıt olmak için giriş yapınız."
+msgstr "Etkinliklere kayıt olmak için lütfen giriş yapınız."
 
 #: web/components/lecture.py:28
 #, python-brace-format
@@ -347,11 +348,11 @@ msgstr "Lütfen yeni parolanızı iki kere giriniz."
 
 #: web/templates/auth/password-reset-confirm.html:26
 msgid "New Password *"
-msgstr "Yeni Parola"
+msgstr "Yeni Parola *"
 
 #: web/templates/auth/password-reset-confirm.html:31
 msgid "Repeat New Password *"
-msgstr "Yeni Parola(Tekrar)"
+msgstr "Yeni Parola(Tekrar) *"
 
 #: web/templates/auth/password-reset-confirm.html:48
 #: web/templates/auth/password-reset.html:41
@@ -368,7 +369,7 @@ msgstr "Halihazırda kullanıldığı için olabilir."
 
 #: web/templates/auth/password-reset-confirm.html:55
 msgid "Please, request a new password reset."
-msgstr "Lütfen yeni bir parola deiştirme isteği gönderiniz."
+msgstr "Lütfen yeni bir parola değiştirme isteği gönderiniz."
 
 #: web/templates/auth/password-reset-confirm.html:56
 msgid "Request new password"
@@ -391,8 +392,8 @@ msgid ""
 "If you have some problems with restoring access to the system, please "
 "contact us at admin@itugnu.org"
 msgstr ""
-"Giriş yapma konusunda hala sorun yaşıyorsanız admin@itugnu.org'a mail "
-"atarak durumu bildirebilirsiniz."
+"Giriş yapma konusunda hala sorun yaşıyorsanız lütfen admin@itugnu.org'a mail "
+"atarak durumu bildiriniz."
 
 #: web/templates/auth/password-reset-email.html:11
 msgid "ITU Software Freedom Club | ITUGnu"
@@ -533,11 +534,11 @@ msgstr "İletişim"
 
 #: web/templates/index.html:98
 msgid "Full Name *"
-msgstr "Ad Soyad"
+msgstr "Ad Soyad *"
 
 #: web/templates/index.html:102
 msgid "Email Address *"
-msgstr "Email Adresi"
+msgstr "Email Adresi *"
 
 #: web/templates/index.html:112
 msgid "Your Message *"
@@ -633,7 +634,7 @@ msgid "Free Software Thought"
 msgstr "Özgür Yazılım Felsefesi"
 
 #: web/templates/oyz.html:119
-msgid "Lecturer"
+msgid "Academician"
 msgstr "Öğr. Gör."
 
 #: web/templates/oyz.html:128
