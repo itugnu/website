@@ -25,10 +25,12 @@
         <h2 class="section-heading text-uppercase">{% trans "ITU Free Software Summit in the ITU Ayazaga Campus in 28th April!" %}</h2>
       </div>
 	  <div class="col text-center">
-	  	<p><strong> {% blocktrans "The first Free Software Summit which puts together the people interested in this movement and wants to learn it, will be
+		{% blocktrans %} 
+	  	<p><strong> The first Free Software Summit which puts together the people interested in this movement and wants to learn it, will be
 		xxx in Istanbul Technical University Ayazaga Campus in 28th April. The event that academicians, students and the people
 		from the sector will be coalesce, talks to anybody. At the same time, the event is important for the mission of presentation
-		of the free software which is getting more and more important on all over the world." endblock %} </strong></p>
+		of the free software which is getting more and more important on all over the world. </strong></p>
+		{% endblocktrans %}
 	  </div>
     </div>
     <div class="row">
@@ -73,7 +75,7 @@
         </div>
 		<div class="col align-right">
             <a href="http://www.modyo.com.tr/" target="_blank">
-            <img class="d-block mx-auto img-thumbnail" src="{% static "img/modyo.jpg" %}">
+            <img class="d-block mx-auto" src="{% static "img/modyo.png" %}">
             </a>
         </div>
 	</div>
@@ -177,8 +179,8 @@
           </li>
         </ul>
         <br>
-	    <h6>{% "Özgür Yazılım A.Ş." %} </h6>
-        <h7>{% "Being GNU/Linux System Administrator" %} </h7>
+	    <h6>{% trans "Özgür Yazılım A.Ş." %} </h6>
+        <h7>{% trans "Being GNU/Linux System Administrator" %} </h7>
 	    </div>
       </div>
     </div>
@@ -266,7 +268,7 @@
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <textarea class="form-control" id="message" placeholder="{% trans Message* %}" required></textarea>
+                <textarea class="form-control" id="message" placeholder="{% trans "Message*" %}" required></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>

@@ -576,3 +576,103 @@ msgstr ""
 #: web/views.py:60
 msgid "Invalid login credentials"
 msgstr ""
+
+#: web/templates/oyz.html:25
+msgid "ITU Free Software Summit in the ITU Ayazaga Campus in 28th April!"
+msgstr ""
+
+#: web/templates/oyz.html:28
+msgid "The first Free Software Summit which puts together the people interested in this movement and wants to learn it, will be"
+		"hosted in Istanbul Technical University Ayazaga Campus in 28th April. The event that academicians, students and the people" 
+		"from the sector will be coalesce, talks to anybody. At the same time, the event is important for the mission of presentation"
+		"of the free software which is getting more and more important on all over the world."
+msgstr ""
+
+#: web/templates/oyz.html:37
+msgid "Main Sponsor"
+msgstr ""
+
+#: web/templates/oyz.html:47
+msgid "Golden Sponsors"
+msgstr ""
+
+#: web/templates/oyz.html:65
+msgid "Supporting Organizations"
+msgstr ""
+
+#: web/templates/oyz.html:114
+msgid "GNU Follower"
+msgstr ""
+
+#: web/templates/oyz.html:114
+msgid "Free Software Thought"
+msgstr ""
+
+#: web/templates/oyz.html:119
+msgid "Academician"
+msgstr ""
+
+#: web/templates/oyz.html:128
+msgid "Istanbul Technical University"
+msgstr ""
+
+#: web/templates/oyz.html:129
+msgid "Subjective Assessments about Free Software"
+msgstr ""
+
+#: web/templates/oyz.html:161
+msgid "Eczacibasi | ITU Graduate"
+msgstr ""
+
+#: web/templates/oyz.html:162
+msgid "Docker"
+msgstr ""
+
+#: web/templates/oyz.html:180
+msgid "Özgür Yazılım A.Ş."
+msgstr ""
+
+#: web/templates/oyz.html:181
+msgid "Being GNU/Linux System Administrator"
+msgstr ""
+
+#: web/templates/oyz.html:204
+msgid "Yıldırım Beyazıt University"
+msgstr ""
+
+#: web/templates/oyz.html:205
+msgid "Vagrant UP!"
+msgstr ""
+
+#: web/templates/oyz.html:224
+msgid "ITU Free Software Club"
+msgstr ""
+
+
+#: web/templates/oyz.html:224
+msgid "Free Software in ITU"
+msgstr ""
+
+#: web/templates/oyz.html:247
+msgid "Contact Us"
+msgstr ""
+
+#: web/templates/oyz.html:256
+msgid "Name-Surname*"
+msgstr ""
+
+#: web/templates/oyz.html:260
+msgid "E-mail Address*"
+msgstr ""
+
+#: web/templates/oyz.html:264
+msgid "Phone Number"
+msgstr ""
+
+#: web/templates/oyz.html:270
+msgid "Message*"
+msgstr ""
+
+#: web/templates/oyz.html:277
+msgid "Submit"
+msgstr ""
