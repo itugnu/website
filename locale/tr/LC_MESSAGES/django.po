@@ -500,9 +500,10 @@ msgid "What is GNU?"
 msgstr "GNU Nedir?"
 
 #: web/templates/faq.html:18
-msgid "GNU Project is the given name to the Free Software movement that initiated at 1983 by Richard M. Stallman. "
-      "It is unknown why an animal's name (GNU) is chosen as name however, the project's symbol is animal's itself. "
-      "'Is GNU an acronym?' question is answered by Stallman as 'GNU is Not Unix' during an interview."
+msgid "GNU Project is the given name to the Free Software movement that initiated at 1983 by Richard M. Stallman."
+      "It is unknown why name of an animal (GNU) is chosen as project name. However, the project's symbol is animal's"
+      "itself and the project is associated with this symbol all around the world. 'Is GNU an acronym?' question is "
+      "answered by Stallman as 'GNU is Not Unix' during an interview."
 msgstr "GNU Projesi 1983 yılında Richard M. Stallman tarafından başlatılan Özgür Yazılım hareketine verilen isimdir. "
        "İsim olarak GNU hayvanının seçilmesine neyin sebep olduğu bilinmemektedir ancak tüm dünyada bu sembolle "
        "anılmaktadır. 'GNU bir kısaltma mıdır?' sorusunun cevabını ise Stallman bir röportajında 'GNU is Not Unix' "
