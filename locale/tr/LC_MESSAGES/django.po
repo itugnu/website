@@ -641,7 +641,6 @@ msgstr "Kayıt sırasında alınan kişisel bilgilerimin güvenliğinden nasıl 
 #: web/templates/faq.html:84
 msgid "None of the information taken during registration is shared to third party service providers. Also your "
       "information is not kept in any backup servers. Even your password is encrypted so that we cannot read it. "
-      "Also, "
 msgstr "itugnu.org web sitesine kayıt sırasında alınan bilgilerden hiçbiri herhangi bir servis sağlayıcı ile "
        "paylaşılmamaktadır. Ayrıca girdiğiniz bilgiler yedek sunucularda vs. kayıt altına alınmamaktadır. "
        "Girdiğiniz paralolar dahi şifrelenerek tarafımızdan okunamamaktadır."
