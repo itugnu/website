@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-23 07:19+0000\n"
+"POT-Creation-Date: 2018-05-17 04:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgid "Language"
 msgstr ""
 
 #: common/forms.py:74 common/forms.py:78 common/models.py:24 web/forms.py:29
-#: web/forms.py:32 web/templates/index.html:106
+#: web/forms.py:32 web/templates/index.html:120 web/templates/oyz.html:265
 msgid "Phone Number"
 msgstr ""
 
@@ -104,7 +104,7 @@ msgstr ""
 msgid "Lecture Information"
 msgstr ""
 
-#: lecture/admin.py:33 web/templates/index.html:148
+#: lecture/admin.py:33 web/templates/index.html:162
 #: web/templates/lectures/index.html:78
 msgid "Dates"
 msgstr ""
@@ -129,12 +129,12 @@ msgstr ""
 msgid "Poster"
 msgstr ""
 
-#: lecture/models.py:27 web/templates/index.html:166
+#: lecture/models.py:27 web/templates/index.html:180
 #: web/templates/lectures/index.html:96
 msgid "Lecturer"
 msgstr ""
 
-#: lecture/models.py:29 web/templates/index.html:163
+#: lecture/models.py:29 web/templates/index.html:177
 #: web/templates/lectures/index.html:93
 msgid "Classroom"
 msgstr ""
@@ -143,7 +143,7 @@ msgstr ""
 msgid "End Date"
 msgstr ""
 
-#: lecture/models.py:32 web/templates/index.html:63
+#: lecture/models.py:32 web/templates/index.html:77
 #: web/templates/lectures/index.html:39
 msgid "Open for Registration"
 msgstr ""
@@ -152,8 +152,7 @@ msgstr ""
 msgid "Lecture"
 msgstr ""
 
-#: lecture/models.py:45 web/templates/base.html:38 web/templates/index.html:13
-#: web/templates/index.html:40 web/templates/lectures/index.html:4
+#: lecture/models.py:45 web/templates/lectures/index.html:4
 #: web/templates/lectures/index.html:11
 msgid "Lectures"
 msgstr ""
@@ -390,7 +389,7 @@ msgid "Password Reset"
 msgstr ""
 
 #: web/templates/auth/registration.html:4
-#: web/templates/auth/registration.html:11
+#: web/templates/auth/registration.html:11 web/templates/oyz.html:13
 msgid "Registration"
 msgstr ""
 
@@ -441,8 +440,13 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: web/templates/base.html:35 web/templates/index.html:25
+#: web/templates/base.html:35 web/templates/index.html:26
 msgid "Blog"
+msgstr ""
+
+#: web/templates/base.html:38 web/templates/index.html:13
+#: web/templates/index.html:54
+msgid "Events | Lectures"
 msgstr ""
 
 #: web/templates/base.html:41
@@ -485,71 +489,87 @@ msgstr ""
 msgid "Free as in Freedom"
 msgstr ""
 
-#: web/templates/index.html:26
+#: web/templates/index.html:27
 msgid "Coming soon..."
 msgstr ""
 
-#: web/templates/index.html:41
-msgid "All lectures"
+#: web/templates/index.html:28
+msgid "Özgür Yazılım Zirvesi 2018"
 msgstr ""
 
-#: web/templates/index.html:41
-msgid "See all lectures"
+#: web/templates/index.html:29
+msgid "İTÜ Ayazağa Kampüsü, KSB Oditoryum"
 msgstr ""
 
-#: web/templates/index.html:65 web/templates/index.html:176
+#: web/templates/index.html:30
+msgid "Saat: 10.00 - 16.00"
+msgstr ""
+
+#: web/templates/index.html:55
+msgid "All activities"
+msgstr ""
+
+#: web/templates/index.html:55
+msgid "See all activities"
+msgstr ""
+
+#: web/templates/index.html:79 web/templates/index.html:190
 #: web/templates/lectures/index.html:41 web/templates/lectures/index.html:106
 msgid "Registration Closed"
 msgstr ""
 
-#: web/templates/index.html:75 web/templates/lectures/index.html:51
-msgid "There is no any lectures, subscribe to get new announcements."
+#: web/templates/index.html:89
+msgid "There is no any activities, subscribe to get new announcements."
 msgstr ""
 
-#: web/templates/index.html:89
+#: web/templates/index.html:103 web/templates/oyz.html:248
 msgid "Contact Us"
 msgstr ""
 
-#: web/templates/index.html:98
+#: web/templates/index.html:112
 msgid "Full Name *"
 msgstr ""
 
-#: web/templates/index.html:102
+#: web/templates/index.html:116
 msgid "Email Address *"
 msgstr ""
 
-#: web/templates/index.html:112
+#: web/templates/index.html:126
 msgid "Your Message *"
 msgstr ""
 
-#: web/templates/index.html:119
+#: web/templates/index.html:133
 msgid "Send Message"
 msgstr ""
 
-#: web/templates/index.html:148 web/templates/lectures/index.html:78
+#: web/templates/index.html:162 web/templates/lectures/index.html:78
 #, python-format
 msgid "%(start)s - %(end)s (%(weeks)s weeks)"
 msgstr ""
 
-#: web/templates/index.html:157 web/templates/lectures/index.html:87
+#: web/templates/index.html:171 web/templates/lectures/index.html:87
 msgid "Schedule is not announced"
 msgstr ""
 
-#: web/templates/index.html:163 web/templates/index.html:166
+#: web/templates/index.html:177 web/templates/index.html:180
 #: web/templates/lectures/index.html:93 web/templates/lectures/index.html:96
 msgid "Not Announced"
 msgstr ""
 
-#: web/templates/index.html:172 web/templates/lectures/index.html:102
+#: web/templates/index.html:186 web/templates/lectures/index.html:102
 msgid "Enroll"
 msgstr ""
 
-#: web/templates/index.html:180 web/templates/lectures/index.html:110
+#: web/templates/index.html:194 web/templates/lectures/index.html:110
 msgid "Close"
 msgstr ""
 
 #: web/templates/lectures/index.html:15
 msgid "Filter"
+msgstr ""
+
+#: web/templates/lectures/index.html:51
+msgid "There is no any lectures, subscribe to get new announcements."
 msgstr ""
 
 #: web/templates/oyz.html:4 web/templates/oyz.html:12
@@ -560,8 +580,94 @@ msgstr ""
 msgid "Free Your Mind!"
 msgstr ""
 
-#: web/templates/oyz.html:13
-msgid "Etkinlik Kayıt"
+#: web/templates/oyz.html:25
+msgid "ITU Free Software Summit in the ITU Ayazaga Campus in 28th of April!"
+msgstr ""
+
+#: web/templates/oyz.html:28
+msgid ""
+" \n"
+"\t  \t<p><strong> The first Free Software Summit which puts together the "
+"people interested in this movement and wants to learn it, will be\n"
+"\t\thosted in Istanbul Technical University Ayazaga Campus in 28th of April. "
+"The event that academicians, students and the people\n"
+"\t\tfrom the sector will be coalesce, talks to anybody. At the same time, "
+"the event is important for the mission of presentation\n"
+"\t\tof the free software which is getting more and more important on all "
+"over the world. </strong></p>\n"
+"\t\t"
+msgstr ""
+
+#: web/templates/oyz.html:38
+msgid "Main Sponsor"
+msgstr ""
+
+#: web/templates/oyz.html:48
+msgid "Golden Sponsors"
+msgstr ""
+
+#: web/templates/oyz.html:66
+msgid "Supporting Organizations"
+msgstr ""
+
+#: web/templates/oyz.html:115
+msgid "GNU Follower"
+msgstr ""
+
+#: web/templates/oyz.html:116
+msgid "Free Software Thought"
+msgstr ""
+
+#: web/templates/oyz.html:129
+msgid "Istanbul Technical University"
+msgstr ""
+
+#: web/templates/oyz.html:130
+msgid "Subjective Assessments about Free Software"
+msgstr ""
+
+#: web/templates/oyz.html:162
+msgid "Eczacibasi | ITU Graduate"
+msgstr ""
+
+#: web/templates/oyz.html:163
+msgid "Docker"
+msgstr ""
+
+#: web/templates/oyz.html:182
+msgid "Ozgur Yazilım Co."
+msgstr ""
+
+#: web/templates/oyz.html:183
+msgid "Being GNU/Linux System Administrator"
+msgstr ""
+
+#: web/templates/oyz.html:205
+msgid "Yildirim Beyazit University"
+msgstr ""
+
+#: web/templates/oyz.html:206
+msgid "Vagrant UP!"
+msgstr ""
+
+#: web/templates/oyz.html:225
+msgid "ITU Free Software Club"
+msgstr ""
+
+#: web/templates/oyz.html:226
+msgid "Free Software in ITU"
+msgstr ""
+
+#: web/templates/oyz.html:257
+msgid "Name-Surname*"
+msgstr ""
+
+#: web/templates/oyz.html:261
+msgid "E-mail Address*"
+msgstr ""
+
+#: web/templates/oyz.html:271
+msgid "Message*"
 msgstr ""
 
 #: web/views.py:53
