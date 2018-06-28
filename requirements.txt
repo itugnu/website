@@ -7,3 +7,6 @@ pyLibravatar
 py3dns
 gunicorn
 raven
+pinax-blog
+django-bootstrap-form
+pinax-templates

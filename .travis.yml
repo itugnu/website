@@ -10,7 +10,7 @@ install:
   - pip install coverage python-coveralls flake8
 
 before_script:
-  - cp local_settings.template.py local_settings.py
+  - cp local_settings.py local_settings.py
   - psql -c "CREATE DATABASE testdb;" -U postgres
 
 script:

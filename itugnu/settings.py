@@ -3,7 +3,7 @@
 # Author: Emin Mastizada <emin@linux.com>
 
 from django.utils.translation import ugettext_lazy as _
-from itugnu.base import INSTALLED_APPS, MIDDLEWARE  # NOQA
+from itugnu.base import INSTALLED_APPS, MIDDLEWARE, SITE_ID  # NOQA
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)

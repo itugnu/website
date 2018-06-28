@@ -9,13 +9,21 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.humanize',
     'raven.contrib.django.raven_compat',
     'django_filters',
     'reversion',
     'common',
     'lecture',
     'web',
+    'pinax.blog',
+    'pinax.images',
+    'bootstrapform',
+    'pinax.templates',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
