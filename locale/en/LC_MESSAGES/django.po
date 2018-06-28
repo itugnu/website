@@ -618,6 +618,14 @@ msgstr ""
 msgid "See all lectures"
 msgstr ""
 
+#: web/templates/index.html:55
+msgid "All activities"
+msgstr ""
+
+#: web/templates/index.html:55
+msgid "See all activities"
+msgstr ""
+
 #: web/templates/index.html:65 web/templates/index.html:176
 #: web/templates/lectures/index.html:41 web/templates/lectures/index.html:106
 msgid "Registration Closed"
@@ -625,6 +633,10 @@ msgstr ""
 
 #: web/templates/index.html:75 web/templates/lectures/index.html:51
 msgid "There is no any lectures, subscribe to get new announcements."
+msgstr ""
+
+#: web/templates/index.html:89
+msgid "There are no activities, subscribe to get new activity announcements."
 msgstr ""
 
 #: web/templates/index.html:89
