@@ -14,6 +14,7 @@ before_script:
   - psql -c "CREATE DATABASE testdb;" -U postgres
 
 script:
+  - ./manage.py compilemessages
   - coverage run --source=. ./manage.py test
   - flake8 .
 
