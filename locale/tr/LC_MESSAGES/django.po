@@ -61,6 +61,7 @@ msgstr "Dil"
 
 #: common/forms.py:74 common/forms.py:78 common/models.py:24 web/forms.py:29
 #: web/forms.py:32 web/templates/index.html:106
+#: web/templates/oyz.html:264
 msgid "Phone Number"
 msgstr "Telefon Numarası"
 
@@ -679,6 +680,7 @@ msgid "There is no any lectures, subscribe to get new announcements."
 msgstr "Şu an eğitim yok. Eğitimler hakkında bilgilendirilmek için üye olun."
 
 #: web/templates/index.html:89
+#: web/templates/oyz.html:247
 msgid "Contact Us"
 msgstr "İletişim"
 
@@ -823,14 +825,9 @@ msgstr "Vagrant UP!"
 msgid "ITU Free Software Club"
 msgstr "İTÜ Özgür Yazılım Kulübü"
 
-
 #: web/templates/oyz.html:224
 msgid "Free Software in ITU"
 msgstr "İTÜ'de Özgür Yazılım"
-
-#: web/templates/oyz.html:247
-msgid "Contact Us"
-msgstr "İletişim"
 
 #: web/templates/oyz.html:256
 msgid "Name-Surname*"
@@ -839,10 +836,6 @@ msgstr "Adınız Soyadınız*"
 #: web/templates/oyz.html:260
 msgid "E-mail Address*"
 msgstr "Email Adresiniz*"
-
-#: web/templates/oyz.html:264
-msgid "Phone Number"
-msgstr "Telefon Numaranız"
 
 #: web/templates/oyz.html:270
 msgid "Message*"

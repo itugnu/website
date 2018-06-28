@@ -60,6 +60,7 @@ msgstr ""
 
 #: common/forms.py:74 common/forms.py:78 common/models.py:24 web/forms.py:29
 #: web/forms.py:32 web/templates/index.html:106
+#: web/templates/oyz.html:264
 msgid "Phone Number"
 msgstr ""
 
@@ -627,6 +628,7 @@ msgid "There is no any lectures, subscribe to get new announcements."
 msgstr ""
 
 #: web/templates/index.html:89
+#: web/templates/oyz.html:247
 msgid "Contact Us"
 msgstr ""
 
@@ -767,13 +769,8 @@ msgstr ""
 msgid "ITU Free Software Club"
 msgstr ""
 
-
 #: web/templates/oyz.html:224
 msgid "Free Software in ITU"
-msgstr ""
-
-#: web/templates/oyz.html:247
-msgid "Contact Us"
 msgstr ""
 
 #: web/templates/oyz.html:256
@@ -782,10 +779,6 @@ msgstr ""
 
 #: web/templates/oyz.html:260
 msgid "E-mail Address*"
-msgstr ""
-
-#: web/templates/oyz.html:264
-msgid "Phone Number"
 msgstr ""
 
 #: web/templates/oyz.html:270
