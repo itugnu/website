@@ -1,6 +1,12 @@
-{% load humanize %}
+{% load i18n humanize %}
+{% load i18n static %}
+
 
 <p class="post-meta">
-    <span class="date">{% if post.published %}{{ post.published|naturaltime }}{% else %}Not published yet{% endif %}</span> /
-    by <span class="author">{{ post.author.get_full_name }}</span>
+        <em>
+    {% blocktrans with datetime=post.published hunantime=post.published|naturaltime author=post.author.get_full_name %}
+        Posted<time datetime="{{ datetime }}" title="{{ datetime }}">
+        {{ hunantime }}</time> by {{ author }}.
+        </em>
+    {% endblocktrans %}
 </p>
