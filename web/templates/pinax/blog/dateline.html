@@ -1,0 +1,6 @@
+{% load humanize %}
+
+<p class="post-meta">
+    <span class="date">{% if post.published %}{{ post.published|naturaltime }}{% else %}Not published yet{% endif %}</span> /
+    by <span class="author">{{ post.author.get_full_name }}</span>
+</p>

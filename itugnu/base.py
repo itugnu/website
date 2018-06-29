@@ -23,7 +23,7 @@ INSTALLED_APPS = [
     'pinax.templates',
 ]
 
-SITE_ID = 1
+SITE_ID = 3
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
