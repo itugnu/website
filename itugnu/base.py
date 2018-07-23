@@ -1,7 +1,3 @@
-# This file is part of ITUGnu Website, licensed under GNU GPLv3.
-# Copyright: ITUGnu <info@itugnu.org>.
-# Author: Emin Mastizada <emin@linux.com>
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -22,6 +18,10 @@ INSTALLED_APPS = [
     'bootstrapform',
     'pinax.templates',
 ]
+# This file is part of ITUGnu Website, licensed under GNU GPLv3.
+# Copyright: ITUGnu <info@itugnu.org>.
+# Author: Emin Mastizada <emin@linux.com>
+
 
 SITE_ID = 3
 

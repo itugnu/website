@@ -14,6 +14,7 @@ from lecture.models import Lecture
 from common.forms import RegistrationForm, LoginForm
 from common.models import User
 from web.forms import ContactForm
+from pinax.blog.models import Post
 from web.components import *  # NOQA
 
 
@@ -26,7 +27,8 @@ def get_user(email):
 
 def index(request):
     lectures = Lecture.objects.filter(start_date__gte=date.today())[:6]
-    data = {'lectures': lectures}
+    post = Post.objects.all()[0]
+    data = {'lectures': lectures, 'post' : post,}
     return render(request, 'index.html', data)
 
 
