@@ -1,0 +1,36 @@
+{% load i18n static humanize %}
+{% if is_paginated %}
+<nav class="page-navigation" aria-label="page navigation">
+    <ul class="pagination">
+        {% if page_obj.has_previous %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ page_obj.previous_page_number|stringformat:"d" }}{{ getvars }}{{ hashtag }}">
+                    <i class="fas fa-long-arrow-alt-left"></i>
+                    {% trans "Previous" %}
+                </a>
+            </li>
+        {% else %}
+            <li class="page-item disabled">
+                <a  class="page-link" tabindex="-1">{% block pagination_previous_label %} {% trans "Previous" %}{% endblock %}</a>
+            </li>
+        {% endif %}
+        {% for page in paginator.page_range %}
+            <li class="{% ifequal page page_obj.number %}page-item active{% endifequal %}">
+                <a href="?page={{ page|stringformat:"d" }}{{ getvars }}{{ hashtag }}" class="page-link">{{ page|stringformat:"d" }}</a>
+            </li>
+        {% endfor %}
+        {% if page_obj.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ page_obj.next_page_number|stringformat:"d" }}{{ getvars }}{{ hashtag }}">
+                    {% trans "Next" %}
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+            </li>
+        {% else %}
+            <li class="page-item disabled">
+                <a  class="page-link" tabindex="-1">{% block pagination_next_label %} {% trans "Next" %}{% endblock %}</a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endif %}

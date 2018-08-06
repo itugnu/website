@@ -27,7 +27,10 @@ def get_user(email):
 
 def index(request):
     lectures = Lecture.objects.filter(start_date__gte=date.today())[:6]
-    post = Post.objects.all()[0]
+    try:
+        post = Post.objects.all()[0]
+    except IndexError:
+        post = None
     data = {'lectures': lectures, 'post' : post,}
     return render(request, 'index.html', data)
 
