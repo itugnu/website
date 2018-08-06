@@ -52,5 +52,5 @@ AUTHORS
 * Ahmed Ihsan Erdem <ihsan@itugnu.org> - Code
 * Muhammed Ali Yeter <muhammed@itugnu.org> - Code
 * Sercan Sahan <sercan@itugnu.org> - Code
-* Emek Gozluklu <emek@itugnu.org> - Turkish Translation
+* Emek Gozluklu <emek@itugnu.org> - Code
 * Jabrail Lezgintsev <lezgintsev13@yandex.ru> - Russian Translation
