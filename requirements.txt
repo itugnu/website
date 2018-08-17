@@ -7,6 +7,6 @@ pyLibravatar
 py3dns
 gunicorn
 raven
-pinax-blog
-django-bootstrap-form
-pinax-templates
+pinax-blog==7.0.4
+django-bootstrap-form==3.4
+pinax-templates==2.0.1

@@ -26,7 +26,8 @@
           <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase"><a href="/blog" class="text-dark"> {% trans "Blog" %} </a></h2>
           </div>
-            {% if post %}
+            {% if posts %}
+                {% for post in posts %}
               <div class="jumbotron col-lg-12" style="padding: 2% 5% 2% 5%;">
                     <h2 class="text-dark display-5"><a href="{{ post.get_absolute_url }}" class="text-dark">{{ post.title }}</a></h2>
                     <hr class="my-6">
@@ -34,6 +35,7 @@
                     <p class="text-left lead">{{ post.teaser_html|safe }}</p>
                     <p class="text-right"><a href="{{ post.get_absolute_url }}" class="btn btn-outline-secondary" style="alignment: right">read more...</a></p>
                 </div>
+                {% endfor %}
             <div class="col">
             <h3 class="display-9 text-right">{% trans "<a href='/blog'>Click here</a> to see other posts." %}</h3>
             </div>
@@ -46,7 +48,6 @@
   </div>
   </div>
 </section>
-<hr>
 <!-- Lectures Grid -->
 <section class="bg-light" id="lectures">
   <div class="container">

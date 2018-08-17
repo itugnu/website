@@ -21,9 +21,7 @@ INSTALLED_APPS = [
 # This file is part of ITUGnu Website, licensed under GNU GPLv3.
 # Copyright: ITUGnu <info@itugnu.org>.
 # Author: Emin Mastizada <emin@linux.com>
-
-
-SITE_ID = 3
+# Author: Emek Gözlüklü <emek@itugnu.org>
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
