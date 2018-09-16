@@ -28,10 +28,8 @@ def get_user(email):
 
 def index(request):
     lectures = Lecture.objects.filter(start_date__gte=date.today())[:6]
-    posts = [
-        post for post in Post.objects.filter(published__lte=timezone.now()).order_by('-created')[:3]
-        if post.is_published
-             ]
+    posts = [post for post in Post.objects.filter(published__lte=timezone.now()).order_by('-created')[:3]
+             if post.is_published]
     data = {'lectures': lectures, 'posts': posts, }
     return render(request, 'index.html', data)
 
