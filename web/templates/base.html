@@ -1,5 +1,5 @@
-{% load i18n static libravatar %}
-{% load humanize %}
+{% load i18n static libravatar humanize %}
+
 <!DOCTYPE html>{% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
 <html lang="{{ LANGUAGE_CODE|default:"en" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% else %}dir="ltr"{% endif %}>
   <head>

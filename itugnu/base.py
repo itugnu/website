@@ -1,3 +1,6 @@
+# This file is part of ITUGnu Website, licensed under GNU GPLv3.
+
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -5,7 +8,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
     'django.contrib.humanize',
     'pinax.blog',
     'raven.contrib.django.raven_compat',
@@ -18,7 +20,6 @@ INSTALLED_APPS = [
     'bootstrapform',
     'pinax.templates',
 ]
-# This file is part of ITUGnu Website, licensed under GNU GPLv3.
 # Copyright: ITUGnu <info@itugnu.org>.
 # Author: Emin Mastizada <emin@linux.com>
 # Author: Emek Gözlüklü <emek@itugnu.org>
