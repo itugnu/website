@@ -1,6 +1,8 @@
 # This file is part of ITUGnu Website, licensed under GNU GPLv3.
 # Copyright: ITUGnu <info@itugnu.org>.
 # Author: Emin Mastizada <emin@linux.com>
+# Author: Emek Gözlüklü <emek@itugnu.org>
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -9,12 +11,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.humanize',
+    'pinax.blog',
     'raven.contrib.django.raven_compat',
     'django_filters',
     'reversion',
     'common',
     'lecture',
     'web',
+    'pinax.images',
+    'bootstrapform',
+    'pinax.templates',
 ]
 
 MIDDLEWARE = [

@@ -42,6 +42,8 @@ TEMPLATES = [
     },
 ]
 
+SITE_ID = 3
+
 WSGI_APPLICATION = 'itugnu.wsgi.application'
 
 LIBRAVATAR_DEFAULT = "https://seccdn.libravatar.org/nobody/{size}.png"
