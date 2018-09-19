@@ -1,4 +1,7 @@
 # This file is part of ITUGnu Website, licensed under GNU GPLv3.
+# Copyright: ITUGnu <info@itugnu.org>.
+# Author: Emin Mastizada <emin@linux.com>
+# Author: Emek Gözlüklü <emek@itugnu.org>
 
 
 INSTALLED_APPS = [
@@ -21,9 +24,6 @@ INSTALLED_APPS = [
     'bootstrapform',
     'pinax.templates',
 ]
-# Copyright: ITUGnu <info@itugnu.org>.
-# Author: Emin Mastizada <emin@linux.com>
-# Author: Emek Gözlüklü <emek@itugnu.org>
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
