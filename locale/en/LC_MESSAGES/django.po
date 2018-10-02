@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-23 07:19+0000\n"
+"POT-Creation-Date: 2018-10-02 18:00+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -59,8 +59,7 @@ msgid "Language"
 msgstr ""
 
 #: common/forms.py:74 common/forms.py:78 common/models.py:24 web/forms.py:29
-#: web/forms.py:32 web/templates/index.html:106
-#: web/templates/oyz.html:264
+#: web/forms.py:32 web/templates/index.html:122 web/templates/oyz.html:267
 msgid "Phone Number"
 msgstr ""
 
@@ -90,15 +89,15 @@ msgstr ""
 msgid "Users"
 msgstr ""
 
-#: itugnu/settings.py:91
+#: itugnu/settings.py:93
 msgid "English"
 msgstr ""
 
-#: itugnu/settings.py:92
+#: itugnu/settings.py:94
 msgid "Turkish"
 msgstr ""
 
-#: itugnu/settings.py:93
+#: itugnu/settings.py:95
 msgid "Russian"
 msgstr ""
 
@@ -106,7 +105,7 @@ msgstr ""
 msgid "Lecture Information"
 msgstr ""
 
-#: lecture/admin.py:33 web/templates/index.html:148
+#: lecture/admin.py:33 web/templates/index.html:164
 #: web/templates/lectures/index.html:78
 msgid "Dates"
 msgstr ""
@@ -131,12 +130,12 @@ msgstr ""
 msgid "Poster"
 msgstr ""
 
-#: lecture/models.py:27 web/templates/index.html:166
+#: lecture/models.py:27 web/templates/index.html:182
 #: web/templates/lectures/index.html:96
 msgid "Lecturer"
 msgstr ""
 
-#: lecture/models.py:29 web/templates/index.html:163
+#: lecture/models.py:29 web/templates/index.html:179
 #: web/templates/lectures/index.html:93
 msgid "Classroom"
 msgstr ""
@@ -145,7 +144,7 @@ msgstr ""
 msgid "End Date"
 msgstr ""
 
-#: lecture/models.py:32 web/templates/index.html:63
+#: lecture/models.py:32 web/templates/index.html:79
 #: web/templates/lectures/index.html:39
 msgid "Open for Registration"
 msgstr ""
@@ -154,10 +153,9 @@ msgstr ""
 msgid "Lecture"
 msgstr ""
 
-#: lecture/models.py:45 web/templates/base.html:38 web/templates/index.html:13
-#: web/templates/index.html:40 web/templates/lectures/index.html:4
+#: lecture/models.py:45 web/templates/lectures/index.html:4
 #: web/templates/lectures/index.html:11
-msgid "Events | Lectures"
+msgid "Lectures"
 msgstr ""
 
 #: lecture/models.py:51
@@ -216,7 +214,7 @@ msgstr ""
 msgid "Lecture Applications"
 msgstr ""
 
-#: web/components/lecture.py:21 web/views.py:81
+#: web/components/lecture.py:21 web/views.py:85
 msgid "Method not allowed"
 msgstr ""
 
@@ -261,7 +259,7 @@ msgstr ""
 #: web/templates/auth/login.html:49
 #: web/templates/auth/password-reset-complete.html:18
 #: web/templates/auth/registration.html:47
-#: web/templates/auth/reset-done.html:17 web/templates/base.html:64
+#: web/templates/auth/reset-done.html:17 web/templates/base.html:65
 msgid "Login"
 msgstr ""
 
@@ -392,7 +390,7 @@ msgid "Password Reset"
 msgstr ""
 
 #: web/templates/auth/registration.html:4
-#: web/templates/auth/registration.html:11
+#: web/templates/auth/registration.html:11 web/templates/oyz.html:13
 msgid "Registration"
 msgstr ""
 
@@ -427,47 +425,52 @@ msgstr ""
 msgid "You should receive it soon."
 msgstr ""
 
-#: web/templates/base.html:7
+#: web/templates/base.html:8
 msgid "Freedom for Bees - Software Freedom Club, Istanbul Technical University"
 msgstr ""
 
-#: web/templates/base.html:26
+#: web/templates/base.html:27
 msgid "ITUGnu"
 msgstr ""
 
-#: web/templates/base.html:28
+#: web/templates/base.html:29
 msgid "Toggle navigation"
 msgstr ""
 
-#: web/templates/base.html:29
+#: web/templates/base.html:30
 msgid "Menu"
 msgstr ""
 
-#: web/templates/base.html:35 web/templates/index.html:25
+#: web/templates/base.html:36 web/templates/index.html:27
 msgid "Blog"
 msgstr ""
 
-#: web/templates/base.html:41
+#: web/templates/base.html:39 web/templates/index.html:15
+#: web/templates/index.html:56
+msgid "Events | Lectures"
+msgstr ""
+
+#: web/templates/base.html:42
 msgid "Contact"
 msgstr ""
 
-#: web/templates/base.html:52
+#: web/templates/base.html:53
 msgid "Dashboard"
 msgstr ""
 
-#: web/templates/base.html:53
+#: web/templates/base.html:54
 msgid "Logout"
 msgstr ""
 
-#: web/templates/base.html:56
+#: web/templates/base.html:57
 msgid "Administration"
 msgstr ""
 
-#: web/templates/base.html:58
+#: web/templates/base.html:59
 msgid "Admin Center"
 msgstr ""
 
-#: web/templates/base.html:114 web/templates/faq.html:4
+#: web/templates/base.html:115 web/templates/faq.html:4
 msgid "FAQ"
 msgstr ""
 
@@ -480,210 +483,236 @@ msgid "What is GNU?"
 msgstr ""
 
 #: web/templates/faq.html:18
-msgid "GNU Project is the given name to the Free Software movement that initiated at 1983 by Richard M. Stallman."
-      "It is unknown why name of an animal (GNU) is chosen as project name. However, the project's symbol is animal's"
-      "itself and the project is associated with this symbol all around the world. 'Is GNU an acronym?' question is "
-      "answered by Stallman as 'GNU is Not Unix' during an interview."
+msgid ""
+"GNU Project is the given name to the Free Software movement that initiated "
+"at 1983 by Richard M. Stallman. It is unknown why name of an animal (GNU) is "
+"chosen as project name. However, the project's symbol is animal's itself and "
+"the project is associated with this symbol all around the world. 'Is GNU an "
+"acronym?' question is answered by Stallman as 'GNU is Not Unix' during an "
+"interview."
 msgstr ""
 
-#: web/templates/faq.html:22
+#: web/templates/faq.html:27
 msgid "What is ITU Software Freedom Club?"
 msgstr ""
 
-#: web/templates/faq.html:24
-msgid "ITU Software Freedom Club (ITUGnu), as name suggests, is a student club which continues activities under the roof "
-      "of Istanbul Technical University. Its mission is spreading Free Software Philosophy, encourage and make people "
-      "understand Free Software usage throughout Turkey, starting from ITU. In this context, we arrange lectures and "
-      "seminars about programming languages and free technologies during semester."
+#: web/templates/faq.html:29
+msgid ""
+"ITU Software Freedom Club (ITUGnu), as name suggests, is a student club "
+"which continues activities under the roof of Istanbul Technical University. "
+"Its mission is spreading Free Software Philosophy, encourage and make people "
+"understand Free Software usage throughout Turkey, starting from ITU. In this "
+"context, we arrange lectures and seminars about programming languages and "
+"free technologies during semester."
 msgstr ""
 
-#: web/templates/faq.html:28
+#: web/templates/faq.html:39
 msgid "Do we have to be a member of ITU to join activities?"
 msgstr ""
 
-#: web/templates/faq.html:30
-msgid "No, you don't have to. Even though ITU students and personal have higher priority, every member of our club can "
-      "participate activities and lectures. Also it is not required to be a member of ITU to be a member of our club. "
-      "You can reach registration page via Facebook link at the bottom of page. To be an official member, you can register "
-      "with registration form at our website so that, we can add you to our mail groups by using e-mail address you gave."
+#: web/templates/faq.html:41
+msgid ""
+"No, you don't have to. Even though ITU students and personal have higher "
+"priority, every member of our club can participate activities and lectures. "
+"Also it is not required to be a member of ITU to be a member of our club. "
+"You can reach registration page via Facebook link at the bottom of page. To "
+"be an official member, you can register with registration form at our "
+"website so that, we can add you to our mail groups by using e-mail address "
+"you gave."
 msgstr ""
 
-#: web/templates/faq.html:34
+#: web/templates/faq.html:51
 msgid "Are your lectures paid?"
 msgstr ""
 
-#: web/templates/faq.html:36
-msgid "No, they are not. None of our members and instructors gain money from our activities and lectures. Our members and "
-      "administrative body, who adopted Freedom of Information as motto, provide these lectures and services. However, if "
-      "our members want to support us, we suggest them to make donations to charities such as TEMA and animal shelters so "
-      "that, all of us can be useful to society and humanity."
+#: web/templates/faq.html:53
+msgid ""
+"No, they are not. None of our members and instructors gain money from our "
+"activities and lectures. Our members and administrative body, who adopted "
+"Freedom of Information as motto, provide these lectures and services. "
+"However, if our members want to support us, we suggest them to make "
+"donations to charities such as TEMA and animal shelters so that, all of us "
+"can be useful to society and humanity."
 msgstr ""
 
-#: web/templates/faq.html:40
+#: web/templates/faq.html:62
 msgid "Can I use an operating system other than a GNU/Linux distribution?"
 msgstr ""
 
-#: web/templates/faq.html:42
-msgid "It is forbidden to use computers with proprietary operating systems. Any computer with W*ndows will not be "
-      "accepted and supported. Status of macOS is undecided among free software communities since it is a UNIX-like "
-      "operating system and uses free software behind the scenes. Therefore, you can use a computer with macOS currently. "
-      "However, we cannot provide a healthy support for macOS. Therefore, it will be better for you to use a GNU/Linux "
-      "distribution even it is installed in a virtual environment."
+#: web/templates/faq.html:64
+msgid ""
+"It is forbidden to use computers with proprietary operating systems. Any "
+"computer with W*ndows will not be accepted and supported. Status of macOS is "
+"undecided among free software communities since it is a UNIX-like operating "
+"system and uses free software behind the scenes. Therefore, you can use a "
+"computer with macOS currently. However, we cannot provide a healthy support "
+"for macOS. Therefore, it will be better for you to use a GNU/Linux "
+"distribution even it is installed in a virtual environment."
 msgstr ""
 
-#: web/templates/faq.html:46
+#: web/templates/faq.html:74
 msgid "I don't know how to install a GNU/Linux distribution. What should I do?"
 msgstr ""
 
-#: web/templates/faq.html:48
-msgid "If you contact any of our members or instructors, we can provide you personal support regarding this subject."
-msgstr ""
-
-#: web/templates/faq.html:52
-msgid "Should we bring our own computers to lectures?"
-msgstr ""
-
-#: web/templates/faq.html:54
-msgid "Yes. Our lectures are done in classrooms and lecture halls, not in computer laboratories. Therefore, you must "
-      "bring your own computers. If you don't own a laptop or cannot bring it for another problem, please contact us."
-msgstr ""
-
-#: web/templates/faq.html:58
-msgid "Can I participate more than one lecture?"
-msgstr ""
-
-#: web/templates/faq.html:60
-msgid "As long as there is no time conflict and you are accepted, you can join any lecture."
-msgstr ""
-
-#: web/templates/faq.html:64
-msgid "Is there any attendence obligation?"
-msgstr ""
-
-#: web/templates/faq.html:66
-msgid "Yes. There is a strict attendance obligation for our lectures. If you do not attend lectures without reason, "
-      "you will be blacklisted and you will not be accepted to any ongoing lectures. Also, we will contact other "
-      "student clubs and do anything we can so that you will not be accepted to their activities :)."
-msgstr ""
-
-#: web/templates/faq.html:70
-msgid "Can I come and listen lectures even if I am not accepted?"
-msgstr ""
-
-#: web/templates/faq.html:72
-msgid "No. We accept people for lectures depending on class capacity and instructor preference. Therefore, we cannot "
-      "exceed this quota."
-msgstr ""
-
 #: web/templates/faq.html:76
-msgid "Are password and cypher the same? Why you stress people?"
-msgstr ""
-
-#: web/templates/faq.html:78
-msgid "No, they are not. Password and cypher are unreleated two terms. Password is password, cypher is cypher. "
-      "Do not drive people nuts! Even if cypher is used for password everywhere, it does not give you right to make "
-      "this mistake."
+msgid ""
+"If you contact any of our members or instructors, we can provide you "
+"personal support regarding this subject."
 msgstr ""
 
 #: web/templates/faq.html:82
-msgid "How can I be certain about security of my personal information that I gave during registration?"
+msgid "Should we bring our own computers to lectures?"
 msgstr ""
 
 #: web/templates/faq.html:84
-msgid "None of the information taken during registration is shared to third party service providers. Also your "
-      "information is not kept in any backup servers. Even your password is encrypted so that we cannot read it."
+msgid ""
+"Yes. Our lectures are done in classrooms and lecture halls, not in computer "
+"laboratories. Therefore, you must bring your own computers. If you don't own "
+"a laptop or cannot bring it for another problem, please contact us."
 msgstr ""
 
-#: web/templates/index.html:4
+#: web/templates/faq.html:92
+msgid "Can I participate more than one lecture?"
+msgstr ""
+
+#: web/templates/faq.html:94
+msgid ""
+"As long as there is no time conflict and you are accepted, you can join any "
+"lecture."
+msgstr ""
+
+#: web/templates/faq.html:100
+msgid "Is there any attendence obligation?"
+msgstr ""
+
+#: web/templates/faq.html:102
+msgid ""
+"Yes. There is a strict attendance obligation for our lectures. If you do not "
+"attend lectures without reason, you will be blacklisted and you will not be "
+"accepted to any ongoing lectures. Also, we will contact other student clubs "
+"and do anything we can so that you will not be accepted to their "
+"activities :)."
+msgstr ""
+
+#: web/templates/faq.html:110
+msgid "Can I come and listen lectures even if I am not accepted?"
+msgstr ""
+
+#: web/templates/faq.html:112
+msgid ""
+"No. We accept people for lectures depending on class capacity and instructor "
+"preference. Therefore, we cannot exceed this quota."
+msgstr ""
+
+#: web/templates/faq.html:119
+msgid "Are password and cypher the same? Why you stress people?"
+msgstr ""
+
+#: web/templates/faq.html:121
+msgid ""
+"No, they are not. Password and cypher are unreleated two terms. Password is "
+"password, cypher is cypher. Do not drive people nuts! Even if cypher is used "
+"for password everywhere, it does not give you right to make this mistake."
+msgstr ""
+
+#: web/templates/faq.html:129
+msgid ""
+"How can I be certain about security of my personal information that I gave "
+"during registration?"
+msgstr ""
+
+#: web/templates/faq.html:131
+msgid ""
+"None of the information taken during registration is shared to third party "
+"service providers. Also your information is not kept in any backup servers. "
+"Even your password is encrypted so that we cannot read it."
+msgstr ""
+
+#: web/templates/index.html:6
 msgid "Software Freedom Club"
 msgstr ""
 
-#: web/templates/index.html:11
+#: web/templates/index.html:13
 msgid "ITU Software Freedom Club"
 msgstr ""
 
-#: web/templates/index.html:12
+#: web/templates/index.html:14
 msgid "Free as in Freedom"
 msgstr ""
 
-#: web/templates/index.html:26
-msgid "Coming soon..."
+#: web/templates/index.html:40
+msgid "<a href='/blog'>Click here</a> to see other posts."
 msgstr ""
 
-#: web/templates/index.html:41
-msgid "All lectures"
+#: web/templates/index.html:45
+msgid "No blog posts yet."
 msgstr ""
 
-#: web/templates/index.html:41
-msgid "See all lectures"
-msgstr ""
-
-#: web/templates/index.html:55
+#: web/templates/index.html:57
 msgid "All activities"
 msgstr ""
 
-#: web/templates/index.html:55
+#: web/templates/index.html:57
 msgid "See all activities"
 msgstr ""
 
-#: web/templates/index.html:65 web/templates/index.html:176
+#: web/templates/index.html:81 web/templates/index.html:192
 #: web/templates/lectures/index.html:41 web/templates/lectures/index.html:106
 msgid "Registration Closed"
 msgstr ""
 
-#: web/templates/index.html:75 web/templates/lectures/index.html:51
-msgid "There is no any lectures, subscribe to get new announcements."
-msgstr ""
-
-#: web/templates/index.html:89
+#: web/templates/index.html:91
 msgid "There are no activities, subscribe to get new activity announcements."
 msgstr ""
 
-#: web/templates/index.html:89
-#: web/templates/oyz.html:247
+#: web/templates/index.html:105 web/templates/oyz.html:250
 msgid "Contact Us"
 msgstr ""
 
-#: web/templates/index.html:98
+#: web/templates/index.html:114
 msgid "Full Name *"
 msgstr ""
 
-#: web/templates/index.html:102
+#: web/templates/index.html:118
 msgid "Email Address *"
 msgstr ""
 
-#: web/templates/index.html:112
+#: web/templates/index.html:128
 msgid "Your Message *"
 msgstr ""
 
-#: web/templates/index.html:119
+#: web/templates/index.html:135
 msgid "Send Message"
 msgstr ""
 
-#: web/templates/index.html:148 web/templates/lectures/index.html:78
+#: web/templates/index.html:164 web/templates/lectures/index.html:78
 #, python-format
 msgid "%(start)s - %(end)s (%(weeks)s weeks)"
 msgstr ""
 
-#: web/templates/index.html:157 web/templates/lectures/index.html:87
+#: web/templates/index.html:173 web/templates/lectures/index.html:87
 msgid "Schedule is not announced"
 msgstr ""
 
-#: web/templates/index.html:163 web/templates/index.html:166
+#: web/templates/index.html:179 web/templates/index.html:182
 #: web/templates/lectures/index.html:93 web/templates/lectures/index.html:96
 msgid "Not Announced"
 msgstr ""
 
-#: web/templates/index.html:172 web/templates/lectures/index.html:102
+#: web/templates/index.html:188 web/templates/lectures/index.html:102
 msgid "Enroll"
 msgstr ""
 
-#: web/templates/index.html:180 web/templates/lectures/index.html:110
+#: web/templates/index.html:196 web/templates/lectures/index.html:110
 msgid "Close"
 msgstr ""
 
 #: web/templates/lectures/index.html:15
 msgid "Filter"
+msgstr ""
+
+#: web/templates/lectures/index.html:51
+msgid "There is no any lectures, subscribe to get new announcements."
 msgstr ""
 
 #: web/templates/oyz.html:4 web/templates/oyz.html:12
@@ -694,109 +723,125 @@ msgstr ""
 msgid "Free Your Mind!"
 msgstr ""
 
-#: web/templates/oyz.html:13
-msgid "Etkinlik Kayıt"
-msgstr ""
-
-#: web/views.py:53
-msgid "User not found"
-msgstr ""
-
-#: web/views.py:59
-msgid "Account Disabled"
-msgstr ""
-
-#: web/views.py:60
-msgid "Invalid login credentials"
-msgstr ""
-
 #: web/templates/oyz.html:25
-msgid "ITU Free Software Summit in the ITU Ayazaga Campus in 28th April!"
+msgid "ITU Free Software Summit in the ITU Ayazaga Campus in 28th of April!"
 msgstr ""
 
-#: web/templates/oyz.html:28
-msgid "The first Free Software Summit which puts together the people interested in this movement and wants to learn it, will be"
-		"hosted in Istanbul Technical University Ayazaga Campus in 28th April. The event that academicians, students and the people" 
-		"from the sector will be coalesce, talks to anybody. At the same time, the event is important for the mission of presentation"
-		"of the free software which is getting more and more important on all over the world."
+#: web/templates/oyz.html:29
+msgid ""
+"The first Free Software Summit which puts together the people interested in "
+"this movement and wants to learn it, will be hosted in Istanbul Technical "
+"University Ayazaga Campus in 28th of April. The event that academicians, "
+"students and the people from the sector will be coalesce, talks to anybody. "
+"At the same time, the event is important for the mission of presentation of "
+"the free software which is getting more and more important on all over the "
+"world."
 msgstr ""
 
-#: web/templates/oyz.html:37
+#: web/templates/oyz.html:40
 msgid "Main Sponsor"
 msgstr ""
 
-#: web/templates/oyz.html:47
+#: web/templates/oyz.html:50
 msgid "Golden Sponsors"
 msgstr ""
 
-#: web/templates/oyz.html:65
+#: web/templates/oyz.html:68
 msgid "Supporting Organizations"
 msgstr ""
 
-#: web/templates/oyz.html:114
+#: web/templates/oyz.html:117
 msgid "GNU Follower"
 msgstr ""
 
-#: web/templates/oyz.html:114
+#: web/templates/oyz.html:118
 msgid "Free Software Thought"
 msgstr ""
 
-#: web/templates/oyz.html:119
-msgid "Academician"
-msgstr ""
-
-#: web/templates/oyz.html:128
+#: web/templates/oyz.html:131
 msgid "Istanbul Technical University"
 msgstr ""
 
-#: web/templates/oyz.html:129
+#: web/templates/oyz.html:132
 msgid "Subjective Assessments about Free Software"
 msgstr ""
 
-#: web/templates/oyz.html:161
+#: web/templates/oyz.html:164
 msgid "Eczacibasi | ITU Graduate"
 msgstr ""
 
-#: web/templates/oyz.html:162
+#: web/templates/oyz.html:165
 msgid "Docker"
 msgstr ""
 
-#: web/templates/oyz.html:180
-msgid "Özgür Yazılım A.Ş."
+#: web/templates/oyz.html:184
+msgid "Ozgur Yazilım Co."
 msgstr ""
 
-#: web/templates/oyz.html:181
+#: web/templates/oyz.html:185
 msgid "Being GNU/Linux System Administrator"
 msgstr ""
 
-#: web/templates/oyz.html:204
-msgid "Yıldırım Beyazıt University"
+#: web/templates/oyz.html:207
+msgid "Yildirim Beyazit University"
 msgstr ""
 
-#: web/templates/oyz.html:205
+#: web/templates/oyz.html:208
 msgid "Vagrant UP!"
 msgstr ""
 
-#: web/templates/oyz.html:224
+#: web/templates/oyz.html:227
 msgid "ITU Free Software Club"
 msgstr ""
 
-#: web/templates/oyz.html:224
+#: web/templates/oyz.html:228
 msgid "Free Software in ITU"
 msgstr ""
 
-#: web/templates/oyz.html:256
+#: web/templates/oyz.html:259
 msgid "Name-Surname*"
 msgstr ""
 
-#: web/templates/oyz.html:260
+#: web/templates/oyz.html:263
 msgid "E-mail Address*"
 msgstr ""
 
-#: web/templates/oyz.html:270
+#: web/templates/oyz.html:273
 msgid "Message*"
 msgstr ""
 
-#: web/templates/oyz.html:277
-msgid "Submit"
+#: web/templates/pagination/_pagination.html:9
+#: web/templates/pagination/_pagination.html:14
+msgid "Previous"
+msgstr ""
+
+#: web/templates/pagination/_pagination.html:25
+#: web/templates/pagination/_pagination.html:31
+msgid "Next"
+msgstr ""
+
+#: web/templates/pinax/blog/blog_list.html:5
+msgid "Blog Posts"
+msgstr ""
+
+#: web/templates/pinax/blog/dateline.html:7
+#, python-format
+msgid ""
+"\n"
+"        Posted<time datetime=\"%(datetime)s\" title=\"%(datetime)s\">\n"
+"        %(hunantime)s</time> by %(author)s.\n"
+"        </em>\n"
+"    "
+msgstr ""
+
+#: web/views.py:57
+msgid "User not found"
+msgstr ""
+
+#: web/views.py:63
+msgid "Account Disabled"
+msgstr ""
+
+#: web/views.py:64
+msgid "Invalid login credentials"
 msgstr ""
