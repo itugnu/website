@@ -670,6 +670,14 @@ msgstr "Tüm Eğitimler"
 msgid "See all lectures"
 msgstr "Tüm eğitimleri gör"
 
+#: web/templates/index.html:55
+msgid "All activities"
+msgstr "Etkinlikler"
+
+#: web/templates/index.html:55
+msgid "See all activities"
+msgstr "Bütün etkinlikleri gör"
+
 #: web/templates/index.html:65 web/templates/index.html:176
 #: web/templates/lectures/index.html:41 web/templates/lectures/index.html:106
 msgid "Registration Closed"
@@ -678,6 +686,10 @@ msgstr "Kayıt Kapalı"
 #: web/templates/index.html:75 web/templates/lectures/index.html:51
 msgid "There is no any lectures, subscribe to get new announcements."
 msgstr "Şu an eğitim yok. Eğitimler hakkında bilgilendirilmek için üye olun."
+
+#: web/templates/index.html:89
+msgid "There are no activities, subscribe to get new activity announcements."
+msgstr "Herhangi bir etkinlik yok, yeni etkinlik duyurularını almak için abone olun."
 
 #: web/templates/index.html:89
 #: web/templates/oyz.html:247
