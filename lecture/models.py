@@ -96,7 +96,7 @@ class LectureApplication(models.Model):
 
     def __str__(self):
         return "Application for {lecture} from {user}".format(
-            lecture=self.lecture.name, user=self.user.last_name
+            lecture=self.lecture.name, user=self.user
         )
 
     class Meta:

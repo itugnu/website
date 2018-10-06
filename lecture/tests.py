@@ -18,7 +18,6 @@ test_gif = (
 
 
 class LectureTestCase(TestCase):
-
     @classmethod
     def setUpTestData(cls):
         cls.user = User.objects.create(email="tester@itugnu.org", username="tester")
@@ -67,3 +66,29 @@ class LectureScheduleTestCase(TestCase):
         schedule.end_time = time(hour=18, minute=30)
         schedule.save()
         self.assertEqual(schedule.length, 3.5)
+
+
+class LectureApplicationTestCase(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.lecture_name = "Test Lecture"
+        cls.user = User.objects.create(email="tester@itugnu.org", username="tester")
+        cls.lecture = Lecture.objects.create(
+            name=cls.lecture_name,
+            lecturer=cls.user,
+            classroom='EEB0000',
+            start_date=timezone.datetime(year=1994, month=4, day=8, hour=9),
+            end_date=timezone.datetime(year=3001, month=5, day=28, hour=18),
+            is_registration_open=True
+        )
+
+    def test_lecture_application(self):
+        application = LectureApplication.objects.create(
+            lecture=self.lecture,
+            user=self.user
+        )
+        self.assertFalse(application.is_approved)
+        self.assertEqual(
+            application.__str__(),
+            "Application for {lecture} from {user}".format(user=self.user, lecture=self.lecture)
+        )
