@@ -61,6 +61,12 @@ input.phone-input:hover::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.nav-dark-default {
+    background-color: #212529 !important;
+}
+.bg-dark {
+    background-color: #212529 !important;
+}
 /* Mobile views */
 @media only screen and (max-width: 768px) {
   .auth-button {

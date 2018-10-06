@@ -32,10 +32,10 @@ class User(AbstractUser):
     def get_full_name(self):
         if self.first_name and self.last_name:
             return ' '.join([self.first_name, self.last_name])
-        return None
+        return '@' + self.username
 
     def __str__(self):
-        return self.get_full_name() or self.username
+        return self.get_full_name()
 
     @property
     def is_moderator(self):

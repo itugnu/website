@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{% trans "Freedom for Bees - Software Freedom Club, Istanbul Technical University" %}">
     <meta name="keywords" content="itugnu, ozguryazilim, free, software, freesoftware, university, club, community, education, seminar, itu, technical, itü, teknik, üniversite, istanbul">
-    <meta name="author" content="ITUGnu">
+    <meta name="author" content="{% block meta-author %}ITUGnu{% endblock %}">
     <link rel="shortcut icon" href="{% static "img/logo.ico" %}" type="image/x-icon">
     <link rel="icon" href="{% static "img/logo.ico" %}" type="image/x-icon">
+    {% block extra_head %}{% endblock %}
 
     <title>{% block title %}{% endblock %} | ITUGnu</title>
 
@@ -17,11 +18,11 @@
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" type="text/css">
     <link href="{% static "css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
     <link href="{% static "css/agency.min.css" %}" rel="stylesheet" type="text/css">
-    <link href="{% static "css/main.css" %}?v1" rel="stylesheet" type="text/css">
+    <link href="{% static "css/main.css" %}?v2" rel="stylesheet" type="text/css">
   </head>
   <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top{% block extra-nav-classes %}{% endblock %}" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="/{{ LANGUAGE_CODE|default:"en" }}/#page-top">
           <img src="{% static "img/navbarlogo.png" %}" alt="" class="nav-logo"> {% trans "ITUGnu" %}
