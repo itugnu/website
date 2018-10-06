@@ -4,7 +4,9 @@
 
 from django.utils.translation import ugettext_lazy as _
 from django.db import models
+from datetime import timedelta
 from common.models import User
+from typing import Union
 from os import path as ospath
 import logging
 
@@ -62,6 +64,16 @@ class LectureSchedule(models.Model):
     start_time = models.TimeField(_("Start Time"))
     end_time = models.TimeField(_("End Time"))
     day_of_week = models.IntegerField(choices=DAYS_OF_WEEK, default=1)
+
+    @property
+    def length(self) -> Union[int, float]:
+        diff = (
+                       timedelta(hours=self.end_time.hour, minutes=self.end_time.minute) -
+                       timedelta(hours=self.start_time.hour, minutes=self.start_time.minute)
+               ).seconds / 60 / 60
+        if diff % 1 == 0.0:
+            return int(diff)
+        return round(diff, 1)
 
     def __str__(self):
         return self.lecture.name
