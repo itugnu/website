@@ -129,6 +129,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL.strip("/"))
 
 try:
     from local_settings import *  # NOQA
-except ImportError as e:
+except ImportError as e:  # pragma: no cover
     if "local_settings" not in str(e):
         raise e
