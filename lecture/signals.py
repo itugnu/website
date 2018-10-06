@@ -14,7 +14,11 @@ def lecture_pre_save(sender, instance, *args, **kwargs):
         old_lecture = Lecture.objects.get(pk=instance.pk)
         # If new poster has different name
         if old_lecture.poster and instance.poster and old_lecture.poster.name != instance.poster.name:
+            pre_save.disconnect(lecture_pre_save, sender=sender)
             old_lecture.poster.delete()
+            pre_save.connect(lecture_pre_save, sender=sender)
         # If poster is removed
         elif old_lecture.poster and not instance.poster:
+            pre_save.disconnect(lecture_pre_save, sender=sender)
             old_lecture.poster.delete()
+            pre_save.connect(lecture_pre_save, sender=sender)
