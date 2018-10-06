@@ -3,12 +3,14 @@
 # Author: Emin Mastizada <emin@linux.com>
 
 from django.test import TestCase
+from django.utils import timezone
 from django.urls import reverse
 from common.models import User
 from web.apps import WebConfig
 from web.templatetags.webtools import dictindex
 from web.templatetags.libravatar import avatar
 from web import views as webviews
+from lecture.models import Lecture
 import re
 
 
@@ -155,4 +157,56 @@ class WebAppTestCase(TestCase):
             'message': 'Test message'
         })
         self.assertEqual(response.status_code, 400)
+        self.assertTrue('message' in response.json().keys())
+
+    def test_lecture_list(self):
+        response = self.client.get(reverse('lectures-index'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'lectures/index.html')
+
+    def test_lecture_registration(self):
+        response = self.client.get(reverse('lecture-register'))
+        self.assertEqual(response.status_code, 405)
+        self.assertTrue('message' in response.json().keys())
+        # test non-user
+        response = self.client.post(reverse('lecture-register'), data={
+            'lecture': 1
+        })
+        self.assertEqual(response.status_code, 403)
+        self.assertTrue('message' in response.json().keys())
+        # Login
+        self.client.login(username=self.user_username, password=self.user_password)
+        # Try missing lecture
+        response = self.client.post(reverse('lecture-register'), data={
+            'lecture': 1
+        })
+        self.assertEqual(response.status_code, 404)
+        self.assertTrue('message' in response.json().keys())
+        # Make a test lecture with closed registration
+        lecture = Lecture.objects.create(
+            name='Test Lecture',
+            lecturer=self.user,
+            classroom='EEB0000',
+            start_date=timezone.datetime(year=1994, month=4, day=8, hour=9),
+            end_date=timezone.datetime(year=3001, month=5, day=28, hour=18),
+            is_registration_open=False
+        )
+        response = self.client.post(reverse('lecture-register'), data={
+            'lecture': lecture.pk
+        })
+        self.assertEqual(response.status_code, 403)
+        self.assertTrue('message' in response.json().keys())
+        # Activate registration
+        lecture.is_registration_open = True
+        lecture.save()
+        response = self.client.post(reverse('lecture-register'), data={
+            'lecture': lecture.pk
+        })
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(len(response.json().keys()), 0)
+        # Duplicate registration
+        response = self.client.post(reverse('lecture-register'), data={
+            'lecture': lecture.pk
+        })
+        self.assertEqual(response.status_code, 405)
         self.assertTrue('message' in response.json().keys())
