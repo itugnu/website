@@ -35,7 +35,7 @@ class User(AbstractUser):
         return '@' + self.username
 
     def __str__(self):
-        return self.get_full_name() or self.username
+        return self.get_full_name()
 
     @property
     def is_moderator(self):
