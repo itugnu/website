@@ -1,6 +1,5 @@
 {% extends "pinax/blog/blog_base.html" %}
-{% load i18n static %}
-{% load i18n humanize %}
+{% load i18n static humanize %}
 
 {% block title %}{% trans "Blog Posts" %}{% endblock %}
 
@@ -16,13 +15,13 @@
                     <hr class="my-6">
                     {% include "pinax/blog/dateline.html" %}
                     <p class="lead">{{ post.teaser_html|safe }}</p>
-                    <p class="text-right"><a href="{{ post.get_absolute_url }}" class="btn btn-outline-secondary" style="alignment: right">read more...</a></p>
+                    <p class="text-right"><a href="{{ post.get_absolute_url }}" class="btn btn-outline-secondary" style="alignment: right">{% trans "read more..." %}</a></p>
                 </div>
             {% endfor %}
         </div>
         {% include "pagination/_pagination.html" %}
     {% else %}
-        <p class="alert alert-info lead">No blog posts have been published.</p>
+        <p class="alert alert-info lead">{% trans "No blog posts have been published." %}</p>
     {% endif %}
     </div>
     </section>

@@ -23,7 +23,7 @@
         <meta property="og:description" content="{{ post.teaser_html|striptags }}">
     {% endif %}
     {% if post.primary_image %}
-        <meta property="og:image" content="http://{{ SITE_DOMAIN }}{{ post.primary_image.image_path.url }}">
+        <meta property="og:image" content="https://itugnu.org{{ post.primary_image.image_path.url }}">
     {% else %}
         {% comment %}
         <meta property="og:image" content="https://pbs.twimg.com/profile_images/62846141/pinaxproject_avatar.png">
@@ -42,7 +42,7 @@
             <div class="content">{{ post.content_html|safe }}</div>
             <div class="twitter-button">
                 <a href="https://twitter.com/share?url=https://itugnu.org{{ post.get_absolute_url }}&amp;text={{ post.title }}&amp;via=ituoy" class="twitter-share-button" data-show-count="false" target="_blank">
-                    <i class="fa fa-twitter" aria-hidden="true">Tweet</i>
+                    <i class="fa fa-twitter" aria-hidden="true">{% trans "Tweet" %}</i>
                 </a>
             </div>
         </div>
