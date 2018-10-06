@@ -5,9 +5,13 @@
 from django.test import TestCase
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.utils import timezone
+from django.dispatch import Signal
 from datetime import time
 from lecture.models import Lecture, LectureSchedule, LectureApplication
+from lecture.signals import lecture_pre_save
+from lecture.apps import LectureConfig
 from common.models import User
+import os
 
 
 test_gif = (
@@ -38,6 +42,35 @@ class LectureTestCase(TestCase):
         self.assertEqual(lecture.__str__(), lecture_name)
         self.assertEqual(lecture.weeks, 52549)
         self.assertIn('/media/lectures/{pk}/test'.format(pk=lecture.pk), lecture.poster.url)
+
+    def test_app_config(self):
+        self.assertEqual(LectureConfig.name, 'lecture')
+
+    def test_deleting_old_poster(self):
+        Signal().connect(receiver=lecture_pre_save, sender=Lecture)
+        lecture = Lecture.objects.create(
+            name="Test Lecture",
+            lecturer=self.user,
+            classroom='EEB0000',
+            start_date=timezone.datetime(year=1994, month=4, day=8, hour=9),
+            end_date=timezone.datetime(year=3001, month=5, day=28, hour=18),
+            is_registration_open=True
+        )
+        lecture.poster = SimpleUploadedFile('test.gif', test_gif, content_type='image/gif')
+        lecture.save()
+
+        old_image = lecture.poster.file.name
+
+        lecture.poster = SimpleUploadedFile('test2.gif', test_gif, content_type='image/gif')
+        lecture.save()
+
+        self.assertNotEqual(old_image, lecture.poster.file.name)
+        self.assertIn('/media/lectures/{pk}/test2'.format(pk=lecture.pk), lecture.poster.url)
+        self.assertFalse(os.path.exists(old_image))
+        self.assertTrue(os.path.exists(lecture.poster.file.name))
+
+        lecture.poster.delete()
+        Signal().disconnect(receiver=lecture_pre_save, sender=Lecture)
 
 
 class LectureScheduleTestCase(TestCase):
