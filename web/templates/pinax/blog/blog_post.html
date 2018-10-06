@@ -6,6 +6,8 @@
 
 {% block title %}  {{ post.title }} {% endblock %}
 
+{% block meta-author %}{{ post.author.get_full_name }}{% endblock %}
+
 {% block extra_head %}
     {{ block.super }}
     <meta name="twitter:card" content="summary">
@@ -27,7 +29,7 @@
         <meta property="og:image" content="https://pbs.twimg.com/profile_images/62846141/pinaxproject_avatar.png">
         {% endcomment %}
     {% endif %}
-    <meta property="og:url" content="http://{{ SITE_DOMAIN }}{{ post.get_absolute_url }}">
+    <meta property="og:url" content="https://itugnu.org{{ post.get_absolute_url }}">
     <meta property="og:type" content="article">
 {% endblock %}
 
@@ -37,13 +39,11 @@
     <div class="blog-post">
         <h2> {{ post.title }} </h2><hr><br>
             {% include "pinax/blog/dateline_stale.html" %}
-
             <div class="content">{{ post.content_html|safe }}</div>
-
             <div class="twitter-button">
-		<a href="https://twitter.com/share?url=https://itugnu.org{{ post.get_absolute_url }}&amp;text={{ post.title }}&amp;via=ituoy" class="twitter-share-button" data-show-count="false" target="_blank">
-			<i class="fa fa-twitter" aria-hidden="true">Tweet</i>
-		</a>
+                <a href="https://twitter.com/share?url=https://itugnu.org{{ post.get_absolute_url }}&amp;text={{ post.title }}&amp;via=ituoy" class="twitter-share-button" data-show-count="false" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true">Tweet</i>
+                </a>
             </div>
         </div>
     </div>
