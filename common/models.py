@@ -49,6 +49,7 @@ class User(AbstractUser):
     def get_random_username(cls, email, counter=0):
         """Get random username using email field.
         :param email: First part of email
+        :param counter: Recursion counter
         """
         if counter:
             username = email + str(counter)

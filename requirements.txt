@@ -9,5 +9,4 @@ gunicorn
 raven
 pinax-blog==7.0.4
 django-bootstrap-form==3.4
-pinax-templates==2.0.1
 Markdown==2.6.11

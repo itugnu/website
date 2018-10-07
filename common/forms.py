@@ -7,6 +7,7 @@ from django import forms
 from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.core.validators import validate_slug
+from django.contrib.auth.forms import UserCreationForm as BaseUserCreationForm, UsernameField
 from common.models import User
 
 
@@ -105,3 +106,10 @@ class RegistrationForm(forms.ModelForm, LoginForm):
         if commit:
             user.save()
         return user
+
+
+class UserCreationForm(BaseUserCreationForm):
+    class Meta:
+        model = User
+        fields = ("username", "email")
+        field_classes = {'username': UsernameField}

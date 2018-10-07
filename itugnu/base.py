@@ -22,7 +22,6 @@ INSTALLED_APPS = [
     'web',
     'pinax.images',
     'bootstrapform',
-    'pinax.templates',
 ]
 
 MIDDLEWARE = [
