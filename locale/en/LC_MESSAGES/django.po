@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-02 18:00+0300\n"
+"POT-Creation-Date: 2018-10-11 08:23+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -18,60 +18,60 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: common/admin.py:18
+#: common/admin.py:20
 msgid "Account Info"
 msgstr ""
 
-#: common/admin.py:22 common/forms.py:25
+#: common/admin.py:24 common/forms.py:26
 msgid "Password"
 msgstr ""
 
-#: common/admin.py:25 lecture/admin.py:36 lecture/admin.py:64
+#: common/admin.py:27 lecture/admin.py:40 lecture/admin.py:68
 msgid "Stamps"
 msgstr ""
 
-#: common/forms.py:16 common/models.py:19 web/forms.py:20
+#: common/forms.py:17 common/models.py:19 web/forms.py:20
 msgid "Email"
 msgstr ""
 
-#: common/forms.py:19 web/templates/auth/password-reset.html:24
+#: common/forms.py:20 web/templates/auth/password-reset.html:24
 msgid "Email *"
 msgstr ""
 
-#: common/forms.py:29
+#: common/forms.py:30
 msgid "Password *"
 msgstr ""
 
-#: common/forms.py:37 common/forms.py:40
+#: common/forms.py:38 common/forms.py:41
 msgid "First Name"
 msgstr ""
 
-#: common/forms.py:46 common/forms.py:49
+#: common/forms.py:47 common/forms.py:50
 msgid "Last Name"
 msgstr ""
 
-#: common/forms.py:55 common/forms.py:58
+#: common/forms.py:56 common/forms.py:59
 msgid "Username"
 msgstr ""
 
-#: common/forms.py:65
+#: common/forms.py:66
 msgid "Language"
 msgstr ""
 
-#: common/forms.py:74 common/forms.py:78 common/models.py:24 web/forms.py:29
+#: common/forms.py:75 common/forms.py:79 common/models.py:24 web/forms.py:29
 #: web/forms.py:32 web/templates/index.html:122 web/templates/oyz.html:267
 msgid "Phone Number"
 msgstr ""
 
-#: common/forms.py:84 common/forms.py:86 common/models.py:26
+#: common/forms.py:85 common/forms.py:87 common/models.py:26
 msgid "Student"
 msgstr ""
 
-#: common/forms.py:86
+#: common/forms.py:87
 msgid "Not Student"
 msgstr ""
 
-#: common/forms.py:99 common/models.py:21
+#: common/forms.py:100 common/models.py:21
 msgid "A user with that email address already exists."
 msgstr ""
 
@@ -81,158 +81,170 @@ msgid ""
 "allowed."
 msgstr ""
 
-#: common/models.py:68 lecture/models.py:80
+#: common/models.py:69 lecture/models.py:93
 msgid "User"
 msgstr ""
 
-#: common/models.py:69
+#: common/models.py:70
 msgid "Users"
 msgstr ""
 
-#: itugnu/settings.py:93
+#: itugnu/settings.py:95
 msgid "English"
 msgstr ""
 
-#: itugnu/settings.py:94
+#: itugnu/settings.py:96
 msgid "Turkish"
 msgstr ""
 
-#: itugnu/settings.py:95
+#: itugnu/settings.py:97
 msgid "Russian"
 msgstr ""
 
-#: lecture/admin.py:30
+#: lecture/admin.py:31
 msgid "Lecture Information"
 msgstr ""
 
-#: lecture/admin.py:33 web/templates/index.html:164
-#: web/templates/lectures/index.html:78
+#: lecture/admin.py:37 web/templates/index.html:164
+#: web/templates/lectures/index.html:80
 msgid "Dates"
 msgstr ""
 
-#: lecture/admin.py:61
+#: lecture/admin.py:65
 msgid "Application"
 msgstr ""
 
-#: lecture/filters.py:13 lecture/models.py:30
+#: lecture/filters.py:13 lecture/models.py:32
 msgid "Start Date"
 msgstr ""
 
-#: lecture/models.py:23
+#: lecture/models.py:25
 msgid "Lecture Name"
 msgstr ""
 
-#: lecture/models.py:24
+#: lecture/models.py:26
 msgid "Description"
 msgstr ""
 
-#: lecture/models.py:25
+#: lecture/models.py:27
 msgid "Poster"
 msgstr ""
 
-#: lecture/models.py:27 web/templates/index.html:182
-#: web/templates/lectures/index.html:96
+#: lecture/models.py:29 web/templates/index.html:182
+#: web/templates/lectures/index.html:98
 msgid "Lecturer"
 msgstr ""
 
-#: lecture/models.py:29 web/templates/index.html:179
-#: web/templates/lectures/index.html:93
+#: lecture/models.py:31 web/templates/index.html:179
+#: web/templates/lectures/index.html:95
 msgid "Classroom"
 msgstr ""
 
-#: lecture/models.py:31
+#: lecture/models.py:33
 msgid "End Date"
 msgstr ""
 
-#: lecture/models.py:32 web/templates/index.html:79
-#: web/templates/lectures/index.html:39
+#: lecture/models.py:34 web/templates/index.html:79
+#: web/templates/lectures/index.html:41
 msgid "Open for Registration"
 msgstr ""
 
-#: lecture/models.py:44 lecture/models.py:60 lecture/models.py:77
+#: lecture/models.py:35
+msgid "External Registration URL"
+msgstr ""
+
+#: lecture/models.py:47 lecture/models.py:63 lecture/models.py:90
 msgid "Lecture"
 msgstr ""
 
-#: lecture/models.py:45 web/templates/lectures/index.html:4
-#: web/templates/lectures/index.html:11
+#: lecture/models.py:48 web/templates/lectures/index.html:4
+#: web/templates/lectures/index.html:13
 msgid "Lectures"
 msgstr ""
 
-#: lecture/models.py:51
+#: lecture/models.py:54
 msgid "Monday"
 msgstr ""
 
-#: lecture/models.py:52
+#: lecture/models.py:55
 msgid "Tuesday"
 msgstr ""
 
-#: lecture/models.py:53
+#: lecture/models.py:56
 msgid "Wednesday"
 msgstr ""
 
-#: lecture/models.py:54
+#: lecture/models.py:57
 msgid "Thursday"
 msgstr ""
 
-#: lecture/models.py:55
+#: lecture/models.py:58
 msgid "Friday"
 msgstr ""
 
-#: lecture/models.py:56
+#: lecture/models.py:59
 msgid "Saturday"
 msgstr ""
 
-#: lecture/models.py:57
+#: lecture/models.py:60
 msgid "Sunday"
 msgstr ""
 
-#: lecture/models.py:62
+#: lecture/models.py:65
 msgid "Start Time"
 msgstr ""
 
-#: lecture/models.py:63
+#: lecture/models.py:66
 msgid "End Time"
 msgstr ""
 
-#: lecture/models.py:70
+#: lecture/models.py:83
 msgid "Lecture Schedule"
 msgstr ""
 
-#: lecture/models.py:71
+#: lecture/models.py:84
 msgid "Lecture Schedules"
 msgstr ""
 
-#: lecture/models.py:82
+#: lecture/models.py:95
 msgid "Approved"
 msgstr ""
 
-#: lecture/models.py:91
+#: lecture/models.py:104
 msgid "Lecture Application"
 msgstr ""
 
-#: lecture/models.py:92
+#: lecture/models.py:105
 msgid "Lecture Applications"
 msgstr ""
 
-#: web/components/lecture.py:21 web/views.py:85
+#: web/components/lecture.py:22 web/views.py:85
 msgid "Method not allowed"
 msgstr ""
 
-#: web/components/lecture.py:23
+#: web/components/lecture.py:27
 msgid "Please, login to register for lectures"
 msgstr ""
 
-#: web/components/lecture.py:28
+#: web/components/lecture.py:35
 #, python-brace-format
 msgid "Lecture {pk} does not exist!"
 msgstr ""
 
-#: web/components/lecture.py:30
+#: web/components/lecture.py:40
 msgid "Lecture is not open for registration"
 msgstr ""
 
-#: web/components/lecture.py:32
+#: web/components/lecture.py:45
 msgid "You already registered for this lecture!"
+msgstr ""
+
+#: web/components/lecture.py:55
+msgid "One more step, Complete this external form."
+msgstr ""
+
+#: web/components/lecture.py:62
+msgid "Your application received."
 msgstr ""
 
 #: web/forms.py:11
@@ -259,11 +271,12 @@ msgstr ""
 #: web/templates/auth/login.html:49
 #: web/templates/auth/password-reset-complete.html:18
 #: web/templates/auth/registration.html:47
-#: web/templates/auth/reset-done.html:17 web/templates/base.html:65
+#: web/templates/auth/reset-done.html:17 web/templates/base.html:66
 msgid "Login"
 msgstr ""
 
 #: web/templates/auth/login.html:52 web/templates/auth/registration.html:46
+#: web/templates/base.html:69
 msgid "Register"
 msgstr ""
 
@@ -429,60 +442,60 @@ msgstr ""
 msgid "Freedom for Bees - Software Freedom Club, Istanbul Technical University"
 msgstr ""
 
-#: web/templates/base.html:27
+#: web/templates/base.html:28
 msgid "ITUGnu"
 msgstr ""
 
-#: web/templates/base.html:29
+#: web/templates/base.html:30
 msgid "Toggle navigation"
 msgstr ""
 
-#: web/templates/base.html:30
+#: web/templates/base.html:31
 msgid "Menu"
 msgstr ""
 
-#: web/templates/base.html:36 web/templates/index.html:27
+#: web/templates/base.html:37 web/templates/index.html:27
 msgid "Blog"
 msgstr ""
 
-#: web/templates/base.html:39 web/templates/index.html:15
+#: web/templates/base.html:40 web/templates/index.html:15
 #: web/templates/index.html:56
 msgid "Events | Lectures"
 msgstr ""
 
-#: web/templates/base.html:42
+#: web/templates/base.html:43
 msgid "Contact"
 msgstr ""
 
-#: web/templates/base.html:53
+#: web/templates/base.html:54
 msgid "Dashboard"
 msgstr ""
 
-#: web/templates/base.html:54
+#: web/templates/base.html:55
 msgid "Logout"
 msgstr ""
 
-#: web/templates/base.html:57
+#: web/templates/base.html:58
 msgid "Administration"
 msgstr ""
 
-#: web/templates/base.html:59
+#: web/templates/base.html:60
 msgid "Admin Center"
 msgstr ""
 
-#: web/templates/base.html:115 web/templates/faq.html:4
+#: web/templates/base.html:119 web/templates/faq.html:4
 msgid "FAQ"
 msgstr ""
 
-#: web/templates/faq.html:11
+#: web/templates/faq.html:13
 msgid "Frequently Asked Questions"
 msgstr ""
 
-#: web/templates/faq.html:16
+#: web/templates/faq.html:18
 msgid "What is GNU?"
 msgstr ""
 
-#: web/templates/faq.html:18
+#: web/templates/faq.html:20
 msgid ""
 "GNU Project is the given name to the Free Software movement that initiated "
 "at 1983 by Richard M. Stallman. It is unknown why name of an animal (GNU) is "
@@ -492,11 +505,11 @@ msgid ""
 "interview."
 msgstr ""
 
-#: web/templates/faq.html:27
+#: web/templates/faq.html:29
 msgid "What is ITU Software Freedom Club?"
 msgstr ""
 
-#: web/templates/faq.html:29
+#: web/templates/faq.html:31
 msgid ""
 "ITU Software Freedom Club (ITUGnu), as name suggests, is a student club "
 "which continues activities under the roof of Istanbul Technical University. "
@@ -506,11 +519,11 @@ msgid ""
 "free technologies during semester."
 msgstr ""
 
-#: web/templates/faq.html:39
+#: web/templates/faq.html:41
 msgid "Do we have to be a member of ITU to join activities?"
 msgstr ""
 
-#: web/templates/faq.html:41
+#: web/templates/faq.html:43
 msgid ""
 "No, you don't have to. Even though ITU students and personal have higher "
 "priority, every member of our club can participate activities and lectures. "
@@ -521,11 +534,11 @@ msgid ""
 "you gave."
 msgstr ""
 
-#: web/templates/faq.html:51
+#: web/templates/faq.html:53
 msgid "Are your lectures paid?"
 msgstr ""
 
-#: web/templates/faq.html:53
+#: web/templates/faq.html:55
 msgid ""
 "No, they are not. None of our members and instructors gain money from our "
 "activities and lectures. Our members and administrative body, who adopted "
@@ -535,11 +548,11 @@ msgid ""
 "can be useful to society and humanity."
 msgstr ""
 
-#: web/templates/faq.html:62
+#: web/templates/faq.html:64
 msgid "Can I use an operating system other than a GNU/Linux distribution?"
 msgstr ""
 
-#: web/templates/faq.html:64
+#: web/templates/faq.html:66
 msgid ""
 "It is forbidden to use computers with proprietary operating systems. Any "
 "computer with W*ndows will not be accepted and supported. Status of macOS is "
@@ -550,42 +563,42 @@ msgid ""
 "distribution even it is installed in a virtual environment."
 msgstr ""
 
-#: web/templates/faq.html:74
+#: web/templates/faq.html:76
 msgid "I don't know how to install a GNU/Linux distribution. What should I do?"
 msgstr ""
 
-#: web/templates/faq.html:76
+#: web/templates/faq.html:78
 msgid ""
 "If you contact any of our members or instructors, we can provide you "
 "personal support regarding this subject."
 msgstr ""
 
-#: web/templates/faq.html:82
+#: web/templates/faq.html:84
 msgid "Should we bring our own computers to lectures?"
 msgstr ""
 
-#: web/templates/faq.html:84
+#: web/templates/faq.html:86
 msgid ""
 "Yes. Our lectures are done in classrooms and lecture halls, not in computer "
 "laboratories. Therefore, you must bring your own computers. If you don't own "
 "a laptop or cannot bring it for another problem, please contact us."
 msgstr ""
 
-#: web/templates/faq.html:92
+#: web/templates/faq.html:94
 msgid "Can I participate more than one lecture?"
 msgstr ""
 
-#: web/templates/faq.html:94
+#: web/templates/faq.html:96
 msgid ""
 "As long as there is no time conflict and you are accepted, you can join any "
 "lecture."
 msgstr ""
 
-#: web/templates/faq.html:100
+#: web/templates/faq.html:102
 msgid "Is there any attendence obligation?"
 msgstr ""
 
-#: web/templates/faq.html:102
+#: web/templates/faq.html:104
 msgid ""
 "Yes. There is a strict attendance obligation for our lectures. If you do not "
 "attend lectures without reason, you will be blacklisted and you will not be "
@@ -594,34 +607,34 @@ msgid ""
 "activities :)."
 msgstr ""
 
-#: web/templates/faq.html:110
+#: web/templates/faq.html:112
 msgid "Can I come and listen lectures even if I am not accepted?"
 msgstr ""
 
-#: web/templates/faq.html:112
+#: web/templates/faq.html:114
 msgid ""
 "No. We accept people for lectures depending on class capacity and instructor "
 "preference. Therefore, we cannot exceed this quota."
 msgstr ""
 
-#: web/templates/faq.html:119
+#: web/templates/faq.html:121
 msgid "Are password and cypher the same? Why you stress people?"
 msgstr ""
 
-#: web/templates/faq.html:121
+#: web/templates/faq.html:123
 msgid ""
 "No, they are not. Password and cypher are unreleated two terms. Password is "
 "password, cypher is cypher. Do not drive people nuts! Even if cypher is used "
 "for password everywhere, it does not give you right to make this mistake."
 msgstr ""
 
-#: web/templates/faq.html:129
+#: web/templates/faq.html:131
 msgid ""
 "How can I be certain about security of my personal information that I gave "
 "during registration?"
 msgstr ""
 
-#: web/templates/faq.html:131
+#: web/templates/faq.html:133
 msgid ""
 "None of the information taken during registration is shared to third party "
 "service providers. Also your information is not kept in any backup servers. "
@@ -657,7 +670,7 @@ msgid "See all activities"
 msgstr ""
 
 #: web/templates/index.html:81 web/templates/index.html:192
-#: web/templates/lectures/index.html:41 web/templates/lectures/index.html:106
+#: web/templates/lectures/index.html:43 web/templates/lectures/index.html:108
 msgid "Registration Closed"
 msgstr ""
 
@@ -685,33 +698,33 @@ msgstr ""
 msgid "Send Message"
 msgstr ""
 
-#: web/templates/index.html:164 web/templates/lectures/index.html:78
+#: web/templates/index.html:164 web/templates/lectures/index.html:80
 #, python-format
 msgid "%(start)s - %(end)s (%(weeks)s weeks)"
 msgstr ""
 
-#: web/templates/index.html:173 web/templates/lectures/index.html:87
+#: web/templates/index.html:173 web/templates/lectures/index.html:89
 msgid "Schedule is not announced"
 msgstr ""
 
 #: web/templates/index.html:179 web/templates/index.html:182
-#: web/templates/lectures/index.html:93 web/templates/lectures/index.html:96
+#: web/templates/lectures/index.html:95 web/templates/lectures/index.html:98
 msgid "Not Announced"
 msgstr ""
 
-#: web/templates/index.html:188 web/templates/lectures/index.html:102
+#: web/templates/index.html:188 web/templates/lectures/index.html:104
 msgid "Enroll"
 msgstr ""
 
-#: web/templates/index.html:196 web/templates/lectures/index.html:110
+#: web/templates/index.html:196 web/templates/lectures/index.html:112
 msgid "Close"
 msgstr ""
 
-#: web/templates/lectures/index.html:15
+#: web/templates/lectures/index.html:17
 msgid "Filter"
 msgstr ""
 
-#: web/templates/lectures/index.html:51
+#: web/templates/lectures/index.html:53
 msgid "There is no any lectures, subscribe to get new announcements."
 msgstr ""
 
@@ -820,8 +833,20 @@ msgstr ""
 msgid "Next"
 msgstr ""
 
-#: web/templates/pinax/blog/blog_list.html:5
+#: web/templates/pinax/blog/blog_list.html:4
 msgid "Blog Posts"
+msgstr ""
+
+#: web/templates/pinax/blog/blog_list.html:18
+msgid "read more..."
+msgstr ""
+
+#: web/templates/pinax/blog/blog_list.html:24
+msgid "No blog posts have been published."
+msgstr ""
+
+#: web/templates/pinax/blog/blog_post.html:47
+msgid "Tweet"
 msgstr ""
 
 #: web/templates/pinax/blog/dateline.html:7
@@ -832,6 +857,10 @@ msgid ""
 "        %(hunantime)s</time> by %(author)s.\n"
 "        </em>\n"
 "    "
+msgstr ""
+
+#: web/templates/pinax/blog/dateline_stale.html:5
+msgid "Not published yet"
 msgstr ""
 
 #: web/views.py:57
