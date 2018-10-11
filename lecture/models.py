@@ -32,6 +32,7 @@ class Lecture(models.Model):
     start_date = models.DateField(_("Start Date"), blank=True, null=True)
     end_date = models.DateField(_("End Date"), blank=True, null=True)
     is_registration_open = models.BooleanField(_("Open for Registration"), default=False)
+    external_registration_url = models.URLField(_("External Registration URL"), blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

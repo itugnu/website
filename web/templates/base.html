@@ -63,7 +63,10 @@
             </li>
             {% else %}
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="{% url 'login' %}">{% trans "Login" %}</a>
+                <a class="nav-link" href="{% url 'login' %}">{% trans "Login" %}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'registration' %}">{% trans "Register" %}</a>
             </li>
             {% endif %}
           </ul>
@@ -79,7 +82,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; ITUGnu 2018</span>
+            <span class="copyright">Copyright &copy; 2013-{% now 'Y' %} ITUGnu</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
@@ -148,6 +151,11 @@
     <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
     <script src="{% static "js/jquery.easing.min.js" %}"></script>
     <script src="{% static "js/agency.min.js" %}"></script>
+    <script type="text/javascript">
+        var GLOBAL_DJANGO_VARS = {
+            "login_url": "{% url 'login' %}"
+        }
+    </script>
     <script src="{% static "js/main.js" %}?v1"></script>
   </body>
 </html>
