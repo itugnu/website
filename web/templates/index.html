@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load i18n static %}
+{% load pinax_blog_tags %}
+
 
 {% block title %}{% trans "Software Freedom Club" %}{% endblock %}
 
@@ -9,7 +11,7 @@
   <div class="container">
     <div class="intro-text">
       <div class="intro-lead-in">{% trans "ITU Software Freedom Club" %}</div>
-      <div class="intro-heading text-uppercase">{% trans "Free as in Freedom" %}</div>
+      <div class="intro-heading text-uppercase" lang="en">{% trans "Free as in Freedom" %}</div>
       <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#lectures">{% trans "Events | Lectures" %}</a>
     </div>
   </div>
@@ -20,32 +22,32 @@
 <!-- Services -->
 <section id="blog">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-
-        <!--<h2 class="section-heading text-uppercase">{% trans "Blog" %}</h2>-->
-        <!--<h3 class="section-subheading text-muted">{% trans "Coming soon..." %}</h3>-->
-        <h2 class="section-heading text-uppercase">{% trans "Özgür Yazılım Zirvesi 2018" %}</h2>
-        <h3 class="section-subheading text-muted">{% trans "İTÜ Ayazağa Kampüsü, KSB Oditoryum" %}</h3>
-        <h3 class="section-subheading text-muted">{% trans "Saat: 10.00 - 16.00" %}</h3>
-        <br>
-        <p>28 Nisan 2018 Cumartesi günü ilkini gerçekleştireceğimiz Özgür Yazılım Zirvesi belirtilen gün ve yerde
-        gerçekleşecektir. Birbirinden değerli konuşmacı ve katılımcıları bir araya getirmeyi hedeflediğimiz zirvede
-        Özgür Yazılımı anlamak, geliştirmek ve topluluğun kaynaşmasını hedefliyoruz.</p>
-        <br>
-        <p>Etkinliğimize katılım tamamen ücretsizdir. Etkinlik herkese açık ve her yaş grubuna uygundur.
-        Hepinizi bekliyoruz. Kulüp ve etkinlik için detaylı bilgi <a href="https://itugnu.org/tr/oyz/"> etkinlik web</a> adresinden ve etkinlik kayıt
-            sayfasından alınabilir. Sorularınız için <a href="https://itugnu.org/tr/faq/">Sıkça Sorulan Sorular</a>sayfamızı ziyaret etmenizi tavsiye ediyoruz.
-            isteğinize bağlı olarak sitemizde bulunan iletişim kanallarından herhangi birini de kullanabilirsiniz.
-        Görüşmek üzere.</p>
-      </div>
-    </div>
-    <div class="row text-center">
-      <!-- blog here -->
-    </div>
+      <div class="row">
+          <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase"><a href="/blog" class="text-dark"> {% trans "Blog" %} </a></h2>
+          </div>
+            {% if posts %}
+                {% for post in posts %}
+              <div class="jumbotron col-lg-12" style="padding: 2% 5% 2% 5%;">
+                    <h2 class="text-dark display-5"><a href="{{ post.get_absolute_url }}" class="text-dark">{{ post.title }}</a></h2>
+                    <hr class="my-6">
+                    {% include "pinax/blog/dateline.html" %}
+                    <p class="text-left lead">{{ post.teaser_html|safe }}</p>
+                    <p class="text-right"><a href="{{ post.get_absolute_url }}" class="btn btn-outline-secondary" style="alignment: right">read more...</a></p>
+                </div>
+                {% endfor %}
+            <div class="col">
+            <h3 class="display-9 text-right">{% trans "<a href='/blog'>Click here</a> to see other posts." %}</h3>
+            </div>
+          {% else %}
+                <br>
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-subheading text-muted">{% trans "No blog posts yet." %}</h3>
+                </div>
+          {% endif %}
+  </div>
   </div>
 </section>
-
 <!-- Lectures Grid -->
 <section class="bg-light" id="lectures">
   <div class="container">

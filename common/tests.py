@@ -21,7 +21,7 @@ class UserManagerTestCase(TestCase):
         self.assertEqual(user.email, self.email)
         self.assertEqual(user.username, self.username)
         self.assertTrue(user.has_usable_password())
-        self.assertEqual(user.__str__(), self.username)
+        self.assertEqual(user.__str__(), '@' + self.username)
         user.first_name = "Tester"
         user.last_name = "Dummy"
         self.assertEqual(user.__str__(), "Tester Dummy")

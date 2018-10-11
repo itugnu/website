@@ -43,10 +43,11 @@ urlpatterns = i18n_patterns(
     path('faq/', views.faq, name='faq'),
     path('oyz/', views.oyz, name='oyz'),
     path('', views.index, name='index'),
+    path('blog/', include('pinax.blog.urls', namespace='pinax_blog')),
 ) + urlpatterns
 
 if settings.DEBUG and settings.DEBUG_TOOLBAR:
-    import debug_toolbar
+    import debug_toolbar  # pragma: no cover
     urlpatterns = [
         path('__debug__/', include(debug_toolbar.urls)),
-    ] + urlpatterns
+    ] + urlpatterns  # pragma: no cover

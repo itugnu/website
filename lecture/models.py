@@ -4,7 +4,9 @@
 
 from django.utils.translation import ugettext_lazy as _
 from django.db import models
+from datetime import timedelta
 from common.models import User
+from typing import Union
 from os import path as ospath
 import logging
 
@@ -30,6 +32,7 @@ class Lecture(models.Model):
     start_date = models.DateField(_("Start Date"), blank=True, null=True)
     end_date = models.DateField(_("End Date"), blank=True, null=True)
     is_registration_open = models.BooleanField(_("Open for Registration"), default=False)
+    external_registration_url = models.URLField(_("External Registration URL"), blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -63,6 +66,16 @@ class LectureSchedule(models.Model):
     end_time = models.TimeField(_("End Time"))
     day_of_week = models.IntegerField(choices=DAYS_OF_WEEK, default=1)
 
+    @property
+    def length(self) -> Union[int, float]:
+        diff = (
+                       timedelta(hours=self.end_time.hour, minutes=self.end_time.minute) -
+                       timedelta(hours=self.start_time.hour, minutes=self.start_time.minute)
+               ).seconds / 60 / 60
+        if diff % 1 == 0.0:
+            return int(diff)
+        return round(diff, 1)
+
     def __str__(self):
         return self.lecture.name
 
@@ -84,7 +97,7 @@ class LectureApplication(models.Model):
 
     def __str__(self):
         return "Application for {lecture} from {user}".format(
-            lecture=self.lecture.name, user=self.user.last_name
+            lecture=self.lecture.name, user=self.user
         )
 
     class Meta:

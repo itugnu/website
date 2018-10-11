@@ -1,2 +1,2 @@
 [report]
-omit = */migrations/*, */venv/*, */etc/*
+omit = */migrations/*, */venv/*, */etc/*, itugnu/wsgi.py

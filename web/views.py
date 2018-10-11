@@ -14,7 +14,9 @@ from lecture.models import Lecture
 from common.forms import RegistrationForm, LoginForm
 from common.models import User
 from web.forms import ContactForm
+from pinax.blog.models import Post
 from web.components import *  # NOQA
+from django.utils import timezone
 
 
 def get_user(email):
@@ -26,7 +28,9 @@ def get_user(email):
 
 def index(request):
     lectures = Lecture.objects.filter(start_date__gte=date.today())[:6]
-    data = {'lectures': lectures}
+    posts = [post for post in Post.objects.filter(published__lte=timezone.now()).order_by('-created')[:3]
+             if post.is_published]
+    data = {'lectures': lectures, 'posts': posts, }
     return render(request, 'index.html', data)
 
 

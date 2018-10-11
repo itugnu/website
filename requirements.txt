@@ -7,3 +7,6 @@ pyLibravatar
 py3dns
 gunicorn
 raven
+pinax-blog==7.0.4
+django-bootstrap-form==3.4
+Markdown==2.6.11

@@ -42,6 +42,8 @@ TEMPLATES = [
     },
 ]
 
+SITE_ID = 3
+
 WSGI_APPLICATION = 'itugnu.wsgi.application'
 
 LIBRAVATAR_DEFAULT = "https://seccdn.libravatar.org/nobody/{size}.png"
@@ -83,6 +85,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.AllowAllUsersModelBackend']
 
 
 # Internationalization
@@ -127,6 +131,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL.strip("/"))
 
 try:
     from local_settings import *  # NOQA
-except ImportError as e:
+except ImportError as e:  # pragma: no cover
     if "local_settings" not in str(e):
         raise e

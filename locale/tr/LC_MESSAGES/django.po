@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-23 07:19+0000\n"
+"POT-Creation-Date: 2018-10-11 08:23+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Emek Gozluklu <emek@itugnu.org>\n"
 "Language-Team: tr <LL@li.org>\n"
@@ -19,61 +19,60 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: common/admin.py:18
+#: common/admin.py:20
 msgid "Account Info"
 msgstr "Hesap Bilgisi"
 
-#: common/admin.py:22 common/forms.py:25
+#: common/admin.py:24 common/forms.py:26
 msgid "Password"
 msgstr "Parola"
 
-#: common/admin.py:25 lecture/admin.py:36 lecture/admin.py:64
+#: common/admin.py:27 lecture/admin.py:40 lecture/admin.py:68
 msgid "Stamps"
 msgstr "Oluşturulma Zamanı"
 
-#: common/forms.py:16 common/models.py:19 web/forms.py:20
+#: common/forms.py:17 common/models.py:19 web/forms.py:20
 msgid "Email"
 msgstr "E-posta"
 
-#: common/forms.py:19 web/templates/auth/password-reset.html:24
+#: common/forms.py:20 web/templates/auth/password-reset.html:24
 msgid "Email *"
 msgstr "E-posta *"
 
-#: common/forms.py:29
+#: common/forms.py:30
 msgid "Password *"
 msgstr "Parola *"
 
-#: common/forms.py:37 common/forms.py:40
+#: common/forms.py:38 common/forms.py:41
 msgid "First Name"
 msgstr "Ad"
 
-#: common/forms.py:46 common/forms.py:49
+#: common/forms.py:47 common/forms.py:50
 msgid "Last Name"
 msgstr "Soyad"
 
-#: common/forms.py:55 common/forms.py:58
+#: common/forms.py:56 common/forms.py:59
 msgid "Username"
 msgstr "Kullanıcı adı"
 
-#: common/forms.py:65
+#: common/forms.py:66
 msgid "Language"
 msgstr "Dil"
 
-#: common/forms.py:74 common/forms.py:78 common/models.py:24 web/forms.py:29
-#: web/forms.py:32 web/templates/index.html:106
-#: web/templates/oyz.html:264
+#: common/forms.py:75 common/forms.py:79 common/models.py:24 web/forms.py:29
+#: web/forms.py:32 web/templates/index.html:122 web/templates/oyz.html:267
 msgid "Phone Number"
 msgstr "Telefon Numarası"
 
-#: common/forms.py:84 common/forms.py:86 common/models.py:26
+#: common/forms.py:85 common/forms.py:87 common/models.py:26
 msgid "Student"
 msgstr "İTÜ Öğrencisiyim"
 
-#: common/forms.py:86
+#: common/forms.py:87
 msgid "Not Student"
 msgstr "İTÜ Öğrencisi Değilim"
 
-#: common/forms.py:99 common/models.py:21
+#: common/forms.py:100 common/models.py:21
 msgid "A user with that email address already exists."
 msgstr "Bu email ile kayıtlı bir kullanıcı zaten mevcut."
 
@@ -82,160 +81,172 @@ msgid ""
 "Phone number must be entered in the format: '+9055555'. Up to 16 digits "
 "allowed."
 msgstr "Telefon numarası '+905555555' formatında olmalıdır."
-#: common/models.py:68 lecture/models.py:80
+
+#: common/models.py:69 lecture/models.py:93
 msgid "User"
 msgstr "Kullanıcı"
 
-#: common/models.py:69
+#: common/models.py:70
 msgid "Users"
 msgstr "Kullanıcılar"
 
-#: itugnu/settings.py:91
+#: itugnu/settings.py:95
 msgid "English"
 msgstr "İngilizce"
 
-#: itugnu/settings.py:92
+#: itugnu/settings.py:96
 msgid "Turkish"
 msgstr "Türkçe"
 
-#: itugnu/settings.py:93
+#: itugnu/settings.py:97
 msgid "Russian"
 msgstr "Rusça"
 
-#: lecture/admin.py:30
+#: lecture/admin.py:31
 msgid "Lecture Information"
 msgstr "Eğitim Bilgisi"
 
-#: lecture/admin.py:33 web/templates/index.html:148
-#: web/templates/lectures/index.html:78
+#: lecture/admin.py:37 web/templates/index.html:164
+#: web/templates/lectures/index.html:80
 msgid "Dates"
 msgstr "Tarih"
 
-#: lecture/admin.py:61
+#: lecture/admin.py:65
 msgid "Application"
 msgstr "Başvuru"
 
-#: lecture/filters.py:13 lecture/models.py:30
+#: lecture/filters.py:13 lecture/models.py:32
 msgid "Start Date"
 msgstr "Başlangıç Tarihi"
 
-#: lecture/models.py:23
+#: lecture/models.py:25
 msgid "Lecture Name"
 msgstr "Eğitim Adı"
 
-#: lecture/models.py:24
+#: lecture/models.py:26
 msgid "Description"
 msgstr "Açıklama"
 
-#: lecture/models.py:25
+#: lecture/models.py:27
 msgid "Poster"
 msgstr "Afiş"
 
-#: lecture/models.py:27 web/templates/index.html:166
-#: web/templates/lectures/index.html:96
+#: lecture/models.py:29 web/templates/index.html:182
+#: web/templates/lectures/index.html:98
 msgid "Lecturer"
 msgstr "Eğitmen"
 
-#: lecture/models.py:29 web/templates/index.html:163
-#: web/templates/lectures/index.html:93
+#: lecture/models.py:31 web/templates/index.html:179
+#: web/templates/lectures/index.html:95
 msgid "Classroom"
 msgstr "Sınıf"
 
-#: lecture/models.py:31
+#: lecture/models.py:33
 msgid "End Date"
 msgstr "Bitiş Tarihi"
 
-#: lecture/models.py:32 web/templates/index.html:63
-#: web/templates/lectures/index.html:39
+#: lecture/models.py:34 web/templates/index.html:79
+#: web/templates/lectures/index.html:41
 msgid "Open for Registration"
 msgstr "Kayıt olabilirsiniz"
 
-#: lecture/models.py:44 lecture/models.py:60 lecture/models.py:77
+#: lecture/models.py:35
+msgid "External Registration URL"
+msgstr ""
+
+#: lecture/models.py:47 lecture/models.py:63 lecture/models.py:90
 msgid "Lecture"
 msgstr "Eğitim"
 
-#: lecture/models.py:45 web/templates/base.html:38 web/templates/index.html:13
-#: web/templates/index.html:40 web/templates/lectures/index.html:4
-#: web/templates/lectures/index.html:11
-msgid "Events | Lectures"
-msgstr "Etkinlikler | Eğitimler"
+#: lecture/models.py:48 web/templates/lectures/index.html:4
+#: web/templates/lectures/index.html:13
+msgid "Lectures"
+msgstr "Eğitimler"
 
-#: lecture/models.py:51
+#: lecture/models.py:54
 msgid "Monday"
 msgstr "Pazartesi"
 
-#: lecture/models.py:52
+#: lecture/models.py:55
 msgid "Tuesday"
 msgstr "Salı"
 
-#: lecture/models.py:53
+#: lecture/models.py:56
 msgid "Wednesday"
 msgstr "Çarşamba"
 
-#: lecture/models.py:54
+#: lecture/models.py:57
 msgid "Thursday"
 msgstr "Perşembe"
 
-#: lecture/models.py:55
+#: lecture/models.py:58
 msgid "Friday"
 msgstr "Cuma"
 
-#: lecture/models.py:56
+#: lecture/models.py:59
 msgid "Saturday"
 msgstr "Cumartesi"
 
-#: lecture/models.py:57
+#: lecture/models.py:60
 msgid "Sunday"
 msgstr "Pazar"
 
-#: lecture/models.py:62
+#: lecture/models.py:65
 msgid "Start Time"
 msgstr "Başlangıç Tarihi"
 
-#: lecture/models.py:63
+#: lecture/models.py:66
 msgid "End Time"
 msgstr "Bitiş Tarihi"
 
-#: lecture/models.py:70
+#: lecture/models.py:83
 msgid "Lecture Schedule"
 msgstr "Eğitim Takvimi"
 
-#: lecture/models.py:71
+#: lecture/models.py:84
 msgid "Lecture Schedules"
 msgstr "Eğitim Takvimi"
 
-#: lecture/models.py:82
+#: lecture/models.py:95
 msgid "Approved"
 msgstr "Onaylandı"
 
-#: lecture/models.py:91
+#: lecture/models.py:104
 msgid "Lecture Application"
 msgstr "Eğitim Başvurusu"
 
-#: lecture/models.py:92
+#: lecture/models.py:105
 msgid "Lecture Applications"
 msgstr "Eğitim Başvuruları"
 
-#: web/components/lecture.py:21 web/views.py:81
+#: web/components/lecture.py:22 web/views.py:85
 msgid "Method not allowed"
 msgstr "Yönteme izin verilmemektedir"
 
-#: web/components/lecture.py:23
+#: web/components/lecture.py:27
 msgid "Please, login to register for lectures"
 msgstr "Etkinliklere kayıt olmak için lütfen giriş yapınız."
 
-#: web/components/lecture.py:28
+#: web/components/lecture.py:35
 #, python-brace-format
 msgid "Lecture {pk} does not exist!"
 msgstr "{pk} numaralı eğitim kaydı bulunmamaktadır!"
 
-#: web/components/lecture.py:30
+#: web/components/lecture.py:40
 msgid "Lecture is not open for registration"
 msgstr "Eğitim kayıtlara kapalı"
 
-#: web/components/lecture.py:32
+#: web/components/lecture.py:45
 msgid "You already registered for this lecture!"
 msgstr "Bu eğitime daha önce kayıt oldunuz!"
+
+#: web/components/lecture.py:55
+msgid "One more step, Complete this external form."
+msgstr ""
+
+#: web/components/lecture.py:62
+msgid "Your application received."
+msgstr ""
 
 #: web/forms.py:11
 msgid "Name"
@@ -261,11 +272,12 @@ msgstr "Mesajınız"
 #: web/templates/auth/login.html:49
 #: web/templates/auth/password-reset-complete.html:18
 #: web/templates/auth/registration.html:47
-#: web/templates/auth/reset-done.html:17 web/templates/base.html:64
+#: web/templates/auth/reset-done.html:17 web/templates/base.html:66
 msgid "Login"
 msgstr "Giriş"
 
 #: web/templates/auth/login.html:52 web/templates/auth/registration.html:46
+#: web/templates/base.html:69
 msgid "Register"
 msgstr "Kayıt ol"
 
@@ -282,8 +294,8 @@ msgid ""
 "ITUGnu do not share any confidential user information like emails with any "
 "third party including University and community members."
 msgstr ""
-"İTÜGnu kullanıcı bilgilerini, üniversite ve topluluk üyeleri dahil olmak"
-"üzere kimseyle paylaşmaz."
+"İTÜGnu kullanıcı bilgilerini, üniversite ve topluluk üyeleri dahil "
+"olmaküzere kimseyle paylaşmaz."
 
 #: web/templates/auth/login.html:66
 msgid ""
@@ -291,8 +303,8 @@ msgid ""
 "marketing or marketing related purposes, like Analytics and Advertisement "
 "providers."
 msgstr ""
-"Analitik ve Reklam sağlayıcıları gibi internet etkinliğinizi kaydeden "
-"üçüncü parti servisleri sitemizde kullanmıyoruz."
+"Analitik ve Reklam sağlayıcıları gibi internet etkinliğinizi kaydeden üçüncü "
+"parti servisleri sitemizde kullanmıyoruz."
 
 #: web/templates/auth/login.html:67
 msgid ""
@@ -407,7 +419,7 @@ msgid "Password Reset"
 msgstr "Parola Yenileme"
 
 #: web/templates/auth/registration.html:4
-#: web/templates/auth/registration.html:11
+#: web/templates/auth/registration.html:11 web/templates/oyz.html:13
 msgid "Registration"
 msgstr "Kayıt"
 
@@ -416,8 +428,8 @@ msgid ""
 "ITUGnu do not share any confidential user information like email or phone "
 "number with any third party including University and community members."
 msgstr ""
-"İTÜGnu kullanıcı bilgilerini, üniversite ve topluluk üyeleri dahil olmak"
-"üzere kimseyle paylaşmaz."
+"İTÜGnu kullanıcı bilgilerini, üniversite ve topluluk üyeleri dahil "
+"olmaküzere kimseyle paylaşmaz."
 
 #: web/templates/auth/registration.html:60
 msgid ""
@@ -425,8 +437,8 @@ msgid ""
 "marketing or marketing related purposes, like Analytics and Advertisement "
 "providers."
 msgstr ""
-"Analitik ve Reklam sağlayıcıları gibi internet etkinliğinizi kaydeden "
-"üçüncü parti servisleri sitemizde kullanmıyoruz."
+"Analitik ve Reklam sağlayıcıları gibi internet etkinliğinizi kaydeden üçüncü "
+"parti servisleri sitemizde kullanmıyoruz."
 
 #: web/templates/auth/registration.html:61
 msgid ""
@@ -448,295 +460,354 @@ msgstr "Mailinize parola ayarları için yönlendirmeleri gönderdik."
 msgid "You should receive it soon."
 msgstr "Yakın zamanda size ulaşacaktır."
 
-#: web/templates/base.html:7
+#: web/templates/base.html:8
 msgid "Freedom for Bees - Software Freedom Club, Istanbul Technical University"
 msgstr "Freedom for Bees - Özgür Yazılım Kulübü, İstanbul Teknik Üniversitesi"
 
-#: web/templates/base.html:26
+#: web/templates/base.html:28
 msgid "ITUGnu"
 msgstr "İTÜGnu"
 
-#: web/templates/base.html:28
+#: web/templates/base.html:30
 msgid "Toggle navigation"
 msgstr "Navigasyonu Aç"
 
-#: web/templates/base.html:29
+#: web/templates/base.html:31
 msgid "Menu"
 msgstr "Menü"
 
-#: web/templates/base.html:35 web/templates/index.html:25
+#: web/templates/base.html:37 web/templates/index.html:27
 msgid "Blog"
 msgstr "Blog"
 
-#: web/templates/base.html:41
+#: web/templates/base.html:40 web/templates/index.html:15
+#: web/templates/index.html:56
+msgid "Events | Lectures"
+msgstr "Etkinlikler | Eğitimler"
+
+#: web/templates/base.html:43
 msgid "Contact"
 msgstr "İletişim"
 
-#: web/templates/base.html:52
+#: web/templates/base.html:54
 msgid "Dashboard"
 msgstr "Kontrol Paneli"
 
-#: web/templates/base.html:53
+#: web/templates/base.html:55
 msgid "Logout"
 msgstr "Çıkış"
 
-#: web/templates/base.html:56
+#: web/templates/base.html:58
 msgid "Administration"
 msgstr "Admin"
 
-#: web/templates/base.html:58
+#: web/templates/base.html:60
 msgid "Admin Center"
 msgstr "Admin Merkezi"
 
-#: web/templates/base.html:114 web/templates/faq.html:4
+#: web/templates/base.html:119 web/templates/faq.html:4
 msgid "FAQ"
 msgstr "S.S.S."
 
-#: web/templates/faq.html:11
+#: web/templates/faq.html:13
 msgid "Frequently Asked Questions"
 msgstr "Sıkça Sorulan Sorular"
 
-#: web/templates/faq.html:16
+#: web/templates/faq.html:18
 msgid "What is GNU?"
 msgstr "GNU Nedir?"
 
-#: web/templates/faq.html:18
-msgid "GNU Project is the given name to the Free Software movement that initiated at 1983 by Richard M. Stallman."
-      "It is unknown why name of an animal (GNU) is chosen as project name. However, the project's symbol is animal's"
-      "itself and the project is associated with this symbol all around the world. 'Is GNU an acronym?' question is "
-      "answered by Stallman as 'GNU is Not Unix' during an interview."
-msgstr "GNU Projesi 1983 yılında Richard M. Stallman tarafından başlatılan Özgür Yazılım hareketine verilen isimdir. "
-       "İsim olarak GNU hayvanının seçilmesine neyin sebep olduğu bilinmemektedir ancak tüm dünyada bu sembolle "
-       "anılmaktadır. 'GNU bir kısaltma mıdır?' sorusunun cevabını ise Stallman bir röportajında 'GNU is Not Unix' "
-       "olarak vermiştir."
+#: web/templates/faq.html:20
+msgid ""
+"GNU Project is the given name to the Free Software movement that initiated "
+"at 1983 by Richard M. Stallman. It is unknown why name of an animal (GNU) is "
+"chosen as project name. However, the project's symbol is animal's itself and "
+"the project is associated with this symbol all around the world. 'Is GNU an "
+"acronym?' question is answered by Stallman as 'GNU is Not Unix' during an "
+"interview."
+msgstr ""
+"GNU Projesi 1983 yılında Richard M. Stallman tarafından başlatılan Özgür "
+"Yazılım hareketine verilen isimdir. İsim olarak GNU hayvanının seçilmesine "
+"neyin sebep olduğu bilinmemektedir ancak tüm dünyada bu sembolle "
+"anılmaktadır. 'GNU bir kısaltma mıdır?' sorusunun cevabını ise Stallman bir "
+"röportajında 'GNU is Not Unix' olarak vermiştir."
 
-#: web/templates/faq.html:22
+#: web/templates/faq.html:29
 msgid "What is ITU Software Freedom Club?"
 msgstr "İTÜ Özgür Yazılım Kulübü nedir?"
 
-#: web/templates/faq.html:24
-msgid "ITU Software Freedom Club (ITUGnu), as name suggests, is a student club which continues activities under the "
-      "roof of Istanbul Technical University. Its mission is spreading Free Software Philosophy, encourage and make "
-      "people understand Free Software usage throughout Turkey, starting from ITU. In this context, we arrange lectures "
-      "and seminars about programming languages and free technologies during semester."
-msgstr "İTÜ Özgür Yazılım Kulübü (ITUGnu) adından anlaşılacağı üzere Teknik Üniversite bünyesinde faaliyetlerine devam "
-       "eden bir okul kulübüdür. Kuruluş ve faaliyet amacı başta İTÜ bünyesinde olmak üzere Türkiye genelinde Özgür "
-       "Yazılım felsefesinin yaygınlaştırılması, Özgür Yazılımların kullandırılmaya teşvik edilmesi ve anlaşılmasını "
-       "sağlamaktır. Bu çerçevede dönemlik olarak yazılım dilleri ve özgür teknolojiler üzerine eğitim, kurs ve "
-       "seminerler düzenler."
+#: web/templates/faq.html:31
+msgid ""
+"ITU Software Freedom Club (ITUGnu), as name suggests, is a student club "
+"which continues activities under the roof of Istanbul Technical University. "
+"Its mission is spreading Free Software Philosophy, encourage and make people "
+"understand Free Software usage throughout Turkey, starting from ITU. In this "
+"context, we arrange lectures and seminars about programming languages and "
+"free technologies during semester."
+msgstr ""
+"İTÜ Özgür Yazılım Kulübü (ITUGnu) adından anlaşılacağı üzere Teknik "
+"Üniversite bünyesinde faaliyetlerine devam eden bir okul kulübüdür. Kuruluş "
+"ve faaliyet amacı başta İTÜ bünyesinde olmak üzere Türkiye genelinde Özgür "
+"Yazılım felsefesinin yaygınlaştırılması, Özgür Yazılımların kullandırılmaya "
+"teşvik edilmesi ve anlaşılmasını sağlamaktır. Bu çerçevede dönemlik olarak "
+"yazılım dilleri ve özgür teknolojiler üzerine eğitim, kurs ve seminerler "
+"düzenler."
 
-#: web/templates/faq.html:28
+#: web/templates/faq.html:41
 msgid "Do we have to be a member of ITU to join activities?"
 msgstr "Etkinliklere katılmak için İTÜ mensubu olmak zorunlu mu?"
 
-#: web/templates/faq.html:30
-msgid "No, you don't have to. Even though ITU students and personal have higher priority, every member of our club can "
-      "participate activities and lectures. Also it is not required to be a member of ITU to be a member of our club. "
-      "You can reach registration page via Facebook link at the bottom of page. To be an official member, you can "
-      "register with registration form at our website so that, we can add you to our mail groups by using e-mail "
-      "address you gave."
-msgstr "Hayır değil. Etkinlik, eğitim ve kurslarımızda öncelik İTÜ öğrenci ve personeline verilse de genel olarak "
-       "kulübümüze üye olan herekese açıktır. Kulübe üyelik için de İTÜ mensubu olma şartı aranmamaktadır. Sitemizin "
-       "en altında bulunan Facebook linki ile kaydolma sayfasına ulaşabilirsiniz. Haricen resmi kayıt olmak için "
-       "yenilenen yüzüyle Web sitemize üye olursanız girmiş olduğunuz e-posta adresi üzerinden mail gruplarımıza dahil "
-       "edileceksiniz."
+#: web/templates/faq.html:43
+msgid ""
+"No, you don't have to. Even though ITU students and personal have higher "
+"priority, every member of our club can participate activities and lectures. "
+"Also it is not required to be a member of ITU to be a member of our club. "
+"You can reach registration page via Facebook link at the bottom of page. To "
+"be an official member, you can register with registration form at our "
+"website so that, we can add you to our mail groups by using e-mail address "
+"you gave."
+msgstr ""
+"Hayır değil. Etkinlik, eğitim ve kurslarımızda öncelik İTÜ öğrenci ve "
+"personeline verilse de genel olarak kulübümüze üye olan herekese açıktır. "
+"Kulübe üyelik için de İTÜ mensubu olma şartı aranmamaktadır. Sitemizin en "
+"altında bulunan Facebook linki ile kaydolma sayfasına ulaşabilirsiniz. "
+"Haricen resmi kayıt olmak için yenilenen yüzüyle Web sitemize üye olursanız "
+"girmiş olduğunuz e-posta adresi üzerinden mail gruplarımıza dahil "
+"edileceksiniz."
 
-#: web/templates/faq.html:34
+#: web/templates/faq.html:53
 msgid "Are your lectures paid?"
 msgstr "Eğitimler ücretli mi?"
 
-#: web/templates/faq.html:36
-msgid "No, they are not. None of our members and instructors gain money from our activities and lectures. Our members "
-      "and administrative body, who adopted Freedom of Information as motto, provide these lectures and services. "
-      "However, if our members want to support us, we suggest them to make donations to charities such as TEMA and "
-      "animal shelters so that, all of us can be useful to society and humanity."
-msgstr "Hayır değil. Kulübümüz bünyesinde yapılan hiç bir etkinlik ve eğitimde kulübümüz ve eğitmenlerimiz para "
-       "kazanmamaktadır. Gönüllülük esasına dayalı ve bilginin özgürlüğünü şiar edinmiş kulüp üyelerimiz ve yönetim "
-       "kurulumuz bu hizmetleri sizlere sunmaktadır. Ancak zaman zaman eğitime katılan üyelerimizden bizlere destek "
-       "olmak isteyenlere, topluma ve insanlığa faydalı olmak adına TEMA Vakfı, hayvan barınakları gibi kuruluşlara "
-       "bağışta bulunmalarını telkin ediyoruz."
+#: web/templates/faq.html:55
+msgid ""
+"No, they are not. None of our members and instructors gain money from our "
+"activities and lectures. Our members and administrative body, who adopted "
+"Freedom of Information as motto, provide these lectures and services. "
+"However, if our members want to support us, we suggest them to make "
+"donations to charities such as TEMA and animal shelters so that, all of us "
+"can be useful to society and humanity."
+msgstr ""
+"Hayır değil. Kulübümüz bünyesinde yapılan hiç bir etkinlik ve eğitimde "
+"kulübümüz ve eğitmenlerimiz para kazanmamaktadır. Gönüllülük esasına dayalı "
+"ve bilginin özgürlüğünü şiar edinmiş kulüp üyelerimiz ve yönetim kurulumuz "
+"bu hizmetleri sizlere sunmaktadır. Ancak zaman zaman eğitime katılan "
+"üyelerimizden bizlere destek olmak isteyenlere, topluma ve insanlığa faydalı "
+"olmak adına TEMA Vakfı, hayvan barınakları gibi kuruluşlara bağışta "
+"bulunmalarını telkin ediyoruz."
 
-#: web/templates/faq.html:40
+#: web/templates/faq.html:64
 msgid "Can I use an operating system other than a GNU/Linux distribution?"
 msgstr "Eğitimlerde GNU/Linux harici bir işletim sistemi kullanabilir miyim?"
 
-#: web/templates/faq.html:42
-msgid "It is forbidden to use computers with proprietary operating systems. Any computer with W*ndows will not be "
-      "accepted and supported. Status of macOS is undecided among free software communities since it is a UNIX-like "
-      "operating system and uses free software behind the scenes. Therefore, you can use a computer with macOS "
-      "currently. However, we cannot provide a healthy support for macOS. Therefore, it will be better for you to "
-      "use a GNU/Linux distribution even it is installed in a virtual environment."
-msgstr "Eğitimlerimizde özgür olmayan işletim sistemli makinaları kullanmanız yasaktır. Özellikle W*ndows işletim "
-       "sistemlerinin kabulu ve desteği kesinlikle olmamaktadır. Unix tabanlı MacBook makinaların durumu ise camiada "
-       "henüz net bir karara bağlanmadığından kullanabilirsiniz. Ancak MacOS işletim sistemine ait destek de "
-       "tarafımızdan sağlıklı şekilde verilememektedir. Sanal ortamda da olsa bir GNU/Linux işletim sistemi kullanmanız"
-       " faydanıza olacaktır."
+#: web/templates/faq.html:66
+msgid ""
+"It is forbidden to use computers with proprietary operating systems. Any "
+"computer with W*ndows will not be accepted and supported. Status of macOS is "
+"undecided among free software communities since it is a UNIX-like operating "
+"system and uses free software behind the scenes. Therefore, you can use a "
+"computer with macOS currently. However, we cannot provide a healthy support "
+"for macOS. Therefore, it will be better for you to use a GNU/Linux "
+"distribution even it is installed in a virtual environment."
+msgstr ""
+"Eğitimlerimizde özgür olmayan işletim sistemli makinaları kullanmanız "
+"yasaktır. Özellikle W*ndows işletim sistemlerinin kabulu ve desteği "
+"kesinlikle olmamaktadır. Unix tabanlı MacBook makinaların durumu ise camiada "
+"henüz net bir karara bağlanmadığından kullanabilirsiniz. Ancak MacOS işletim "
+"sistemine ait destek de tarafımızdan sağlıklı şekilde verilememektedir. "
+"Sanal ortamda da olsa bir GNU/Linux işletim sistemi kullanmanız faydanıza "
+"olacaktır."
 
-#: web/templates/faq.html:46
+#: web/templates/faq.html:76
 msgid "I don't know how to install a GNU/Linux distribution. What should I do?"
 msgstr "GNU/Linux yüklemeyi bilmiyorum. Ne yapmalıyım?"
 
-#: web/templates/faq.html:48
-msgid "If you contact any of our members or instructors, we can provide you personal support regarding this subject."
-msgstr "Kulüp üyelerimiz veya eğitmenlerimizden biriyle iletişime geçmeniz halinde sizlere bireysel kurulum desteği "
-       "kulübümüz tarafından sağlanmaktadır."
+#: web/templates/faq.html:78
+msgid ""
+"If you contact any of our members or instructors, we can provide you "
+"personal support regarding this subject."
+msgstr ""
+"Kulüp üyelerimiz veya eğitmenlerimizden biriyle iletişime geçmeniz halinde "
+"sizlere bireysel kurulum desteği kulübümüz tarafından sağlanmaktadır."
 
-#: web/templates/faq.html:52
+#: web/templates/faq.html:84
 msgid "Should we bring our own computers to lectures?"
 msgstr "Eğitimlere kendi bilgisayarımızla mı gelmeliyiz?"
 
-#: web/templates/faq.html:54
-msgid "Yes. Our lectures are done in classrooms and lecture halls, not in computer laboratories. Therefore, you must "
-      "bring your own computers. If you don't own a laptop or cannot bring it for another problem, please contact us."
-msgstr "Evet. Eğitimlerimiz labaratuarlarda değil normal amfi ve sınıflarda yapılmaktadır. Dolayısı ile kendi "
-       "bilgisayarlarınızı getirmeniz gerekmektedir. Eğer taşınabilir bir bilgisayarınız yok ise ya da farklı bir "
-       "sorundan dolayı getiremiyorsanız lütfen bizimle iletişime geçiniz."
+#: web/templates/faq.html:86
+msgid ""
+"Yes. Our lectures are done in classrooms and lecture halls, not in computer "
+"laboratories. Therefore, you must bring your own computers. If you don't own "
+"a laptop or cannot bring it for another problem, please contact us."
+msgstr ""
+"Evet. Eğitimlerimiz labaratuarlarda değil normal amfi ve sınıflarda "
+"yapılmaktadır. Dolayısı ile kendi bilgisayarlarınızı getirmeniz "
+"gerekmektedir. Eğer taşınabilir bir bilgisayarınız yok ise ya da farklı bir "
+"sorundan dolayı getiremiyorsanız lütfen bizimle iletişime geçiniz."
 
-#: web/templates/faq.html:58
+#: web/templates/faq.html:94
 msgid "Can I participate more than one lecture?"
 msgstr "Aynı anda birden fazla eğitime katılabilir miyim?"
 
-#: web/templates/faq.html:60
-msgid "As long as there is no time conflict and you are accepted, you can join any lecture."
-msgstr "Eğitim saatleri çakışmadığı sürece ve eğitimlerden kabul aldığınız takdirde istediğiniz eğitime istediğiniz "
-       "anda katılabilirsiniz."
+#: web/templates/faq.html:96
+msgid ""
+"As long as there is no time conflict and you are accepted, you can join any "
+"lecture."
+msgstr ""
+"Eğitim saatleri çakışmadığı sürece ve eğitimlerden kabul aldığınız takdirde "
+"istediğiniz eğitime istediğiniz anda katılabilirsiniz."
 
-#: web/templates/faq.html:64
+#: web/templates/faq.html:102
 msgid "Is there any attendence obligation?"
 msgstr "Eğitimlerde devam zorunluluğu var mı?"
 
-#: web/templates/faq.html:66
-msgid "Yes. There is a strict attendance obligation for our lectures. If you do not attend lectures without reason, "
-      "you will be blacklisted and you will not be accepted to any ongoing lectures. Also, we will contact other "
-      "student clubs and do anything we can so that you will not be accepted to their activities :)."
-msgstr "Evet. Eğitimlerimizin tamamında sıkı bir yoklama takibi yapılmaktadır. Eğitimlere mazeretsiz devamsızlık "
-       "yapmanız halinde kara listeye alınacak ve devam eden eğitimlerden de kaydınız düşürülecektir. Ayrıca bizimle "
-       "aynı mantıkta hareket eden tüm İTÜ kulüpleri ile iletişime geçip, etkinliklere kabul edilmemeniz için "
-       "elimizden geleni yapacağız :)."
+#: web/templates/faq.html:104
+msgid ""
+"Yes. There is a strict attendance obligation for our lectures. If you do not "
+"attend lectures without reason, you will be blacklisted and you will not be "
+"accepted to any ongoing lectures. Also, we will contact other student clubs "
+"and do anything we can so that you will not be accepted to their "
+"activities :)."
+msgstr ""
+"Evet. Eğitimlerimizin tamamında sıkı bir yoklama takibi yapılmaktadır. "
+"Eğitimlere mazeretsiz devamsızlık yapmanız halinde kara listeye alınacak ve "
+"devam eden eğitimlerden de kaydınız düşürülecektir. Ayrıca bizimle aynı "
+"mantıkta hareket eden tüm İTÜ kulüpleri ile iletişime geçip, etkinliklere "
+"kabul edilmemeniz için elimizden geleni yapacağız :)."
 
-#: web/templates/faq.html:70
+#: web/templates/faq.html:112
 msgid "Can I come and listen lectures even if I am not accepted?"
 msgstr "Eğitime kabul almasam da gelip dersleri dinleyebiliyor muyum?"
 
-#: web/templates/faq.html:72
-msgid "No. We accept people for lectures depending on class capacity and instructor preference. Therefore, we cannot "
-      "exceed this quota."
-msgstr "Hayır. Eğitimlerimiz sınıfın kapasitesine ve/veya eğitmenin tercihlerine göre öğrenci kabul etmektedir. "
-       "Bu sebeple kontenjanı aşmamız mümkün değil."
+#: web/templates/faq.html:114
+msgid ""
+"No. We accept people for lectures depending on class capacity and instructor "
+"preference. Therefore, we cannot exceed this quota."
+msgstr ""
+"Hayır. Eğitimlerimiz sınıfın kapasitesine ve/veya eğitmenin tercihlerine "
+"göre öğrenci kabul etmektedir. Bu sebeple kontenjanı aşmamız mümkün değil."
 
-#: web/templates/faq.html:76
+#: web/templates/faq.html:121
 msgid "Are password and cypher the same? Why you stress people?"
-msgstr "Parola ile şifre aynı şey değil mi? Neden insanları bu konuda darlıyorsunuz?"
+msgstr ""
+"Parola ile şifre aynı şey değil mi? Neden insanları bu konuda darlıyorsunuz?"
 
-#: web/templates/faq.html:78
-msgid "No, they are not. Password and cypher are unreleated two terms. Password is password, cypher is cypher. "
-      "Do not drive people nuts! Even if cypher is used for password everywhere, it does not give you right to make "
-      "this mistake."
-msgstr "Hayır değil. Parola ile şifre birbiri ile alakasız iki farklı terimdir. Parola paroladır, şifre de şifredir. "
-       "İnsanı delirtmeyin! Her yerde parolaya şifre denmesi cahilliği sizin öğrenmeme hakkını tanımaz."
+#: web/templates/faq.html:123
+msgid ""
+"No, they are not. Password and cypher are unreleated two terms. Password is "
+"password, cypher is cypher. Do not drive people nuts! Even if cypher is used "
+"for password everywhere, it does not give you right to make this mistake."
+msgstr ""
+"Hayır değil. Parola ile şifre birbiri ile alakasız iki farklı terimdir. "
+"Parola paroladır, şifre de şifredir. İnsanı delirtmeyin! Her yerde parolaya "
+"şifre denmesi cahilliği sizin öğrenmeme hakkını tanımaz."
 
-#: web/templates/faq.html:82
-msgid "How can I be certain about security of my personal information that I gave during registration?"
-msgstr "Kayıt sırasında alınan kişisel bilgilerimin güvenliğinden nasıl emin olabilirim?"
+#: web/templates/faq.html:131
+msgid ""
+"How can I be certain about security of my personal information that I gave "
+"during registration?"
+msgstr ""
+"Kayıt sırasında alınan kişisel bilgilerimin güvenliğinden nasıl emin "
+"olabilirim?"
 
-#: web/templates/faq.html:84
-msgid "None of the information taken during registration is shared to third party service providers. Also your "
-      "information is not kept in any backup servers. Even your password is encrypted so that we cannot read it. "
-msgstr "itugnu.org web sitesine kayıt sırasında alınan bilgilerden hiçbiri herhangi bir servis sağlayıcı ile "
-       "paylaşılmamaktadır. Ayrıca girdiğiniz bilgiler yedek sunucularda vs. kayıt altına alınmamaktadır. "
-       "Girdiğiniz paralolar dahi şifrelenerek tarafımızdan okunamamaktadır."
+#: web/templates/faq.html:133
+msgid ""
+"None of the information taken during registration is shared to third party "
+"service providers. Also your information is not kept in any backup servers. "
+"Even your password is encrypted so that we cannot read it."
+msgstr ""
+"itugnu.org web sitesine kayıt sırasında alınan bilgilerden hiçbiri herhangi "
+"bir servis sağlayıcı ile paylaşılmamaktadır. Ayrıca girdiğiniz bilgiler "
+"yedek sunucularda vs. kayıt altına alınmamaktadır. Girdiğiniz paralolar dahi "
+"şifrelenerek tarafımızdan okunamamaktadır."
 
-#: web/templates/index.html:4
+#: web/templates/index.html:6
 msgid "Software Freedom Club"
 msgstr "Özgür Yazılım Kulübü"
 
-#: web/templates/index.html:11
+#: web/templates/index.html:13
 msgid "ITU Software Freedom Club"
 msgstr "İTÜ Özgür Yazılım Kulübü"
 
-#: web/templates/index.html:12
+#: web/templates/index.html:14
 msgid "Free as in Freedom"
 msgstr "Free as in Freedom"
 
-#: web/templates/index.html:26
-msgid "Coming soon..."
-msgstr "Çok yakında..."
+#: web/templates/index.html:40
+msgid "<a href='/blog'>Click here</a> to see other posts."
+msgstr ""
 
-#: web/templates/index.html:41
-msgid "All lectures"
-msgstr "Tüm Eğitimler"
+#: web/templates/index.html:45
+msgid "No blog posts yet."
+msgstr ""
 
-#: web/templates/index.html:41
-msgid "See all lectures"
-msgstr "Tüm eğitimleri gör"
-
-#: web/templates/index.html:55
+#: web/templates/index.html:57
 msgid "All activities"
 msgstr "Etkinlikler"
 
-#: web/templates/index.html:55
+#: web/templates/index.html:57
 msgid "See all activities"
 msgstr "Bütün etkinlikleri gör"
 
-#: web/templates/index.html:65 web/templates/index.html:176
-#: web/templates/lectures/index.html:41 web/templates/lectures/index.html:106
+#: web/templates/index.html:81 web/templates/index.html:192
+#: web/templates/lectures/index.html:43 web/templates/lectures/index.html:108
 msgid "Registration Closed"
 msgstr "Kayıt Kapalı"
 
-#: web/templates/index.html:75 web/templates/lectures/index.html:51
-msgid "There is no any lectures, subscribe to get new announcements."
-msgstr "Şu an eğitim yok. Eğitimler hakkında bilgilendirilmek için üye olun."
-
-#: web/templates/index.html:89
+#: web/templates/index.html:91
 msgid "There are no activities, subscribe to get new activity announcements."
-msgstr "Herhangi bir etkinlik yok, yeni etkinlik duyurularını almak için abone olun."
+msgstr ""
+"Herhangi bir etkinlik yok, yeni etkinlik duyurularını almak için abone olun."
 
-#: web/templates/index.html:89
-#: web/templates/oyz.html:247
+#: web/templates/index.html:105 web/templates/oyz.html:250
 msgid "Contact Us"
 msgstr "İletişim"
 
-#: web/templates/index.html:98
+#: web/templates/index.html:114
 msgid "Full Name *"
 msgstr "Ad Soyad *"
 
-#: web/templates/index.html:102
+#: web/templates/index.html:118
 msgid "Email Address *"
 msgstr "Email Adresi *"
 
-#: web/templates/index.html:112
+#: web/templates/index.html:128
 msgid "Your Message *"
 msgstr "Mesajınız"
 
-#: web/templates/index.html:119
+#: web/templates/index.html:135
 msgid "Send Message"
 msgstr "Mesaj Gönder"
 
-#: web/templates/index.html:148 web/templates/lectures/index.html:78
+#: web/templates/index.html:164 web/templates/lectures/index.html:80
 #, python-format
 msgid "%(start)s - %(end)s (%(weeks)s weeks)"
 msgstr "%(start)s - %(end)s (%(weeks)s hafta)"
 
-#: web/templates/index.html:157 web/templates/lectures/index.html:87
+#: web/templates/index.html:173 web/templates/lectures/index.html:89
 msgid "Schedule is not announced"
 msgstr "Takvim Açıklanmadı"
 
-#: web/templates/index.html:163 web/templates/index.html:166
-#: web/templates/lectures/index.html:93 web/templates/lectures/index.html:96
+#: web/templates/index.html:179 web/templates/index.html:182
+#: web/templates/lectures/index.html:95 web/templates/lectures/index.html:98
 msgid "Not Announced"
 msgstr "Açıklama yok"
 
-#: web/templates/index.html:172 web/templates/lectures/index.html:102
+#: web/templates/index.html:188 web/templates/lectures/index.html:104
 msgid "Enroll"
 msgstr "Kayıt ol"
 
-#: web/templates/index.html:180 web/templates/lectures/index.html:110
+#: web/templates/index.html:196 web/templates/lectures/index.html:112
 msgid "Close"
 msgstr "Kapat"
 
-#: web/templates/lectures/index.html:15
+#: web/templates/lectures/index.html:17
 msgid "Filter"
 msgstr "Filtre"
+
+#: web/templates/lectures/index.html:53
+msgid "There is no any lectures, subscribe to get new announcements."
+msgstr "Şu an eğitim yok. Eğitimler hakkında bilgilendirilmek için üye olun."
 
 #: web/templates/oyz.html:4 web/templates/oyz.html:12
 msgid "Free Software Summit"
@@ -746,116 +817,170 @@ msgstr "Özgür Yazılım Zirvesi"
 msgid "Free Your Mind!"
 msgstr "Free Your Mind!"
 
-#: web/templates/oyz.html:13
-msgid "Etkinlik Kayıt"
-msgstr "Etkinliğe Kayıt Ol"
-
-#: web/views.py:53
-msgid "User not found"
-msgstr "Kullanıcı bulunamadı."
-
-#: web/views.py:59
-msgid "Account Disabled"
-msgstr "Hesaba Erişim Engellenmiştir"
-
-#: web/views.py:60
-msgid "Invalid login credentials"
-msgstr "Geçersiz giriş bilgileri"
-
 #: web/templates/oyz.html:25
-msgid "ITU Free Software Summit in the ITU Ayazaga Campus in 28th April!"
-msgstr "İTÜ Özgür Yazılım Zirvesi 28 Nisan 2018 Tarihinde İTÜ Ayazağa Kampüsünde!"
+msgid "ITU Free Software Summit in the ITU Ayazaga Campus in 28th of April!"
+msgstr ""
+"İTÜ Özgür Yazılım Zirvesi 28 Nisan 2018 Tarihinde İTÜ Ayazağa Kampüsünde!"
 
-#: web/templates/oyz.html:28
-msgid "The first Free Software Summit which puts together the people interested in this movement and wants to learn it, will be" 
-		"hosted in Istanbul Technical University Ayazaga Campus in 28th April. The event that academicians, students and the people" 
-		"from the sector will be coalesce, talks to anybody. At the same time, the event is important for the mission of presentation"
-		"of the free software which is getting more and more important on all over the world."
-msgstr "Açık kaynak kodlu ve Özgür Yazılımlara ilgi duyan ve bu akımı tanımak isteyen kişilerin bir araya geleceği"
-            "Özgür Yazılım Zirvesi’nin ilki 28 Nisan’da İstanbul Teknik Üniversitesi Ayazağa Kampüsünde gerçekleşecek."
-            "Akademisyenler, öğrenciler ve sektörden kişilerin bir araya geleceği bu etkinlik, her kesimden ziyaretçiye"
-            "hitap ediyor. Aynı zamanda dünyada gitgide önemi kavranan ve daha fazla destek gören Özgür Yazılım"
-            "kavramının ülkemizde daha geniş kitlelerce tanınır hale gelmesi adına büyük önem taşıyor."
-            
-#: web/templates/oyz.html:37
+#: web/templates/oyz.html:29
+msgid ""
+"The first Free Software Summit which puts together the people interested in "
+"this movement and wants to learn it, will be hosted in Istanbul Technical "
+"University Ayazaga Campus in 28th of April. The event that academicians, "
+"students and the people from the sector will be coalesce, talks to anybody. "
+"At the same time, the event is important for the mission of presentation of "
+"the free software which is getting more and more important on all over the "
+"world."
+msgstr ""
+"Açık kaynak kodlu ve Özgür Yazılımlara ilgi duyan ve bu akımı tanımak "
+"isteyen kişilerin bir araya geleceğiÖzgür Yazılım Zirvesi’nin ilki 28 "
+"Nisan’da İstanbul Teknik Üniversitesi Ayazağa Kampüsünde gerçekleşecek."
+"Akademisyenler, öğrenciler ve sektörden kişilerin bir araya geleceği bu "
+"etkinlik, her kesimden ziyaretçiyehitap ediyor. Aynı zamanda dünyada gitgide "
+"önemi kavranan ve daha fazla destek gören Özgür Yazılımkavramının ülkemizde "
+"daha geniş kitlelerce tanınır hale gelmesi adına büyük önem taşıyor."
+
+#: web/templates/oyz.html:40
 msgid "Main Sponsor"
 msgstr "Ana Sponsor"
 
-#: web/templates/oyz.html:47
+#: web/templates/oyz.html:50
 msgid "Golden Sponsors"
 msgstr "Altın Sponsorlar"
 
-#: web/templates/oyz.html:65
+#: web/templates/oyz.html:68
 msgid "Supporting Organizations"
 msgstr "Destekleyen Kuruluşlar"
 
-#: web/templates/oyz.html:114
+#: web/templates/oyz.html:117
 msgid "GNU Follower"
 msgstr "GNU Münstesibi"
 
-#: web/templates/oyz.html:114
+#: web/templates/oyz.html:118
 msgid "Free Software Thought"
 msgstr "Özgür Yazılım Felsefesi"
 
-#: web/templates/oyz.html:119
-msgid "Academician"
-msgstr "Öğr. Gör."
-
-#: web/templates/oyz.html:128
+#: web/templates/oyz.html:131
 msgid "Istanbul Technical University"
 msgstr "İstanbul Teknik Üniversitesi"
 
-#: web/templates/oyz.html:129
+#: web/templates/oyz.html:132
 msgid "Subjective Assessments about Free Software"
 msgstr "Özgür Yazılım Üzerine Öznel Değerlendirmeler"
 
-#: web/templates/oyz.html:161
+#: web/templates/oyz.html:164
 msgid "Eczacibasi | ITU Graduate"
 msgstr "Eczacıbaşı | İTÜ Mezunu"
 
-#: web/templates/oyz.html:162
+#: web/templates/oyz.html:165
 msgid "Docker"
 msgstr "Docker"
 
-#: web/templates/oyz.html:181
-msgid "Özgür Yazılım A.Ş."
+#: web/templates/oyz.html:184
+msgid "Ozgur Yazilım Co."
 msgstr "Özgür Yazılım A.Ş."
 
-#: web/templates/oyz.html:182
+#: web/templates/oyz.html:185
 msgid "Being GNU/Linux System Administrator"
 msgstr "GNU/Linux Sistem Yöneticisi Olmak"
 
-#: web/templates/oyz.html:204
-msgid "Yıldırım Beyazıt University"
+#: web/templates/oyz.html:207
+msgid "Yildirim Beyazit University"
 msgstr "Yıldırım Beyazıt Üniversitesi"
 
-#: web/templates/oyz.html:205
+#: web/templates/oyz.html:208
 msgid "Vagrant UP!"
 msgstr "Vagrant UP!"
 
-#: web/templates/oyz.html:224
+#: web/templates/oyz.html:227
 msgid "ITU Free Software Club"
 msgstr "İTÜ Özgür Yazılım Kulübü"
 
-#: web/templates/oyz.html:224
+#: web/templates/oyz.html:228
 msgid "Free Software in ITU"
 msgstr "İTÜ'de Özgür Yazılım"
 
-#: web/templates/oyz.html:256
+#: web/templates/oyz.html:259
 msgid "Name-Surname*"
 msgstr "Adınız Soyadınız*"
 
-#: web/templates/oyz.html:260
+#: web/templates/oyz.html:263
 msgid "E-mail Address*"
 msgstr "Email Adresiniz*"
 
-#: web/templates/oyz.html:270
+#: web/templates/oyz.html:273
 msgid "Message*"
 msgstr "Mesajınız*"
 
-#: web/templates/oyz.html:277
-msgid "Submit"
-msgstr "Gönder"
+#: web/templates/pagination/_pagination.html:9
+#: web/templates/pagination/_pagination.html:14
+msgid "Previous"
+msgstr ""
+
+#: web/templates/pagination/_pagination.html:25
+#: web/templates/pagination/_pagination.html:31
+msgid "Next"
+msgstr ""
+
+#: web/templates/pinax/blog/blog_list.html:4
+msgid "Blog Posts"
+msgstr ""
+
+#: web/templates/pinax/blog/blog_list.html:18
+msgid "read more..."
+msgstr ""
+
+#: web/templates/pinax/blog/blog_list.html:24
+msgid "No blog posts have been published."
+msgstr ""
+
+#: web/templates/pinax/blog/blog_post.html:47
+msgid "Tweet"
+msgstr ""
+
+#: web/templates/pinax/blog/dateline.html:7
+#, python-format
+msgid ""
+"\n"
+"        Posted<time datetime=\"%(datetime)s\" title=\"%(datetime)s\">\n"
+"        %(hunantime)s</time> by %(author)s.\n"
+"        </em>\n"
+"    "
+msgstr ""
+
+#: web/templates/pinax/blog/dateline_stale.html:5
+msgid "Not published yet"
+msgstr ""
+
+#: web/views.py:57
+msgid "User not found"
+msgstr "Kullanıcı bulunamadı."
+
+#: web/views.py:63
+msgid "Account Disabled"
+msgstr "Hesaba Erişim Engellenmiştir"
+
+#: web/views.py:64
+msgid "Invalid login credentials"
+msgstr "Geçersiz giriş bilgileri"
+
+#~ msgid "Coming soon..."
+#~ msgstr "Çok yakında..."
+
+#~ msgid "All lectures"
+#~ msgstr "Tüm Eğitimler"
+
+#~ msgid "See all lectures"
+#~ msgstr "Tüm eğitimleri gör"
+
+#~ msgid "Etkinlik Kayıt"
+#~ msgstr "Etkinliğe Kayıt Ol"
+
+#~ msgid "Academician"
+#~ msgstr "Öğr. Gör."
+
+#~ msgid "Submit"
+#~ msgstr "Gönder"
 
 #~ msgid "Missing Fields"
 #~ msgstr "Eksik Alanlar Mevcut"
