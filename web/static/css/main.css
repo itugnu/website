@@ -67,6 +67,15 @@ input.phone-input:hover::-webkit-outer-spin-button {
 .bg-dark {
     background-color: #212529 !important;
 }
+body.modal-open {
+    position: fixed;
+    overflow: hidden;
+    left:0;
+    right:0;
+}
+.modal{
+    -webkit-overflow-scrolling: auto;
+}
 /* Mobile views */
 @media only screen and (max-width: 768px) {
   .auth-button {
