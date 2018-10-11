@@ -42,8 +42,8 @@ urlpatterns = i18n_patterns(
     path('lectures/', views.lectures_list, name='lectures-index'),
     path('faq/', views.faq, name='faq'),
     path('oyz/', views.oyz, name='oyz'),
-    path('', views.index, name='index'),
     path('blog/', include('pinax.blog.urls', namespace='pinax_blog')),
+    path('', views.index, name='index'),
 ) + urlpatterns
 
 if settings.DEBUG and settings.DEBUG_TOOLBAR:

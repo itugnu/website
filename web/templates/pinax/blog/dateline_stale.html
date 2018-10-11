@@ -4,5 +4,5 @@
     {% if not post.stale %}
         <span class="date">{% if post.published %}{{ post.published|naturaltime }}{% else %}{% trans "Not published yet" %}{% endif %}</span> /
     {% endif %}
-    by <span class="author">{{ post.author.get_full_name }}</span>
+    {% blocktrans with author=post.author.get_full_name %}by <span class="author">{{ author }}</span>{% endblocktrans %}
 </p>
