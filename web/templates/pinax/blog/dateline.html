@@ -4,8 +4,8 @@
 
 <p class="post-meta">
         <em>
-    {% blocktrans with datetime=post.published hunantime=post.published|naturaltime author=post.author.get_full_name %}
-        Posted<time datetime="{{ datetime }}" title="{{ datetime }}">
+    {% blocktrans with datetime=post.published hunantime=post.published|naturaltime author=post.author.get_full_name trimmed %}
+        Posted <time datetime="{{ datetime }}" title="{{ datetime }}">
         {{ hunantime }}</time> by {{ author }}.
         </em>
     {% endblocktrans %}

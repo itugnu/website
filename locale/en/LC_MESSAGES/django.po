@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-11 08:23+0300\n"
+"POT-Creation-Date: 2018-10-11 15:09+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -852,11 +852,8 @@ msgstr ""
 #: web/templates/pinax/blog/dateline.html:7
 #, python-format
 msgid ""
-"\n"
-"        Posted<time datetime=\"%(datetime)s\" title=\"%(datetime)s\">\n"
-"        %(hunantime)s</time> by %(author)s.\n"
-"        </em>\n"
-"    "
+"Posted <time datetime=\"%(datetime)s\" title=\"%(datetime)s\"> "
+"%(hunantime)s</time> by %(author)s. </em>"
 msgstr ""
 
 #: web/templates/pinax/blog/dateline_stale.html:5
