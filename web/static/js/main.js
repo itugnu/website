@@ -79,18 +79,34 @@ $(document).ready(
             beforeSend: function(xhr, settings) {
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             },
-            success: function() {
+            success: function(data) {
+                var response = data;
                 result_box.html("<div class='alert alert-success'>");
                 result_box.find('> .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
-                result_box.find('> .alert-success').append("<strong>Your application received. </strong>");
+                if (response.code === 'external_form') {
+                    var registration_anchor = "<a href='" + response.url + "' target='_blank'>" + response.message + "</a>";
+                    result_box.find('> .alert-success').append(registration_anchor);
+                    setTimeout(function() {
+                        window.location.href = response.url;
+                        }, 3000
+                    );
+                } else {
+                    result_box.find('> .alert-success').append($("<strong>").text(response.message));
+                }
                 result_box.find('> .alert-success').append('</div>');
             },
             error: function(data) {
-                var response = $.parseJSON(data.responseText).message;
+                var response = $.parseJSON(data.responseText);
                 result_box.html("<div class='alert alert-danger'>");
                 result_box.find('> .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
-                result_box.find('> .alert-danger').append($("<strong>").text(response));
+                result_box.find('> .alert-danger').append($("<strong>").text(response.message));
                 result_box.find('> .alert-danger').append('</div>');
+                if (response.code === 'login_required') {
+                    setTimeout(function() {
+                        window.location.href = GLOBAL_DJANGO_VARS.login_url;
+                        }, 1000
+                    );
+                }
             }
         });
         return false;

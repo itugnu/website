@@ -20,7 +20,8 @@ class InlineScheduleAdmin(admin.TabularInline):
 @admin.register(Lecture)
 class LectureAdmin(VersionAdmin):
     list_display = (
-        'pk', 'name', 'lecturer', 'classroom', 'start_date', 'end_date', 'is_registration_open', 'created_at',
+        'pk', 'name', 'lecturer', 'classroom', 'start_date', 'end_date',
+        'is_registration_open', 'external_registration_url', 'created_at',
     )
     list_filter = (
         'classroom', ('lecturer', admin.RelatedOnlyFieldListFilter),
@@ -28,7 +29,10 @@ class LectureAdmin(VersionAdmin):
     )
     fieldsets = (
         (_('Lecture Information'), {
-            'fields': ('name', 'description', 'poster', 'lecturer', ('classroom', 'is_registration_open'),)
+            'fields': (
+                'name', 'description', 'poster', 'lecturer',
+                ('classroom', 'is_registration_open'), 'external_registration_url'
+            )
         }),
         (_('Dates'), {
             'fields': (('start_date', 'end_date'),)
