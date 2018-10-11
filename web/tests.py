@@ -168,12 +168,14 @@ class WebAppTestCase(TestCase):
         response = self.client.get(reverse('lecture-register'))
         self.assertEqual(response.status_code, 405)
         self.assertTrue('message' in response.json().keys())
+        self.assertEqual(response.json()['code'], 'disabled_method')
         # test non-user
         response = self.client.post(reverse('lecture-register'), data={
             'lecture': 1
         })
         self.assertEqual(response.status_code, 403)
         self.assertTrue('message' in response.json().keys())
+        self.assertEqual(response.json()['code'], 'login_required')
         # Login
         self.client.login(username=self.user_username, password=self.user_password)
         # Try missing lecture
@@ -182,6 +184,7 @@ class WebAppTestCase(TestCase):
         })
         self.assertEqual(response.status_code, 404)
         self.assertTrue('message' in response.json().keys())
+        self.assertEqual(response.json()['code'], 'not_found')
         # Make a test lecture with closed registration
         lecture = Lecture.objects.create(
             name='Test Lecture',
@@ -196,6 +199,7 @@ class WebAppTestCase(TestCase):
         })
         self.assertEqual(response.status_code, 403)
         self.assertTrue('message' in response.json().keys())
+        self.assertEqual(response.json()['code'], 'registration_closed')
         # Activate registration
         lecture.is_registration_open = True
         lecture.save()
@@ -203,10 +207,13 @@ class WebAppTestCase(TestCase):
             'lecture': lecture.pk
         })
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(len(response.json().keys()), 0)
+        self.assertEqual(len(response.json().keys()), 2)
+        self.assertEqual(response.json()['code'], 'registration_success')
         # Duplicate registration
         response = self.client.post(reverse('lecture-register'), data={
             'lecture': lecture.pk
         })
         self.assertEqual(response.status_code, 405)
         self.assertTrue('message' in response.json().keys())
+        self.assertEqual(response.json()['code'], 'duplicate_registration')
+        # @TODO remove application and retry with external_form_url
