@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-12 03:02+0300\n"
+"POT-Creation-Date: 2018-10-12 03:06+0300\n"
 "PO-Revision-Date: 2018-10-11 10:22+0300\n"
 "Last-Translator: Emek Gozluklu <emek@itugnu.org>\n"
 "Language-Team: tr <LL@li.org>\n"
@@ -733,6 +733,10 @@ msgstr "İTÜ Özgür Yazılım Kulübü"
 msgid "Free as in Freedom"
 msgstr "Free as in Freedom"
 
+#: web/templates/index.html:36 web/templates/pinax/blog/blog_list.html:18
+msgid "read more..."
+msgstr "daha fazlasını oku..."
+
 #: web/templates/index.html:40
 #, python-format
 msgid "<a href='%(blog_url)s'>Click here</a> to see other posts."
@@ -927,10 +931,6 @@ msgstr "Sonraki"
 #: web/templates/pinax/blog/blog_list.html:4
 msgid "Blog Posts"
 msgstr "Blog gönderileri"
-
-#: web/templates/pinax/blog/blog_list.html:18
-msgid "read more..."
-msgstr "daha fazlasını oku..."
 
 #: web/templates/pinax/blog/blog_list.html:24
 msgid "No blog posts have been published."

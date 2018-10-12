@@ -33,7 +33,7 @@
                     <hr class="my-6">
                     {% include "pinax/blog/dateline.html" %}
                     <p class="text-left lead">{{ post.teaser_html|safe }}</p>
-                    <p class="text-right"><a href="{{ post.get_absolute_url }}" class="btn btn-outline-secondary" style="alignment: right">read more...</a></p>
+                    <p class="text-right"><a href="{{ post.get_absolute_url }}" class="btn btn-outline-secondary" style="alignment: right">{% trans "read more..." %}</a></p>
                 </div>
                 {% endfor %}
             <div class="col">

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-12 03:00+0300\n"
+"POT-Creation-Date: 2018-10-12 03:06+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Emin Mastizada <emin@linux.com>\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -657,6 +657,10 @@ msgstr "Клуб Свободного Программное Обеспечен�
 msgid "Free as in Freedom"
 msgstr "Свободный Доступ"
 
+#: web/templates/index.html:36 web/templates/pinax/blog/blog_list.html:18
+msgid "read more..."
+msgstr ""
+
 #: web/templates/index.html:40
 #, python-format
 msgid "<a href='%(blog_url)s'>Click here</a> to see other posts."
@@ -840,10 +844,6 @@ msgstr ""
 
 #: web/templates/pinax/blog/blog_list.html:4
 msgid "Blog Posts"
-msgstr ""
-
-#: web/templates/pinax/blog/blog_list.html:18
-msgid "read more..."
 msgstr ""
 
 #: web/templates/pinax/blog/blog_list.html:24
