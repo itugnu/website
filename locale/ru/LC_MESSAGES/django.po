@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-12 02:56+0300\n"
+"POT-Creation-Date: 2018-10-12 03:00+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Emin Mastizada <emin@linux.com>\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -658,7 +658,8 @@ msgid "Free as in Freedom"
 msgstr "Свободный Доступ"
 
 #: web/templates/index.html:40
-msgid "<a href='{{ blog_url }}'>Click here</a> to see other posts."
+#, python-format
+msgid "<a href='%(blog_url)s'>Click here</a> to see other posts."
 msgstr ""
 
 #: web/templates/index.html:45

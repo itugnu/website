@@ -37,7 +37,7 @@
                 </div>
                 {% endfor %}
             <div class="col">
-            <h3 class="display-9 text-right">{% url 'pinax_blog.blog' as blog_url %}{% trans "<a href='{{ blog_url }}'>Click here</a> to see other posts." %}</h3>
+            <h3 class="display-9 text-right">{% url 'pinax_blog.blog' as blog_url %}{% blocktrans %}<a href='{{ blog_url }}'>Click here</a> to see other posts.{% endblocktrans %}</h3>
             </div>
           {% else %}
                 <br>
