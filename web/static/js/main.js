@@ -100,6 +100,10 @@ $(document).ready(
                 result_box.html("<div class='alert alert-danger'>");
                 result_box.find('> .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
                 result_box.find('> .alert-danger').append($("<strong>").text(response.message));
+                if (response.code === 'duplicate_registration_with_external_form') {
+                  var registration_anchor = "<a href='" + response.url + "' target='_blank'>" + GLOBAL_DJANGO_VARS.external_form + "</a>";
+                  result_box.find('> .alert-danger').append(registration_anchor);
+                }
                 result_box.find('> .alert-danger').append('</div>');
                 if (response.code === 'login_required') {
                     setTimeout(function() {

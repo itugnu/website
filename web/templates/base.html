@@ -154,7 +154,8 @@
     <script src="{% static "js/main.js" %}?v2"></script>
     <script type="text/javascript">
         var GLOBAL_DJANGO_VARS = {
-            "login_url": "{% url 'login' %}"
+            "login_url": "{% url 'login' %}",
+            "external_form": "{% trans "External Form" %}"
         }
     </script>
   </body>

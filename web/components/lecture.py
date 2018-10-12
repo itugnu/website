@@ -41,6 +41,15 @@ def lectures_register(request):
             status=403
         )
     if LectureApplication.objects.filter(lecture=lecture, user=request.user).exists():
+        if lecture.external_registration_url:
+            return JsonResponse(
+                {
+                    "message": _("You already registered for this lecture!"),
+                    "code": 'duplicate_registration_with_external_form',
+                    "url": lecture.external_registration_url
+                },
+                status=405
+            )
         return JsonResponse(
             {"message": _("You already registered for this lecture!"), "code": 'duplicate_registration'},
             status=405
