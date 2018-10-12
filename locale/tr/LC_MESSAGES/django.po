@@ -947,7 +947,7 @@ msgid ""
 "%(hunantime)s</time> by %(author)s. </em>"
 msgstr ""
 "%(author)s tarafından <time datetime=\"%(datetime)s\" title=\"%(datetime)s"
-"\"> %(hunantime)s</time>tarihinde paylaşılmış</em>"
+"\"> %(hunantime)s</time> paylaşılmış</em>"
 
 #: web/templates/pinax/blog/dateline_stale.html:5
 msgid "Not published yet"
