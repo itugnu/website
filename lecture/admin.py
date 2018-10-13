@@ -69,4 +69,5 @@ class LectureApplicationAdmin(VersionAdmin):
             'fields': (('created_at',),)
         }),
     )
+    search_fields = ('user__email', 'user__first_name', 'user__last_name',)
     readonly_fields = ('created_at',)
