@@ -31,7 +31,7 @@ class WebAppTestCase(TestCase):
         self.assertEqual(dictindex({'user': self.user}, 'user'), self.user)
 
     def test_libravatar(self):
-        pattern = re.compile("https?://\S+?/\S+?\.(?:jpg|jpeg|gif|png)&s=64")
+        pattern = re.compile("https?://\\S+?/\\S+?\\.(?:jpg|jpeg|gif|png)&s=64")
         self.assertIsNotNone(pattern.match(avatar(None, 'emin@linux.com', 64)))
         self.assertEqual(avatar(None, None, 64), "https://seccdn.libravatar.org/nobody/64.png")
 
