@@ -20,7 +20,10 @@ DEPLOYMENT
 
 * Ubuntu: `apt install python3.6 python3.6-dev nginx libpq-dev postgresql postgresql-contrib`
 * Set-up database and create settings file using `cp local_settings.template.py local_settings.py` (hint: use link (`ln -s`))
-* Install virtualenv: `sudo pip3 install virtualenv`
+* Update pip Version - Open CMD as Administrator
+                Type - `Python -m pip install --upgrade pip`
+                        
+* Install virtualenv: `pip install virtualenv`
 * Create user: `useradd -m itugnu`
 * Check `etc` folder for deployment files (nginx & supervisor)
 * Application uses gunicorn and PostgreSQL (psycopg2-binary) database for deployment
@@ -40,9 +43,9 @@ LICENSE
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+    GNU(General Public License) for more details.
 
-    You should have received a copy of the GNU General Public License
+    You should have received a copy of the GNU(General Public License)
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 AUTHORS
