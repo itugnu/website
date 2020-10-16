@@ -1,10 +1,10 @@
-# website
+# Amazing Website
 Public website for ITUGnu
 
 [![Build Status](https://travis-ci.org/itugnu/website.svg?branch=master)](https://travis-ci.org/itugnu/website)
 [![Coverage Status](https://coveralls.io/repos/github/itugnu/website/badge.svg?branch=master)](https://coveralls.io/github/itugnu/website?branch=master)
 
-INSTALL
+INSTALLATION PROCESS
 -------
 
 * Clone project from git
@@ -15,7 +15,7 @@ INSTALL
 * Initialize database: `./manage.py migrate`
 * Run application: `./manage.py runserver`
 
-DEPLOYMENT
+DEPLOYMENT PROCESS
 ----------
 
 * Ubuntu: `apt install python3.6 python3.6-dev nginx libpq-dev postgresql postgresql-contrib`
@@ -27,7 +27,7 @@ DEPLOYMENT
 * Translations needs to be compiled to use them: `./manage.py compilemessages`
 
 
-LICENSE
+LICENSE 
 -------
 
     Copyright 2018 ITUGnu <info@itugnu.org>
